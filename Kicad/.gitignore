@@ -1,0 +1,9 @@
+**/.DS_Store
+*.zip
+*.xml
+Gerbers
+*-backups/*
+*-bak
+*-erc.txt
+*-drc.txt
+kibot_errors.*

@@ -1,0 +1,28 @@
+name: Generate release files
+
+on:
+  push:
+    tags:
+      - "Release_**"
+      - "Rev**"
+      - "Proto**"
+      - "proto**"
+  workflow_dispatch:
+
+jobs:
+  draft_release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Zip Gerbers
+        run: zip -r Gerbers.zip Gerbers
+      - name: release
+        uses: softprops/action-gh-release@v1
+        with:
+          draft: true
+          files: |
+            Docs/Schematic.pdf
+            Docs/*-ibom.html
+            Gerbers.zip
+            Binary/*.jed
