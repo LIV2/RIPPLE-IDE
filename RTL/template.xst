@@ -6,7 +6,7 @@ run
 -ofn OFN
 -ofmt NGC
 -p xc9500xl
--top SETME
+-top LIV2RIDE2K
 -opt_mode Speed
 -opt_level 2
 -iuc NO

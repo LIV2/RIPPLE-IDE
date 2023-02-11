@@ -1,17 +1,17 @@
-PROJECT=
+PROJECT=LIV2RIDE2K
 PART=XC95144XL-10-TQ100
 WORKDIR=tmp
-SERIAL=$(shell git rev-parse --short=8 HEAD)
-PRODID=69
-DEFINES=makedefines autoconfig SERIAL=32'h${SERIAL} PRODID=${PRODID}
+SERIAL=0
+PRODID=72
+DEFINES=makedefines SERIAL=32'h${SERIAL} PRODID=${PRODID}
 
 CABLE=usb21
 
-CPLDFITFLAGS=-loc on -slew slow -init low -terminate keeper -optimize speed -keepio
+CPLDFITFLAGS=-loc on -slew slow -init low -terminate keeper -optimize speed -keepio -ignoretspec
 
-.PHONY:	all clean
+.PHONY:	all clean timing
 
-all:	$(PROJECT).jed
+all:	$(PROJECT).jed timing
 
 $(PROJECT).prj: *.v
 	-$(shell rm -f $@)
@@ -25,8 +25,9 @@ $(WORKDIR)/$(PROJECT).ngc:	*.v $(PROJECT).prj
 $(WORKDIR)/%.ngd:	$(WORKDIR)/%.ngc $(PROJECT).ucf
 	cd $(WORKDIR) && ngdbuild -p $(PART) -uc ../$(PROJECT).ucf ../$< ../$@
 
-$(WORKDIR)/%.vm6:	$(WORKDIR)/%.ngd $(PROJECT).ucf
+$(WORKDIR)/%.rpt $(WORKDIR)/%.vm6:	$(WORKDIR)/%.ngd $(PROJECT).ucf
 	cd $(WORKDIR) && cpldfit $(CPLDFITFLAGS) -p $(PART) ../$< | egrep -v "^CS: block|^$$"
+	cp $(WORKDIR)/$(PROJECT).rpt .
 
 %.jed:	$(WORKDIR)/%.vm6
 	hprep6 -i $<
@@ -34,6 +35,12 @@ $(WORKDIR)/%.vm6:	$(WORKDIR)/%.ngd $(PROJECT).ucf
 
 fit:	$(WORKDIR)/$(PROJECT).vm6
 
+
+%.tim:	$(WORKDIR)/%.vm6
+	cd $(WORKDIR) && taengine -l ../$@ -f $(PROJECT)
+
+
+timing:	$(PROJECT).tim
 
 clean:
 	-rm -rvf tmp

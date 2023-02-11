@@ -1,4 +1,4 @@
-PROJECT=
+PROJECT=LIV2RIDE2K
 KIBOT_CONF=./kibot/release.kibot.yaml
 GERBER_OUTPUT=../Gerbers
 
