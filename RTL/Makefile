@@ -42,6 +42,12 @@ fit:	$(WORKDIR)/$(PROJECT).vm6
 
 timing:	$(PROJECT).tim
 
+%.tim:	$(WORKDIR)/%.vm6
+	cd $(WORKDIR) && taengine -l ../$@ -f $(PROJECT)
+
+
+timing:	$(PROJECT).tim
+
 clean:
 	-rm -rvf tmp
 	-rm *.jed

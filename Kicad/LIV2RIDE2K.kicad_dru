@@ -1,0 +1,67 @@
+# JLCPCB 2-Layer
+(version 1)
+
+(rule "Via to track clearance"
+  (constraint hole_clearance (min 0.254mm))
+  (condition "A.Net != B.Net && A.Type == 'Via"))
+
+(rule "Drill hole-size"
+  (constraint hole_size (min 0.3mm) (max 6.3mm))
+  (condition "A.Type == 'hole'"))
+
+(rule "Min. Via hole size"
+  (constraint hole_size (min 0.3mm))
+  (condition "A.Type == 'Via'"))
+
+(rule "Min. Via Diameter"
+  (constraint via_diameter (min 0.5mm))
+  (condition "A.Type == 'Via'"))
+
+(rule "PTH hole size"
+  (constraint hole_size (min 0.2mm) (max 6.35mm))
+  (condition "A.Pad_Type == 'Through-hole' && A.isPlated() && A.Type == 'Pad'"))
+
+(rule "Pad Size"
+  (constraint length (min 1.0mm))
+  (condition "A.Pad_Type == 'Through-hole' && A.isPlated() && A.Type == 'Pad'"))
+
+(rule "Minimum annular ring (PTH)"
+  (constraint annular_width (min 0.3mm))
+  (condition "A.Pad_Type == 'Through-hole' && A.Type == 'Pad'"))
+
+(rule "Minimum annular ring"
+  (constraint annular_width (min 0.127mm))
+  (condition "A.Type != 'Pad'"))
+
+#(rule "Hole-to-hole clearance (different nets)"
+#  (constraint hole_to_hole (min 0.50mm))
+#  (condition "A.Net != B.Net"))
+
+(rule "Via-to-Via clearance (same nets)"
+  (constraint hole_clearance (min 0.254mm))
+  (condition "A.Type == 'Via' && B.type == 'Via' && A.Net == B.Net"))
+
+(rule "Pad-to-Pad clearance (Pad with hole, different nets)"
+  (constraint clearance (min 0.127mm))
+  (condition "A.isPlated() && B.isPlated() && A.Type == B.Type && A.Type == 'Pad' && A.Net != B.Net && A.Pad_Type == 'Through-hole' && B.Pad_Type == 'Through-hole"))
+
+(rule "PTH to Track clearance"
+  (constraint hole_clearance (min 0.33mm))
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole' && A.isPlated() && B.Type == 'Track' && A.Net != B.Net"))
+
+(rule "NPTH to Track clearance"
+  (constraint hole_clearance (min 0.2mm))
+  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole' && !A.isPlated() && B.Type == 'Track' && A.Net != B.Net"))
+
+(rule "Pad to Track clearance"
+  (constraint clearance (min 0.2mm))
+  (condition "A.Type == 'Pad' && B.Type == 'Track' && A.Net != B.Net"))
+
+(rule "Minimum width"
+  (constraint track_width (min 0.127mm))
+  (condition "(A.existsOnLayer('F.Cu') || A.existsOnLayer('B.cu')) && A.Type == 'Track'"))
+
+(rule "Trace clearance"
+  (constraint clearance (min 5mil))
+  (condition "A.Type == 'Track' && B.Type == 'Track'"))
+
