@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.254
         }
       },
       "diff_pair_dimensions": [
@@ -171,7 +171,9 @@
         0.1778,
         0.2032,
         0.254,
-        0.381
+        0.381,
+        0.762,
+        1.524
       ],
       "via_dimensions": [
         {
@@ -403,7 +405,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LIV2RIDE2K.kicad_pro",
+    "filename": "RIPPLE.kicad_pro",
     "version": 1
   },
   "net_settings": {
