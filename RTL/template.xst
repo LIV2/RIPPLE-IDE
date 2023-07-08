@@ -6,8 +6,8 @@ run
 -ofn OFN
 -ofmt NGC
 -p xc9500xl
--top LIV2RIDE2K
--opt_mode Speed
+-top RIPPLE
+-opt_mode Area
 -opt_level 2
 -iuc NO
 -keep_hierarchy Yes

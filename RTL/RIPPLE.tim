@@ -1,0 +1,364 @@
+                           Performance Summary Report
+                           --------------------------
+
+Design:     RIPPLE
+Device:     XC9572XL-10-VQ64
+Speed File: Version 3.0
+Program:    Timing Report Generator:  version P.20131013
+Date:       Wed Jul  5 11:19:28 2023
+
+Performance Summary:
+
+Pad to Pad (tPD)                          :         18.7ns (2 macrocell levels)
+Pad 'ADDR<23>' to Pad 'OVR_n'                                     
+
+Clock net 'AS_n' path delays:
+
+Clock Pad to Output Pad (tCO)             :         14.5ns (2 macrocell levels)
+Clock Pad 'AS_n' to Output Pad 'DBUS<12>'                                 (GCK)
+
+Setup to Clock at the Pad (tSU)           :          6.5ns (0 macrocell levels)
+Data signal 'CFGIN_n' to DFF D input Pin at 'AUTOCONFIG/cfgin.D'
+Clock pad 'AS_n'                                                          (GCK)
+
+                          Minimum Clock Period: 9.0ns
+                     Maximum Internal Clock Speed: 111.1Mhz
+                         (Limited by Clock Pulse Width)
+
+Clock net 'C1n' path delays:
+
+Clock to Setup (tCYC)                     :         11.4ns (1 macrocell levels)
+Clock to Q, net 'AUTOCONFIG/ide_base<3>.Q' to DFF Setup(D) at 'ide_dtack.D'        (GCK)
+Target FF drives output net 'ide_dtack'
+
+                          Minimum Clock Period: 11.4ns
+                     Maximum Internal Clock Speed: 87.7Mhz
+                            (Limited by Cycle Time)
+
+Clock net 'C3n' path delays:
+
+Clock to Setup (tCYC)                     :         11.4ns (1 macrocell levels)
+Clock to Q, net 'AUTOCONFIG/ide_base<3>.Q' to DFF Setup(D) at 'ide_dtack.D'        (GCK)
+Target FF drives output net 'ide_dtack'
+
+                          Minimum Clock Period: 11.4ns
+                     Maximum Internal Clock Speed: 87.7Mhz
+                            (Limited by Cycle Time)
+
+--------------------------------------------------------------------------------
+                            Pad to Pad (tPD) (nsec)
+
+\ From        A     A     A     A     A     A     A     A     A     A     A
+ \            D     D     D     D     D     D     D     D     D     D     S
+  \           D     D     D     D     D     D     D     D     D     D     _
+   \          R     R     R     R     R     R     R     R     R     R     n
+    \         <     <     <     <     <     <     <     <     <     <      
+     \        1     1     1     1     1     1     2     2     2     2      
+      \       2     3     6     7     8     9     0     1     2     3      
+       \      >     >     >     >     >     >     >     >     >     >      
+        \                                                                  
+  To     \------------------------------------------------------------------
+
+DBUS<12>               11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0      
+DBUS<13>               11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0      
+DBUS<14>               11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0      
+DBUS<15>               11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0      
+DTACK_n                18.7  18.7  18.7  18.7  18.7  18.7  18.7  18.7  18.7
+IDEBUF_OE              15.5  15.5  15.5  15.5  15.5  15.5  15.5  15.5  15.5
+IDECS1_n   15.5        15.5  15.5  15.5  15.5  15.5  15.5  15.5  15.5      
+IDECS2_n         15.5  15.5  15.5  15.5  15.5  15.5  15.5  15.5  15.5      
+IDE_ROMEN              15.5  15.5  15.5  15.5  14.5  14.5  14.5  14.5      
+OVR_n                  18.7  18.7  18.7  18.7  18.7  18.7  18.7  18.7  18.7
+
+--------------------------------------------------------------------------------
+                            Pad to Pad (tPD) (nsec)
+
+\ From        B     R     R     U
+ \            E     E     W     D
+  \           R     S           S
+   \          R     E           _
+    \         _     T           n
+     \        n     _            
+      \             n            
+       \                         
+        \                        
+  To     \------------------------
+
+DBUS<12>   11.0  11.0  11.0  11.0
+DBUS<13>   11.0  11.0  11.0  11.0
+DBUS<14>   11.0  11.0  11.0  11.0
+DBUS<15>   11.0  11.0  11.0  11.0
+DTACK_n                          
+IDEBUF_OE                        
+IDECS1_n                         
+IDECS2_n                         
+IDE_ROMEN                        
+OVR_n                            
+
+--------------------------------------------------------------------------------
+                      Clock Pad to Output Pad (tCO) (nsec)
+
+\ From       A
+ \           S
+  \          _
+   \         n
+    \         
+     \        
+      \       
+       \      
+  To    \------
+
+CFGOUT_n  10.3
+DBUS<12>  14.5
+DBUS<13>  14.5
+DBUS<14>  14.5
+DBUS<15>  14.5
+
+--------------------------------------------------------------------------------
+                   Setup to Clock at Pad (tSU or tSUF) (nsec)
+
+\ From      A
+ \          S
+  \         _
+   \        n
+    \        
+     \       
+      \      
+  To   \------
+
+CFGIN_n   6.5
+
+--------------------------------------------------------------------------------
+                          Clock to Setup (tCYC) (nsec)
+                                  (Clock: C1n)
+
+\ From                           A     A     A     A     A     A     I     I
+ \                               U     U     U     U     U     U     D     D
+  \                              T     T     T     T     T     T     E     E
+   \                             O     O     O     O     O     O     /     /
+    \                            C     C     C     C     C     C     A     A
+     \                           O     O     O     O     O     O     S     S
+      \                          N     N     N     N     N     N     _     _
+       \                         F     F     F     F     F     F     n     n
+        \                        I     I     I     I     I     I     _     _
+         \                       G     G     G     G     G     G     s     s
+          \                      /     /     /     /     /     /     y     y
+           \                     d     i     i     i     i     i     n     n
+            \                    t     d     d     d     d     d     c     c
+             \                   a     e     e     e     e     e     <     <
+              \                  c     _     _     _     _     _     0     1
+               \                 k     b     b     b     b     c     >     >
+                \                .     a     a     a     a     o     .     .
+                 \               Q     s     s     s     s     n     Q     Q
+                  \                    e     e     e     e     f            
+                   \                   <     <     <     <     i            
+                    \                  0     1     2     3     g            
+                     \                 >     >     >     >     u            
+                      \                .     .     .     .     r            
+                       \               Q     Q     Q     Q     e            
+                        \                                      d            
+                         \                                     .            
+                          \                                    Q            
+                           \                                                
+  To                        \------------------------------------------------
+
+AUTOCONFIG/dtack.D            10.0                                          
+AUTOCONFIG/ide_base<0>.CE     10.0                                          
+AUTOCONFIG/ide_base<1>.CE     10.0                                          
+AUTOCONFIG/ide_base<2>.CE     10.0                                          
+AUTOCONFIG/ide_base<3>.CE     10.0                                          
+AUTOCONFIG/ide_configured.CE  10.0                                          
+AUTOCONFIG/shutup.CE          10.0                                          
+DBUS<12>.CE                   10.0                                          
+DBUS<13>.CE                   10.0                                          
+DBUS<14>.CE                   10.0                                          
+DBUS<15>.CE                   10.0                                          
+IDE/AS_n_sync<1>.D                                                10.0      
+IDE/ide_enabled.D                   11.0  11.0  11.0  11.0  10.0            
+IOW_n.D                                                           10.0  10.0
+ide_dtack.D                         11.0  11.0  11.0  11.4  10.0  11.0      
+
+--------------------------------------------------------------------------------
+                          Clock to Setup (tCYC) (nsec)
+                                  (Clock: C1n)
+
+\ From                           I
+ \                               D
+  \                              E
+   \                             /
+    \                            i
+     \                           d
+      \                          e
+       \                         _
+        \                        e
+         \                       n
+          \                      a
+           \                     b
+            \                    l
+             \                   e
+              \                  d
+               \                 .
+                \                Q
+                 \                
+                  \               
+                   \              
+                    \             
+                     \            
+                      \           
+                       \          
+                        \         
+                         \        
+                          \       
+                           \      
+  To                        \------
+
+AUTOCONFIG/dtack.D                
+AUTOCONFIG/ide_base<0>.CE         
+AUTOCONFIG/ide_base<1>.CE         
+AUTOCONFIG/ide_base<2>.CE         
+AUTOCONFIG/ide_base<3>.CE         
+AUTOCONFIG/ide_configured.CE      
+AUTOCONFIG/shutup.CE              
+DBUS<12>.CE                       
+DBUS<13>.CE                       
+DBUS<14>.CE                       
+DBUS<15>.CE                       
+IDE/AS_n_sync<1>.D                
+IDE/ide_enabled.D             11.0
+IOW_n.D                           
+ide_dtack.D                       
+
+--------------------------------------------------------------------------------
+                          Clock to Setup (tCYC) (nsec)
+                                  (Clock: C3n)
+
+\ From                           A     A     A     A     A     A     I     I
+ \                               U     U     U     U     U     U     D     D
+  \                              T     T     T     T     T     T     E     E
+   \                             O     O     O     O     O     O     /     /
+    \                            C     C     C     C     C     C     A     A
+     \                           O     O     O     O     O     O     S     S
+      \                          N     N     N     N     N     N     _     _
+       \                         F     F     F     F     F     F     n     n
+        \                        I     I     I     I     I     I     _     _
+         \                       G     G     G     G     G     G     s     s
+          \                      /     /     /     /     /     /     y     y
+           \                     d     i     i     i     i     i     n     n
+            \                    t     d     d     d     d     d     c     c
+             \                   a     e     e     e     e     e     <     <
+              \                  c     _     _     _     _     _     0     1
+               \                 k     b     b     b     b     c     >     >
+                \                .     a     a     a     a     o     .     .
+                 \               Q     s     s     s     s     n     Q     Q
+                  \                    e     e     e     e     f            
+                   \                   <     <     <     <     i            
+                    \                  0     1     2     3     g            
+                     \                 >     >     >     >     u            
+                      \                .     .     .     .     r            
+                       \               Q     Q     Q     Q     e            
+                        \                                      d            
+                         \                                     .            
+                          \                                    Q            
+                           \                                                
+  To                        \------------------------------------------------
+
+AUTOCONFIG/dtack.D            10.0                                          
+AUTOCONFIG/ide_base<0>.CE     10.0                                          
+AUTOCONFIG/ide_base<1>.CE     10.0                                          
+AUTOCONFIG/ide_base<2>.CE     10.0                                          
+AUTOCONFIG/ide_base<3>.CE     10.0                                          
+AUTOCONFIG/ide_configured.CE  10.0                                          
+AUTOCONFIG/shutup.CE          10.0                                          
+DBUS<12>.CE                   10.0                                          
+DBUS<13>.CE                   10.0                                          
+DBUS<14>.CE                   10.0                                          
+DBUS<15>.CE                   10.0                                          
+IDE/AS_n_sync<1>.D                                                10.0      
+IDE/ide_enabled.D                   11.0  11.0  11.0  11.0  10.0            
+IOW_n.D                                                           10.0  10.0
+ide_dtack.D                         11.0  11.0  11.0  11.4  10.0  11.0      
+
+--------------------------------------------------------------------------------
+                          Clock to Setup (tCYC) (nsec)
+                                  (Clock: C3n)
+
+\ From                           I
+ \                               D
+  \                              E
+   \                             /
+    \                            i
+     \                           d
+      \                          e
+       \                         _
+        \                        e
+         \                       n
+          \                      a
+           \                     b
+            \                    l
+             \                   e
+              \                  d
+               \                 .
+                \                Q
+                 \                
+                  \               
+                   \              
+                    \             
+                     \            
+                      \           
+                       \          
+                        \         
+                         \        
+                          \       
+                           \      
+  To                        \------
+
+AUTOCONFIG/dtack.D                
+AUTOCONFIG/ide_base<0>.CE         
+AUTOCONFIG/ide_base<1>.CE         
+AUTOCONFIG/ide_base<2>.CE         
+AUTOCONFIG/ide_base<3>.CE         
+AUTOCONFIG/ide_configured.CE      
+AUTOCONFIG/shutup.CE              
+DBUS<12>.CE                       
+DBUS<13>.CE                       
+DBUS<14>.CE                       
+DBUS<15>.CE                       
+IDE/AS_n_sync<1>.D                
+IDE/ide_enabled.D             11.0
+IOW_n.D                           
+ide_dtack.D                       
+
+Path Type Definition: 
+
+Pad to Pad (tPD) -                        Reports pad to pad paths that start 
+                                          at input pads and end at output pads. 
+                                          Paths are not traced through 
+                                          registers. 
+
+Clock Pad to Output Pad (tCO) -           Reports paths that start at input 
+                                          pads trace through clock inputs of 
+                                          registers and end at output pads. 
+                                          Paths are not traced through PRE/CLR 
+                                          inputs of registers. 
+
+Setup to Clock at Pad (tSU or tSUF) -     Reports external setup time of data 
+                                          to clock at pad. Data path starts at 
+                                          an input pad and ends at register 
+                                          (Fast Input Register for tSUF) D/T 
+                                          input. Clock path starts at input pad 
+                                          and ends at the register clock input. 
+                                          Paths are not traced through 
+                                          registers. Pin-to-pin setup 
+                                          requirement is not reported or 
+                                          guaranteed for product-term clocks 
+                                          derived from macrocell feedback 
+                                          signals. 
+
+Clock to Setup (tCYC) -                   Register to register cycle time. 
+                                          Include source register tCO and 
+                                          destination register tSU. Note that 
+                                          when the computed Maximum Clock Speed 
+                                          is limited by tCYC it is computed 
+                                          assuming that all registers are 
+                                          rising-edge sensitive. 
+
