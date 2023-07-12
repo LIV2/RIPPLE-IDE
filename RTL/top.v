@@ -32,6 +32,7 @@ module RIPPLE(
     output CFGOUT_n,
     output DTACK_n,
     output OVR_n,
+    output SLAVE_n,
 // IDE stuff
     input IDEEN_n,
     output IDE_ROMEN,
@@ -68,7 +69,6 @@ Autoconfig AUTOCONFIG (
 
 IDE IDE (
   .ADDR (ADDR),
-  .BERR_n (BERR_n),
   .UDS_n (UDS_n),
   .LDS_n (LDS_n),
   .RW (RW),
@@ -82,7 +82,6 @@ IDE IDE (
   .IOW_n (IOW_n),
   .IDECS1_n (IDECS1_n),
   .IDECS2_n (IDECS2_n),
-  .IDEBUF_OE (IDEBUF_OE),
   .IDE_ROMEN (IDE_ROMEN)
 );
 
@@ -94,5 +93,10 @@ assign DTACK_n = (ide_access && !AS_n && ide_dtack) ? 1'b0 : 1'bZ;
 
 assign OVR_n = 1'bZ;
 assign DTACK_n = 1'bZ;
+
+assign SLAVE_n = !((autoconfig_cycle || ide_access) && !AS_n);
+
+assign IDEBUF_OE = !((autoconfig_cycle || ide_access) && !AS_n && BERR_n && (UDS_n || LDS_n || !RW));
+
 
 endmodule

@@ -18,7 +18,6 @@
 
 module IDE(
     input [23:1] ADDR,
-    input BERR_n,
     input UDS_n,
     input LDS_n,
     input RW,
@@ -32,7 +31,6 @@ module IDE(
     output reg IOW_n,
     output IDECS1_n,
     output IDECS2_n,
-    output IDEBUF_OE,
     output IDE_ROMEN
     );
 
@@ -44,9 +42,7 @@ reg ide_enabled;
 assign IDECS1_n = !(ide_access && ADDR[12] && !ADDR[16]) || !ide_enabled;
 assign IDECS2_n = !(ide_access && ADDR[13] && !ADDR[16]) || !ide_enabled;
 
-assign IDE_ROMEN = !(ide_access && BERR_n && (!ide_enabled || ADDR[16]));
-
-assign IDEBUF_OE = !(ide_access && ide_enabled && BERR_n && !ADDR[16] && !AS_n && (ds || !RW));
+assign IDE_ROMEN = !(ide_access && (!ide_enabled || ADDR[16]));
 
 
 reg [1:0] AS_n_sync = 2'b11;
