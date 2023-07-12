@@ -390,6 +390,9 @@
     (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/25c5e79c-7130-4a20-b3dd-2e71ea24afb0"
       (reference "#PWR039") (unit 1) (value "GND") (footprint "")
     )
+    (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/879f08e2-2ae2-4930-a7ef-7e07b4948e54"
+      (reference "#PWR040") (unit 1) (value "VCC") (footprint "")
+    )
     (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/0570f529-e2bb-42b3-bc7d-6d1569fff403"
       (reference "C1") (unit 1) (value "47u") (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm")
     )
@@ -485,6 +488,9 @@
     )
     (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/ef694741-aeee-46e4-a9f2-52a54d2bfb68"
       (reference "R10") (unit 1) (value "68") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/8e6d41c7-a76b-40c8-821e-c4c3d670b130"
+      (reference "R11") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/cfa4f149-d789-447f-b73c-52b7b922ae93"
       (reference "U1") (unit 1) (value "LM1117-3.3") (footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
