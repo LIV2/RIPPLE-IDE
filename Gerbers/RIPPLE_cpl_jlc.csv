@@ -1,5 +1,7 @@
 Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+"C1","47u","CP_Radial_D5.0mm_P2.50mm",121.7429,11.7701,0.0000,top
 "C2","10u","C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",120.2222,22.6921,180.0000,top
+"C3","47u","CP_Radial_D5.0mm_P2.50mm",15.0629,11.7701,0.0000,top
 "C4","0.1u","C_0603_1608Metric",73.3997,14.2462,-135.0000,top
 "C5","10u","C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",114.0834,22.6921,0.0000,top
 "C6","0.1u","C_0603_1608Metric",87.8707,12.7669,-45.0000,top
@@ -9,7 +11,15 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "C10","0.1u","C_0603_1608Metric",44.7250,15.3515,0.0000,top
 "C11","0.1u","C_0603_1608Metric",58.1870,15.3515,0.0000,top
 "C12","0.1u","C_0603_1608Metric",109.8420,18.5434,90.0000,top
+"CN1","Zorro2","Zorro2-CardEdge",2.4000,4.3194,0.0000,top
 "F1","Polyfuse_Small","Fuse_1812_4532Metric",121.7716,28.4071,90.0000,top
+"J1","JTAG","PinHeader_1x06_P2.54mm_Vertical",127.2416,18.2217,180.0000,top
+"J2","Conn_01x02_Male","PinHeader_1x02_P2.54mm_Vertical",3.1111,38.6889,0.0000,top
+"J3","Conn_01x02_Male","PinHeader_1x02_P2.54mm_Vertical",126.0348,36.1489,180.0000,top
+"J4","LED","PinHeader_1x03_P2.54mm_Vertical",3.1261,30.0529,90.0000,top
+"J5","Conn_02x20_Odd_Even","IDC-Header_2x20_P2.54mm_Horizontal",10.6810,36.6358,90.0000,top
+"J6","Conn_02x20_Odd_Even","IDC-Header_2x20_P2.54mm_Horizontal",70.2858,36.6358,90.0000,top
+"J7","Disable","PinHeader_1x02_P2.54mm_Vertical",77.4650,30.4800,90.0000,top
 "R1","10K","R_0603_1608Metric",118.5458,33.3347,-90.0000,top
 "R2","220","R_0603_1608Metric",11.4931,30.9217,-90.0000,top
 "R3","1K","R_0603_1608Metric",43.7388,33.3347,-90.0000,top

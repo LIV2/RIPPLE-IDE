@@ -115,7 +115,7 @@ outputs:
       output: ../Docs/PCB.png
       zoom: 8
       view: top
-      no_tht: true
+      no_tht: false
       orthographic: true
       download: false
       width: 1300
@@ -139,7 +139,7 @@ outputs:
       units: millimeters
       separate_files_for_front_and_back: false
       use_aux_axis_as_origin: true
-      only_smd: true
+      only_smd: false
       columns:
         - id: Ref
           name: Designator
@@ -159,7 +159,6 @@ outputs:
     type: bom
     options:
       output: '../Gerbers/%f_%i_jlc.%x'
-      exclude_filter: 'exclude_tht'
       ref_separator: ','
       columns:
         - field: Value
