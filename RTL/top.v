@@ -31,10 +31,11 @@ module RIPPLE(
     input UDS_n,
     output CFGOUT_n,
     output DTACK_n,
-    output OVR_n,
+    output OVR_n_1,
+    output OVR_n_2,
     output SLAVE_n,
 // IDE stuff
-    input IDEEN_n,
+    input IDE_OFF_n,
     output IDE_ROMEN,
     output IDEBUF_OE,
     output IDECS1_n,
@@ -75,7 +76,7 @@ IDE IDE (
   .AS_n (AS_n),
   .CLK (CLK7M),
   .ide_access (ide_access),
-  .ide_enable (~IDEEN_n),
+  .ide_enable (IDE_OFF_n),
   .RESET_n (RESET_n),
   .DTACK (ide_dtack),
   .IOR_n (IOR_n),
@@ -86,13 +87,14 @@ IDE IDE (
 );
 
 
-assign DBUS[15:12] = (autoconfig_cycle) && RW && !UDS_n && BERR_n && RESET_n ? autoconfig_dout : 'bZ;
+assign DBUS[15:12] = (autoconfig_cycle) && RW && !AS_n && !UDS_n && BERR_n && RESET_n ? autoconfig_dout : 'bZ;
 
-assign OVR_n = (ide_access && !AS_n) ? 1'b0 : 1'bZ;
-assign DTACK_n = (ide_access && !AS_n && ide_dtack) ? 1'b0 : 1'bZ;
+assign DTACK_n = (!AS_n && ide_access && ide_dtack) ? 1'b0 : 1'bZ;
 
-assign OVR_n = 1'bZ;
-assign DTACK_n = 1'bZ;
+wire OVR = ide_access && !AS_n;
+
+assign OVR_n_1 = (OVR) ? 1'b0 : 1'bZ;
+assign OVR_n_2 = (OVR) ? 1'b0 : 1'bZ;
 
 assign SLAVE_n = !((autoconfig_cycle || ide_access) && !AS_n);
 

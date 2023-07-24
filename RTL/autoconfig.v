@@ -69,7 +69,7 @@ begin
     ide_base       <= 4'b0;
     ide_configured <= 0;
     shutup         <= 0;
-  end else if (!UDS_n && autoconfig_cycle && !dtack) begin
+  end else if (!AS_n && !UDS_n && autoconfig_cycle && !dtack) begin
     dtack <= 1;
     if (RW) begin
       case (ADDR[8:1])
