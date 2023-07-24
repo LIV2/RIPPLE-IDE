@@ -450,6 +450,15 @@
     (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/23918dad-5d9d-4bf6-8968-19157407eb2f"
       (reference "F1") (unit 1) (value "Polyfuse_Small") (footprint "Fuse:Fuse_1812_4532Metric")
     )
+    (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/2f5a60b3-799b-41bc-a8f1-21c4b19b9e24"
+      (reference "FB1") (unit 1) (value "Ferrite") (footprint "Inductor_SMD:L_0603_1608Metric")
+    )
+    (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/39fa3e58-4c3c-4fc7-a85c-1e1697109735"
+      (reference "FB2") (unit 1) (value "Ferrite") (footprint "Inductor_SMD:L_0603_1608Metric")
+    )
+    (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/bd99d9e7-86dc-4604-b78e-708bce456f9d"
+      (reference "FB3") (unit 1) (value "Ferrite") (footprint "Inductor_SMD:L_0603_1608Metric")
+    )
     (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/2cb1763e-d872-4f12-b12c-35e02d2ebc1b"
       (reference "J1") (unit 1) (value "JTAG") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical")
     )

@@ -13,6 +13,9 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "C12","47u","CP_Radial_D5.0mm_P2.50mm",15.0629,11.7701,0.0000,top
 "CN1","Zorro2","Zorro2-CardEdge",2.4000,4.3194,0.0000,top
 "F1","Polyfuse_Small","Fuse_1812_4532Metric",121.7716,28.4071,90.0000,top
+"FB1","Ferrite","L_0603_1608Metric",38.7006,9.0877,0.0000,top
+"FB2","Ferrite","L_0603_1608Metric",109.0840,9.9513,-90.0000,top
+"FB3","Ferrite","L_0603_1608Metric",111.6240,9.9513,-90.0000,top
 "J1","JTAG","PinHeader_1x06_P2.54mm_Vertical",127.2416,18.2217,180.0000,top
 "J2","Conn_01x02_Male","PinHeader_1x02_P2.54mm_Vertical",126.0348,36.1489,180.0000,top
 "J3","Conn_02x20_Odd_Even","IDC-Header_2x20_P2.54mm_Horizontal",70.2858,36.6358,90.0000,top

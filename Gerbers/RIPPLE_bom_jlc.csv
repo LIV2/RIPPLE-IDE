@@ -3,6 +3,7 @@
 "10u","C2,C3","C_1206_3216Metric_Pad1.33x1.80mm_HandSolder","C7171"
 "47u","C1,C12","CP_Radial_D5.0mm_P2.50mm","C239310"
 "Polyfuse_Small","F1","Fuse_1812_4532Metric","C210834"
+"Ferrite","FB1,FB2,FB3","L_0603_1608Metric","C2649307"
 "Conn_01x02_Male","J2,J5,J7","PinHeader_1x02_P2.54mm_Vertical",""
 "Conn_02x20_Odd_Even","J3,J4","IDC-Header_2x20_P2.54mm_Horizontal","C720747"
 "JTAG","J1","PinHeader_1x06_P2.54mm_Vertical",""
