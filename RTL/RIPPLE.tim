@@ -5,19 +5,29 @@ Design:     RIPPLE
 Device:     XC9572XL-10-VQ64
 Speed File: Version 3.0
 Program:    Timing Report Generator:  version P.20131013
-Date:       Mon Jul 24 20:16:35 2023
+Date:       Thu Aug 10 22:48:47 2023
 
 Performance Summary:
 
-Pad to Pad (tPD)                          :         38.6ns (4 macrocell levels)
-Pad 'ADDR<18>' to Pad 'IDEBUF_OE'                                 
+Pad to Pad (tPD)                          :         21.8ns (1 macrocell levels)
+Pad 'UDS_n' to Pad 'IDEBUF_OE'                                    
+
+Clock net 'RESET_n' path delays:
+
+Setup to Clock at the Pad (tSU)           :          7.6ns (0 macrocell levels)
+Data signal 'IDE_OFF_n' to DFF D input Pin at 'ide_enable.D'
+Clock pad 'RESET_n'                                               (Pterm Clock)
+
+                          Minimum Clock Period: 14.0ns
+                     Maximum Internal Clock Speed: 71.4Mhz
+                         (Limited by Clock Pulse Width)
 
 Clock net 'AS_n' path delays:
 
-Clock Pad to Output Pad (tCO)             :         30.1ns (3 macrocell levels)
+Clock Pad to Output Pad (tCO)             :         27.9ns (2 macrocell levels)
 Clock Pad 'AS_n' to Output Pad 'IDEBUF_OE'                        (Pterm Clock)
 
-Setup to Clock at the Pad (tSU)           :          2.1ns (0 macrocell levels)
+Setup to Clock at the Pad (tSU)           :          7.6ns (0 macrocell levels)
 Data signal 'CFGIN_n' to DFF D input Pin at 'AUTOCONFIG/cfgin.D'
 Clock pad 'AS_n'                                                  (Pterm Clock)
 
@@ -27,22 +37,45 @@ Clock pad 'AS_n'                                                  (Pterm Clock)
 
 Clock net 'C3n' path delays:
 
-Clock to Setup (tCYC)                     :         26.4ns (3 macrocell levels)
-Clock to Q, net 'AUTOCONFIG/ide_base<2>.Q' to TFF Setup(D) at 'IDE/ide_enabled.D'        (GCK)
-Target FF drives output net 'IDE/ide_enabled'
+Clock Pad to Output Pad (tCO)             :         41.1ns (3 macrocell levels)
+Clock Pad 'C3n' to Output Pad 'IOW_n'                             (Pterm Clock)
 
-                          Minimum Clock Period: 26.4ns
-                     Maximum Internal Clock Speed: 37.8Mhz
-                            (Limited by Cycle Time)
+Setup to Clock at the Pad (tSU)           :         -5.6ns (0 macrocell levels)
+Data signal 'UDS_n' to DFF D input Pin at 'IDE/ds_delay.D'
+Clock pad 'C3n'                                                   (Pterm Clock)
+
+                          Minimum Clock Period: 14.0ns
+                     Maximum Internal Clock Speed: 71.4Mhz
+                         (Limited by Clock Pulse Width)
 
 Clock net 'C1n' path delays:
 
-Clock to Setup (tCYC)                     :         26.4ns (3 macrocell levels)
-Clock to Q, net 'AUTOCONFIG/ide_base<2>.Q' to TFF Setup(D) at 'IDE/ide_enabled.D'        (GCK)
+Clock Pad to Output Pad (tCO)             :         41.1ns (3 macrocell levels)
+Clock Pad 'C1n' to Output Pad 'IOW_n'                             (Pterm Clock)
+
+Setup to Clock at the Pad (tSU)           :         -5.6ns (0 macrocell levels)
+Data signal 'UDS_n' to DFF D input Pin at 'IDE/ds_delay.D'
+Clock pad 'C1n'                                                   (Pterm Clock)
+
+                          Minimum Clock Period: 14.0ns
+                     Maximum Internal Clock Speed: 71.4Mhz
+                         (Limited by Clock Pulse Width)
+
+Clock net 'UDS_n' path delays:
+
+Clock Pad to Output Pad (tCO)             :         29.7ns (2 macrocell levels)
+Clock Pad 'UDS_n' to Output Pad 'IDEBUF_OE'                       (Pterm Clock)
+
+Clock to Setup (tCYC)                     :         16.5ns (1 macrocell levels)
+Clock to Q, net 'AUTOCONFIG/ide_base<0>.Q' to TFF Setup(D) at 'IDE/ide_enabled.D'(Pterm Clock)
 Target FF drives output net 'IDE/ide_enabled'
 
-                          Minimum Clock Period: 26.4ns
-                     Maximum Internal Clock Speed: 37.8Mhz
+Setup to Clock at the Pad (tSU)           :          8.6ns (0 macrocell levels)
+Data signal 'ADDR<4>' to DFF D input Pin at 'DBUS<14>.D'
+Clock pad 'UDS_n'                                                 (Pterm Clock)
+
+                          Minimum Clock Period: 16.5ns
+                     Maximum Internal Clock Speed: 60.6Mhz
                             (Limited by Cycle Time)
 
 --------------------------------------------------------------------------------
@@ -59,18 +92,17 @@ Target FF drives output net 'IDE/ide_enabled'
         \                                                                  
   To     \------------------------------------------------------------------
 
-DBUS<12>               11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0
-DBUS<13>               11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0
-DBUS<14>               11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0
-DBUS<15>               11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0
-DTACK_n                26.4  26.4  27.4  18.7  18.7  18.7  18.7  18.7  11.0
-IDEBUF_OE              37.6  37.6  38.6  29.9  29.9  29.9  29.9  29.9  22.2
-IDECS1_n   14.5        29.9  29.9  30.9  22.2  22.2  22.2  22.2  22.2  14.5
-IDECS2_n         14.5  29.9  29.9  30.9  22.2  22.2  22.2  22.2  22.2  14.5
-IDE_ROMEN              29.9  29.9  30.9  22.2  22.2  22.2  22.2  22.2  14.5
-OVR_n_1                26.4  26.4  27.4  18.7  18.7  18.7  18.7  18.7  11.0
-OVR_n_2                26.4  26.4  27.4  18.7  18.7  18.7  18.7  18.7  11.0
-SLAVE_n                29.9  29.9  30.9  22.2  22.2  22.2  22.2  22.2  14.5
+DBUS<12>               11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0      
+DBUS<13>               11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0      
+DBUS<14>               11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0      
+DBUS<15>               11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0      
+IDEBUF_OE              20.0  21.8  21.8  21.8  21.8  21.8  21.8  21.8  21.8
+IDECS1_n   21.0        21.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0      
+IDECS2_n         21.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0      
+IDE_ROMEN              21.0  21.0  21.0  21.0  20.0  20.0  20.0  20.0  21.0
+IOR_n                                                                  20.0
+IOW_n                                                                  20.0
+SLAVE_n                20.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0      
 
 --------------------------------------------------------------------------------
                             Pad to Pad (tPD) (nsec)
@@ -86,254 +118,125 @@ SLAVE_n                29.9  29.9  30.9  22.2  22.2  22.2  22.2  22.2  14.5
         \                              
   To     \------------------------------
 
-DBUS<12>   11.0        11.0  11.0  11.0
-DBUS<13>   11.0        11.0  11.0  11.0
-DBUS<14>   11.0        11.0  11.0  11.0
-DBUS<15>   11.0        11.0  11.0  11.0
-DTACK_n                                
-IDEBUF_OE  14.5  14.5        14.5  14.5
+DBUS<12>               11.0  11.0      
+DBUS<13>               11.0  11.0      
+DBUS<14>               11.0  11.0      
+DBUS<15>               11.0  11.0      
+IDEBUF_OE  21.8  21.8        20.0  21.8
 IDECS1_n                               
 IDECS2_n                               
 IDE_ROMEN                              
-OVR_n_1                                
-OVR_n_2                                
+IOR_n            20.0        20.0  20.0
+IOW_n            20.0        20.0  20.0
 SLAVE_n                                
 
 --------------------------------------------------------------------------------
                       Clock Pad to Output Pad (tCO) (nsec)
 
-\ From        A
- \            S
-  \           _
-   \          n
-    \          
-     \         
-      \        
-       \       
-        \      
-  To     \------
+\ From        A     C     C     U
+ \            S     1     3     D
+  \           _     n     n     S
+   \          n                 _
+    \                           n
+     \                           
+      \                          
+       \                         
+        \                        
+  To     \------------------------
 
-CFGOUT_n   14.7
-DBUS<12>   18.9
-DBUS<13>   18.9
-DBUS<14>   18.9
-DBUS<15>   18.9
-IDEBUF_OE  30.1
-SLAVE_n    22.4
+CFGOUT_n   14.7                  
+DBUS<12>   18.9              14.7
+DBUS<13>   18.9              14.7
+DBUS<14>   18.9              14.7
+DBUS<15>   18.9              14.7
+IDEBUF_OE  27.9              29.7
+IDECS1_n                     28.9
+IDECS2_n                     28.9
+IDE_ROMEN                    28.9
+IOR_n            41.1  41.1      
+IOW_n            41.1  41.1      
+SLAVE_n    27.9              28.9
 
 --------------------------------------------------------------------------------
                    Setup to Clock at Pad (tSU or tSUF) (nsec)
 
-\ From      A
- \          S
-  \         _
-   \        n
-    \        
-     \       
-      \      
-  To   \------
+\ From        A     C     C     R     U
+ \            S     1     3     E     D
+  \           _     n     n     S     S
+   \          n                 E     _
+    \                           T     n
+     \                          _      
+      \                         n      
+       \                               
+        \                              
+  To     \------------------------------
 
-CFGIN_n   2.1
-
---------------------------------------------------------------------------------
-                          Clock to Setup (tCYC) (nsec)
-                                  (Clock: C3n)
-
-\ From                           A     A     A     A     A     A     I     I
- \                               U     U     U     U     U     U     D     D
-  \                              T     T     T     T     T     T     E     E
-   \                             O     O     O     O     O     O     /     /
-    \                            C     C     C     C     C     C     A     A
-     \                           O     O     O     O     O     O     S     S
-      \                          N     N     N     N     N     N     _     _
-       \                         F     F     F     F     F     F     n     n
-        \                        I     I     I     I     I     I     _     _
-         \                       G     G     G     G     G     G     d     d
-          \                      /     /     /     /     /     /     e     e
-           \                     d     i     i     i     i     i     l     l
-            \                    t     d     d     d     d     d     a     a
-             \                   a     e     e     e     e     e     y     y
-              \                  c     _     _     _     _     _     <     <
-               \                 k     b     b     b     b     c     0     1
-                \                .     a     a     a     a     o     >     >
-                 \               Q     s     s     s     s     n     .     .
-                  \                    e     e     e     e     f     Q     Q
-                   \                   <     <     <     <     i            
-                    \                  0     1     2     3     g            
-                     \                 >     >     >     >     u            
-                      \                .     .     .     .     r            
-                       \               Q     Q     Q     Q     e            
-                        \                                      d            
-                         \                                     .            
-                          \                                    Q            
-                           \                                                
-  To                        \------------------------------------------------
-
-AUTOCONFIG/dtack.D            10.0                                          
-AUTOCONFIG/ide_base<0>.CE     10.0                                          
-AUTOCONFIG/ide_base<1>.CE     10.0                                          
-AUTOCONFIG/ide_base<2>.CE     10.0                                          
-AUTOCONFIG/ide_base<3>.CE     10.0                                          
-AUTOCONFIG/ide_configured.CE  10.0                                          
-AUTOCONFIG/shutup.CE          10.0                                          
-DBUS<12>.CE                   10.0                                          
-DBUS<13>.CE                   10.0                                          
-DBUS<14>.CE                   10.0                                          
-DBUS<15>.CE                   10.0                                          
-IDE/AS_n_delay<1>.D                                               10.0      
-IDE/ide_enabled.D                   25.4  25.4  26.4  17.7  17.7            
-IOW_n.D                                                           10.0  10.0
-ide_dtack.D                         25.4  25.4  26.4  17.7  17.7            
+ADDR<16>                            2.1
+ADDR<17>                            8.6
+ADDR<18>                            8.6
+ADDR<19>                            8.6
+ADDR<1>                             8.6
+ADDR<20>                            8.6
+ADDR<21>                            8.6
+ADDR<22>                            8.6
+ADDR<23>                            8.6
+ADDR<2>                             8.6
+ADDR<3>                             8.6
+ADDR<4>                             8.6
+ADDR<5>                             8.6
+ADDR<6>                             8.6
+ADDR<7>                             8.6
+ADDR<8>                             8.6
+AS_n                                8.6
+CFGIN_n     7.6                        
+DBUS<13>                            7.6
+DBUS<14>                            7.6
+DBUS<15>                            7.6
+IDE_OFF_n                     7.6      
+LDS_n            -5.6  -5.6            
+RW                                  8.6
+UDS_n            -5.6  -5.6            
 
 --------------------------------------------------------------------------------
                           Clock to Setup (tCYC) (nsec)
-                                  (Clock: C3n)
+                                 (Clock: UDS_n)
 
-\ From                           I
- \                               D
-  \                              E
-   \                             /
-    \                            i
-     \                           d
-      \                          e
-       \                         _
-        \                        e
-         \                       n
-          \                      a
-           \                     b
-            \                    l
-             \                   e
-              \                  d
-               \                 .
-                \                Q
-                 \                
-                  \               
-                   \              
-                    \             
-                     \            
-                      \           
-                       \          
-                        \         
-                         \        
-                          \       
-                           \      
-  To                        \------
+\ From                           A     A     A     A     A     I
+ \                               U     U     U     U     U     D
+  \                              T     T     T     T     T     E
+   \                             O     O     O     O     O     /
+    \                            C     C     C     C     C     i
+     \                           O     O     O     O     O     d
+      \                          N     N     N     N     N     e
+       \                         F     F     F     F     F     _
+        \                        I     I     I     I     I     e
+         \                       G     G     G     G     G     n
+          \                      /     /     /     /     /     a
+           \                     i     i     i     i     s     b
+            \                    d     d     d     d     h     l
+             \                   e     e     e     e     u     e
+              \                  _     _     _     _     t     d
+               \                 b     b     b     c     u     .
+                \                a     a     a     o     p     Q
+                 \               s     s     s     n     .      
+                  \              e     e     e     f     Q      
+                   \             <     <     <     i            
+                    \            0     1     2     g            
+                     \           >     >     >     u            
+                      \          .     .     .     r            
+                       \         Q     Q     Q     e            
+                        \                          d            
+                         \                         .            
+                          \                        Q            
+                           \                                    
+  To                        \------------------------------------
 
-AUTOCONFIG/dtack.D                
-AUTOCONFIG/ide_base<0>.CE         
-AUTOCONFIG/ide_base<1>.CE         
-AUTOCONFIG/ide_base<2>.CE         
-AUTOCONFIG/ide_base<3>.CE         
-AUTOCONFIG/ide_configured.CE      
-AUTOCONFIG/shutup.CE              
-DBUS<12>.CE                       
-DBUS<13>.CE                       
-DBUS<14>.CE                       
-DBUS<15>.CE                       
-IDE/AS_n_delay<1>.D               
-IDE/ide_enabled.D             10.0
-IOW_n.D                           
-ide_dtack.D                       
-
---------------------------------------------------------------------------------
-                          Clock to Setup (tCYC) (nsec)
-                                  (Clock: C1n)
-
-\ From                           A     A     A     A     A     A     I     I
- \                               U     U     U     U     U     U     D     D
-  \                              T     T     T     T     T     T     E     E
-   \                             O     O     O     O     O     O     /     /
-    \                            C     C     C     C     C     C     A     A
-     \                           O     O     O     O     O     O     S     S
-      \                          N     N     N     N     N     N     _     _
-       \                         F     F     F     F     F     F     n     n
-        \                        I     I     I     I     I     I     _     _
-         \                       G     G     G     G     G     G     d     d
-          \                      /     /     /     /     /     /     e     e
-           \                     d     i     i     i     i     i     l     l
-            \                    t     d     d     d     d     d     a     a
-             \                   a     e     e     e     e     e     y     y
-              \                  c     _     _     _     _     _     <     <
-               \                 k     b     b     b     b     c     0     1
-                \                .     a     a     a     a     o     >     >
-                 \               Q     s     s     s     s     n     .     .
-                  \                    e     e     e     e     f     Q     Q
-                   \                   <     <     <     <     i            
-                    \                  0     1     2     3     g            
-                     \                 >     >     >     >     u            
-                      \                .     .     .     .     r            
-                       \               Q     Q     Q     Q     e            
-                        \                                      d            
-                         \                                     .            
-                          \                                    Q            
-                           \                                                
-  To                        \------------------------------------------------
-
-AUTOCONFIG/dtack.D            10.0                                          
-AUTOCONFIG/ide_base<0>.CE     10.0                                          
-AUTOCONFIG/ide_base<1>.CE     10.0                                          
-AUTOCONFIG/ide_base<2>.CE     10.0                                          
-AUTOCONFIG/ide_base<3>.CE     10.0                                          
-AUTOCONFIG/ide_configured.CE  10.0                                          
-AUTOCONFIG/shutup.CE          10.0                                          
-DBUS<12>.CE                   10.0                                          
-DBUS<13>.CE                   10.0                                          
-DBUS<14>.CE                   10.0                                          
-DBUS<15>.CE                   10.0                                          
-IDE/AS_n_delay<1>.D                                               10.0      
-IDE/ide_enabled.D                   25.4  25.4  26.4  17.7  17.7            
-IOW_n.D                                                           10.0  10.0
-ide_dtack.D                         25.4  25.4  26.4  17.7  17.7            
-
---------------------------------------------------------------------------------
-                          Clock to Setup (tCYC) (nsec)
-                                  (Clock: C1n)
-
-\ From                           I
- \                               D
-  \                              E
-   \                             /
-    \                            i
-     \                           d
-      \                          e
-       \                         _
-        \                        e
-         \                       n
-          \                      a
-           \                     b
-            \                    l
-             \                   e
-              \                  d
-               \                 .
-                \                Q
-                 \                
-                  \               
-                   \              
-                    \             
-                     \            
-                      \           
-                       \          
-                        \         
-                         \        
-                          \       
-                           \      
-  To                        \------
-
-AUTOCONFIG/dtack.D                
-AUTOCONFIG/ide_base<0>.CE         
-AUTOCONFIG/ide_base<1>.CE         
-AUTOCONFIG/ide_base<2>.CE         
-AUTOCONFIG/ide_base<3>.CE         
-AUTOCONFIG/ide_configured.CE      
-AUTOCONFIG/shutup.CE              
-DBUS<12>.CE                       
-DBUS<13>.CE                       
-DBUS<14>.CE                       
-DBUS<15>.CE                       
-IDE/AS_n_delay<1>.D               
-IDE/ide_enabled.D             10.0
-IOW_n.D                           
-ide_dtack.D                       
+AUTOCONFIG/ide_base<0>.CE                       10.0            
+AUTOCONFIG/ide_base<1>.CE                       10.0            
+AUTOCONFIG/ide_base<2>.CE                       10.0            
+AUTOCONFIG/ide_configured.CE                    10.0            
+AUTOCONFIG/shutup.CE                                  10.0      
+IDE/ide_enabled.D             16.5  16.5  16.5  16.5        16.5
 
 Path Type Definition: 
 

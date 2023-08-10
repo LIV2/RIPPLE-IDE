@@ -22,7 +22,7 @@ module RIPPLE(
     input BERR_n,
     input C1n,
     input C3n,
-    input CDACn, // Unused but maybe handy
+    input CDACn, // Unused but maybe handy later
     input CFGIN_n,
     inout [15:12] DBUS,
     input LDS_n,
@@ -51,6 +51,11 @@ wire ide_dtack;
 
 wire CLK7M = !(C1n ^ C3n);
 
+reg ide_enable;
+always @(negedge RESET_n) begin
+  ide_enable <= IDE_OFF_n;
+end
+
 Autoconfig AUTOCONFIG (
   .ADDR (ADDR),
   .AS_n (AS_n),
@@ -59,7 +64,7 @@ Autoconfig AUTOCONFIG (
   .RW (RW),
   .DIN (DBUS[15:12]),
   .RESET_n (RESET_n),
-  .ide_enabled (~IDEEN_n),
+  .ide_enabled (ide_enable),
   .CFGIN_n (CFGIN_n),
   .CFGOUT_n (CFGOUT_n),
   .ide_access (ide_access),
@@ -76,7 +81,7 @@ IDE IDE (
   .AS_n (AS_n),
   .CLK (CLK7M),
   .ide_access (ide_access),
-  .ide_enable (IDE_OFF_n),
+  .ide_enable (ide_enable),
   .RESET_n (RESET_n),
   .DTACK (ide_dtack),
   .IOR_n (IOR_n),
@@ -87,18 +92,18 @@ IDE IDE (
 );
 
 
-assign DBUS[15:12] = (autoconfig_cycle) && RW && !AS_n && !UDS_n && BERR_n && RESET_n ? autoconfig_dout : 'bZ;
+assign DBUS[15:12] = (autoconfig_cycle) && RW && RESET_n ? autoconfig_dout : 'bZ;
 
-assign DTACK_n = (!AS_n && ide_access && ide_dtack) ? 1'b0 : 1'bZ;
+assign DTACK_n = (!AS_n && ide_access) ? 1'b0 : 1'bZ;
 
-wire OVR = ide_access && !AS_n;
+wire OVR = ide_access;
 
 assign OVR_n_1 = (OVR) ? 1'b0 : 1'bZ;
 assign OVR_n_2 = (OVR) ? 1'b0 : 1'bZ;
 
-assign SLAVE_n = !((autoconfig_cycle || ide_access) && !AS_n);
+assign SLAVE_n = !((autoconfig_cycle || ide_access));
 
-assign IDEBUF_OE = !((autoconfig_cycle || ide_access) && !AS_n && BERR_n && (UDS_n || LDS_n || !RW));
+assign IDEBUF_OE = !(((autoconfig_cycle || ide_access) && !AS_n && BERR_n && (!RW || !UDS_n || !LDS_n)));
 
 
 endmodule
