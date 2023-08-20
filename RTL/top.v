@@ -94,14 +94,24 @@ IDE IDE (
 
 assign DBUS[15:12] = (autoconfig_cycle) && RW && RESET_n ? autoconfig_dout : 'bZ;
 
+`ifdef enable_dtack_gen
+// If we want to control DTACK ourselves...
+// Disabled by default
 assign DTACK_n = (!AS_n && ide_access) ? 1'b0 : 1'bZ;
 
-wire OVR = ide_access;
-
+wire OVR = ide_access && !AS_n;
 assign OVR_n_1 = (OVR) ? 1'b0 : 1'bZ;
 assign OVR_n_2 = (OVR) ? 1'b0 : 1'bZ;
 
-assign SLAVE_n = !((autoconfig_cycle || ide_access));
+`else
+
+assign DTACK_n = 1'bZ;
+assign OVR_n_1 = 1'bZ;
+assign OVR_n_2 = 1'bZ;
+
+`endif
+
+assign SLAVE_n = !((autoconfig_cycle || ide_access) && !AS_n);
 
 assign IDEBUF_OE = !(((autoconfig_cycle || ide_access) && !AS_n && BERR_n && (!RW || !UDS_n || !LDS_n)));
 

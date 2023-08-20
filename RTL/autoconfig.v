@@ -41,22 +41,19 @@ reg ide_configured;
 
 reg [2:0] ide_base;
 
-reg cfgin;
 reg cfgout;
 reg shutup;
 
 assign CFGOUT_n = !cfgout;
 
-assign autoconfig_cycle = (ADDR[23:16] == 8'hE8) && cfgin && !cfgout;
+assign autoconfig_cycle = (ADDR[23:16] == 8'hE8) && ~CFGIN_n && !cfgout;
 
 
 // These need to be registered at the end of a bus cycle
 always @(posedge AS_n or negedge RESET_n) begin
   if (!RESET_n) begin
     cfgout <= 0;
-    cfgin  <= 0;
   end else begin
-    cfgin  <= ~CFGIN_n;
     cfgout <= ide_configured || shutup;
   end
 end
