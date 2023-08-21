@@ -366,6 +366,9 @@
     (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/7b5b0893-b37a-4473-a0a5-9f2887049e43"
       (reference "#PWR027") (unit 1) (value "GND") (footprint "")
     )
+    (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/7dd11e08-ad58-4333-a7f5-9df13c996203"
+      (reference "#PWR028") (unit 1) (value "VCC") (footprint "")
+    )
     (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/c6dfb142-aabc-4ac2-9754-310269a2dcb7"
       (reference "#PWR029") (unit 1) (value "VCC") (footprint "")
     )
@@ -447,6 +450,9 @@
     (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/fa90cbdf-5fe2-4a2b-ba2f-16d4952d5285"
       (reference "CN1") (unit 2) (value "Zorro2") (footprint "Zorro2:Zorro2-CardEdge")
     )
+    (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/92450bd3-828e-435c-9f86-7f3b9d360e54"
+      (reference "D1") (unit 1) (value "BAT54A") (footprint "Package_TO_SOT_SMD:SOT-23")
+    )
     (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/23918dad-5d9d-4bf6-8968-19157407eb2f"
       (reference "F1") (unit 1) (value "Polyfuse_Small") (footprint "Fuse:Fuse_1812_4532Metric")
     )
@@ -508,10 +514,16 @@
       (reference "R9") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/02ae6d6a-c454-4870-a756-cabb801e7fd5"
-      (reference "R10") (unit 1) (value "220") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R10") (unit 1) (value "150") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/a8496e07-ccbc-4968-ad5d-06d821d0a047"
       (reference "R11") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/5f74234c-d2eb-404a-90c0-5cf108b2214e"
+      (reference "R12") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/aa98eb5e-36cf-4be6-b011-485f71792fe1"
+      (reference "R13") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/cfa4f149-d789-447f-b73c-52b7b922ae93"
       (reference "U1") (unit 1) (value "LM1117-3.3") (footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
