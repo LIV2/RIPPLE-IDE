@@ -36,15 +36,15 @@ module IDE(
 wire ds = !UDS_n || !LDS_n;
 
 reg ide_dtack;
-reg ide_enabled;
+reg ide_enabled = 0;
 
 
-always @(negedge UDS_n or negedge RESET_n) begin
+always @(posedge CLK or negedge RESET_n) begin
   if (!RESET_n) begin
     ide_enabled <= 0;
   end else begin
     // IDE enabled on first write to an IDE address
-    if (ide_access && ide_enable && !RW && !AS_n) ide_enabled <= 1;
+    if (ide_access && ide_enable && !RW && !UDS_n && !AS_n) ide_enabled <= 1;
   end
 end
 

@@ -5,7 +5,7 @@ Design:     RIPPLE
 Device:     XC9572XL-10-VQ64
 Speed File: Version 3.0
 Program:    Timing Report Generator:  version P.20131013
-Date:       Sun Aug 20 07:39:38 2023
+Date:       Sun Sep  3 20:18:21 2023
 
 Performance Summary:
 
@@ -33,12 +33,16 @@ Clock pad 'RESET_n'                                               (Pterm Clock)
 
 Clock net 'C3n' path delays:
 
-Clock Pad to Output Pad (tCO)             :         30.1ns (3 macrocell levels)
-Clock Pad 'C3n' to Output Pad 'IOR_n'                             (Pterm Clock)
+Clock Pad to Output Pad (tCO)             :         31.1ns (3 macrocell levels)
+Clock Pad 'C3n' to Output Pad 'IDECS1_n'                          (Pterm Clock)
 
-Clock to Setup (tCYC)                     :         10.0ns (1 macrocell levels)
-Clock to Q, net 'IDE/as_delay<0>.Q' to DFF Setup(D) at 'IDE/as_delay<1>.D'(Pterm Clock)
-Target FF drives output net 'IDE/as_delay<1>'
+Clock to Setup (tCYC)                     :         11.0ns (1 macrocell levels)
+Clock to Q, net 'IDE/ide_enabled.Q' to TFF Setup(D) at 'IDE/ide_enabled.D'(Pterm Clock)
+Target FF drives output net 'IDE/ide_enabled'
+
+Setup to Clock at the Pad (tSU)           :         -4.6ns (0 macrocell levels)
+Data signal 'UDS_n' to TFF D input Pin at 'IDE/ide_enabled.D'
+Clock pad 'C3n'                                                   (Pterm Clock)
 
                           Minimum Clock Period: 14.0ns
                      Maximum Internal Clock Speed: 71.4Mhz
@@ -46,12 +50,16 @@ Target FF drives output net 'IDE/as_delay<1>'
 
 Clock net 'C1n' path delays:
 
-Clock Pad to Output Pad (tCO)             :         30.1ns (3 macrocell levels)
-Clock Pad 'C1n' to Output Pad 'IOR_n'                             (Pterm Clock)
+Clock Pad to Output Pad (tCO)             :         31.1ns (3 macrocell levels)
+Clock Pad 'C1n' to Output Pad 'IDECS1_n'                          (Pterm Clock)
 
-Clock to Setup (tCYC)                     :         10.0ns (1 macrocell levels)
-Clock to Q, net 'IDE/as_delay<0>.Q' to DFF Setup(D) at 'IDE/as_delay<1>.D'(Pterm Clock)
-Target FF drives output net 'IDE/as_delay<1>'
+Clock to Setup (tCYC)                     :         11.0ns (1 macrocell levels)
+Clock to Q, net 'IDE/ide_enabled.Q' to TFF Setup(D) at 'IDE/ide_enabled.D'(Pterm Clock)
+Target FF drives output net 'IDE/ide_enabled'
+
+Setup to Clock at the Pad (tSU)           :         -4.6ns (0 macrocell levels)
+Data signal 'UDS_n' to TFF D input Pin at 'IDE/ide_enabled.D'
+Clock pad 'C1n'                                                   (Pterm Clock)
 
                           Minimum Clock Period: 14.0ns
                      Maximum Internal Clock Speed: 71.4Mhz
@@ -62,9 +70,6 @@ Clock net 'UDS_n' path delays:
 Clock Pad to Output Pad (tCO)             :         24.6ns (2 macrocell levels)
 Clock Pad 'UDS_n' to Output Pad 'IDEBUF_OE'                       (Pterm Clock)
 
-Clock to Setup (tCYC)                     :         11.0ns (1 macrocell levels)
-Clock to Q, net 'AUTOCONFIG/ide_base<0>.Q' to TFF Setup(D) at 'IDE/ide_enabled.D'(Pterm Clock)
-Target FF drives output net 'IDE/ide_enabled'
 
 Setup to Clock at the Pad (tSU)           :          3.1ns (0 macrocell levels)
 Data signal 'ADDR<4>' to DFF D input Pin at 'DBUS<14>.D'
@@ -146,9 +151,9 @@ DBUS<13>   18.9              14.7
 DBUS<14>   18.9              14.7
 DBUS<15>   18.9              14.7
 IDEBUF_OE  32.3              24.6
-IDECS1_n                     23.4
-IDECS2_n                     23.4
-IDE_ROMEN                    23.4
+IDECS1_n         31.1  31.1  23.4
+IDECS2_n         31.1  31.1  23.4
+IDE_ROMEN        31.1  31.1  23.4
 IOR_n            30.1  30.1      
 IOW_n            30.1  30.1      
 SLAVE_n    22.4              23.4
@@ -156,131 +161,133 @@ SLAVE_n    22.4              23.4
 --------------------------------------------------------------------------------
                    Setup to Clock at Pad (tSU or tSUF) (nsec)
 
-\ From        R     U
- \            E     D
-  \           S     S
-   \          E     _
-    \         T     n
-     \        _      
-      \       n      
-       \             
-        \            
-  To     \------------
+\ From        C     C     R     U
+ \            1     3     E     D
+  \           n     n     S     S
+   \                      E     _
+    \                     T     n
+     \                    _      
+      \                   n      
+       \                         
+        \                        
+  To     \------------------------
 
-ADDR<16>          2.1
-ADDR<17>          3.1
-ADDR<18>          3.1
-ADDR<19>          3.1
-ADDR<1>           3.1
-ADDR<20>          3.1
-ADDR<21>          3.1
-ADDR<22>          3.1
-ADDR<23>          3.1
-ADDR<2>           3.1
-ADDR<3>           3.1
-ADDR<4>           3.1
-ADDR<5>           3.1
-ADDR<6>           3.1
-ADDR<7>           3.1
-ADDR<8>           3.1
-AS_n              3.1
-CFGIN_n           2.1
-DBUS<13>          2.1
-DBUS<14>          2.1
-DBUS<15>          2.1
-IDE_OFF_n   2.1      
-RW                3.1
+ADDR<16>                      2.1
+ADDR<17>   -4.6  -4.6         2.1
+ADDR<18>   -4.6  -4.6         2.1
+ADDR<19>   -4.6  -4.6         2.1
+ADDR<1>                       3.1
+ADDR<20>   -4.6  -4.6         2.1
+ADDR<21>   -4.6  -4.6         2.1
+ADDR<22>   -4.6  -4.6         2.1
+ADDR<23>   -4.6  -4.6         2.1
+ADDR<2>                       3.1
+ADDR<3>                       3.1
+ADDR<4>                       3.1
+ADDR<5>                       3.1
+ADDR<6>                       3.1
+ADDR<7>                       3.1
+ADDR<8>                       3.1
+AS_n       -4.6  -4.6         2.1
+CFGIN_n                       2.1
+DBUS<13>                      2.1
+DBUS<14>                      2.1
+DBUS<15>                      2.1
+IDE_OFF_n               2.1      
+RW         -4.6  -4.6         2.1
+UDS_n      -4.6  -4.6            
 
 --------------------------------------------------------------------------------
                           Clock to Setup (tCYC) (nsec)
                                   (Clock: C3n)
 
-\ From                I
- \                    D
-  \                   E
-   \                  /
-    \                 a
-     \                s
-      \               _
-       \              d
-        \             e
-         \            l
-          \           a
-           \          y
-            \         <
-             \        0
-              \       >
-               \      .
-                \     Q
-  To             \------
+\ From                I     I
+ \                    D     D
+  \                   E     E
+   \                  /     /
+    \                 a     i
+     \                s     d
+      \               _     e
+       \              d     _
+        \             e     e
+         \            l     n
+          \           a     a
+           \          y     b
+            \         <     l
+             \        0     e
+              \       >     d
+               \      .     .
+                \     Q     Q
+  To             \------------
 
-IDE/as_delay<1>.D  10.0
+IDE/as_delay<1>.D  10.0      
+IDE/ide_enabled.D        11.0
 
 --------------------------------------------------------------------------------
                           Clock to Setup (tCYC) (nsec)
                                   (Clock: C1n)
 
-\ From                I
- \                    D
-  \                   E
-   \                  /
-    \                 a
-     \                s
-      \               _
-       \              d
-        \             e
-         \            l
-          \           a
-           \          y
-            \         <
-             \        0
-              \       >
-               \      .
-                \     Q
-  To             \------
+\ From                I     I
+ \                    D     D
+  \                   E     E
+   \                  /     /
+    \                 a     i
+     \                s     d
+      \               _     e
+       \              d     _
+        \             e     e
+         \            l     n
+          \           a     a
+           \          y     b
+            \         <     l
+             \        0     e
+              \       >     d
+               \      .     .
+                \     Q     Q
+  To             \------------
 
-IDE/as_delay<1>.D  10.0
+IDE/as_delay<1>.D  10.0      
+IDE/ide_enabled.D        11.0
 
 --------------------------------------------------------------------------------
                           Clock to Setup (tCYC) (nsec)
                                  (Clock: UDS_n)
 
-\ From                           A     A     A     A     A     I
- \                               U     U     U     U     U     D
-  \                              T     T     T     T     T     E
-   \                             O     O     O     O     O     /
-    \                            C     C     C     C     C     i
-     \                           O     O     O     O     O     d
-      \                          N     N     N     N     N     e
-       \                         F     F     F     F     F     _
-        \                        I     I     I     I     I     e
-         \                       G     G     G     G     G     n
-          \                      /     /     /     /     /     a
-           \                     i     i     i     i     s     b
-            \                    d     d     d     d     h     l
-             \                   e     e     e     e     u     e
-              \                  _     _     _     _     t     d
-               \                 b     b     b     c     u     .
-                \                a     a     a     o     p     Q
-                 \               s     s     s     n     .      
-                  \              e     e     e     f     Q      
-                   \             <     <     <     i            
-                    \            0     1     2     g            
-                     \           >     >     >     u            
-                      \          .     .     .     r            
-                       \         Q     Q     Q     e            
-                        \                          d            
-                         \                         .            
-                          \                        Q            
-                           \                                    
-  To                        \------------------------------------
+\ From                           A     A
+ \                               U     U
+  \                              T     T
+   \                             O     O
+    \                            C     C
+     \                           O     O
+      \                          N     N
+       \                         F     F
+        \                        I     I
+         \                       G     G
+          \                      /     /
+           \                     i     s
+            \                    d     h
+             \                   e     u
+              \                  _     t
+               \                 c     u
+                \                o     p
+                 \               n     .
+                  \              f     Q
+                   \             i      
+                    \            g      
+                     \           u      
+                      \          r      
+                       \         e      
+                        \        d      
+                         \       .      
+                          \      Q      
+                           \            
+  To                        \------------
 
-AUTOCONFIG/ide_base<0>.CE                       10.0            
-AUTOCONFIG/ide_base<1>.CE                       10.0            
-AUTOCONFIG/ide_base<2>.CE                       10.0            
-AUTOCONFIG/ide_configured.CE                    10.0            
-AUTOCONFIG/shutup.CE                                  10.0      
-IDE/ide_enabled.D             11.0  11.0  11.0  11.0        11.0
+AUTOCONFIG/ide_base<0>.CE     10.0      
+AUTOCONFIG/ide_base<1>.CE     10.0      
+AUTOCONFIG/ide_base<2>.CE     10.0      
+AUTOCONFIG/ide_configured.CE  10.0      
+AUTOCONFIG/shutup.CE                10.0
 
 Path Type Definition: 
 

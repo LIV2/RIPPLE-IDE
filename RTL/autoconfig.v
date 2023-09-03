@@ -37,7 +37,7 @@ localparam [15:0] mfg_id  = 16'd5194;
 localparam [7:0]  prod_id = 8'd5;
 localparam [31:0] serial  = 32'd1;
 
-reg ide_configured;
+reg ide_configured = 0;
 
 reg [2:0] ide_base;
 
