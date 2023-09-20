@@ -399,6 +399,9 @@
     (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/6305e599-0316-4203-997c-a9488a806b26"
       (reference "#PWR038") (unit 1) (value "VCC") (footprint "")
     )
+    (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/6efbcb3c-3e9b-43a8-aa1c-57ee8fdd5d98"
+      (reference "#PWR039") (unit 1) (value "GND") (footprint "")
+    )
     (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/879f08e2-2ae2-4930-a7ef-7e07b4948e54"
       (reference "#PWR040") (unit 1) (value "VCC") (footprint "")
     )
@@ -456,15 +459,6 @@
     (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/23918dad-5d9d-4bf6-8968-19157407eb2f"
       (reference "F1") (unit 1) (value "Polyfuse_Small") (footprint "Fuse:Fuse_1812_4532Metric")
     )
-    (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/2f5a60b3-799b-41bc-a8f1-21c4b19b9e24"
-      (reference "FB1") (unit 1) (value "Ferrite") (footprint "Inductor_SMD:L_0603_1608Metric")
-    )
-    (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/39fa3e58-4c3c-4fc7-a85c-1e1697109735"
-      (reference "FB2") (unit 1) (value "Ferrite") (footprint "Inductor_SMD:L_0603_1608Metric")
-    )
-    (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/bd99d9e7-86dc-4604-b78e-708bce456f9d"
-      (reference "FB3") (unit 1) (value "Ferrite") (footprint "Inductor_SMD:L_0603_1608Metric")
-    )
     (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/2cb1763e-d872-4f12-b12c-35e02d2ebc1b"
       (reference "J1") (unit 1) (value "JTAG") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical")
     )
@@ -480,11 +474,14 @@
     (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/c1efa115-b0ab-48b5-a8ae-42a56070ab80"
       (reference "J5") (unit 1) (value "Disable") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
-    (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/e1ff4144-edb3-4968-a42e-e9a7ed69e925"
-      (reference "J6") (unit 1) (value "LED") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+    (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/9de49fd7-587e-4fb5-ae01-f863dac3c68d"
+      (reference "J6") (unit 1) (value "LED") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
     )
     (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/bef17e2d-a573-4a28-8f1b-e0fbba154157"
       (reference "J7") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/f8fd5962-aec6-4c58-9477-07493efed0fd/6d477867-0bc7-428d-87cf-dc03bc0bcd38"
+      (reference "J8") (unit 1) (value "GND") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical")
     )
     (path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/e470f3a5-7a2f-44a2-8b3c-db52a75b2ed0"
       (reference "R1") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")

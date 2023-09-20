@@ -14,14 +14,11 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "CN1","Zorro2","Zorro2-CardEdge",2.4000,4.3194,0.0000,top
 "D1","BAT54A","SOT-23",62.6494,33.2199,90.0000,top
 "F1","Polyfuse_Small","Fuse_1812_4532Metric",121.7716,28.4071,90.0000,top
-"FB1","Ferrite","L_0603_1608Metric",38.7006,9.0877,0.0000,top
-"FB2","Ferrite","L_0603_1608Metric",109.0840,9.9513,-90.0000,top
-"FB3","Ferrite","L_0603_1608Metric",111.6240,9.9513,-90.0000,top
 "J2","Conn_01x02_Male","PinHeader_1x02_P2.54mm_Vertical",126.0348,36.1489,180.0000,top
 "J3","Conn_02x20_Odd_Even","IDC-Header_2x20_P2.54mm_Horizontal",70.2858,36.6358,90.0000,top
 "J4","Conn_02x20_Odd_Even","IDC-Header_2x20_P2.54mm_Horizontal",10.6810,36.6358,90.0000,top
-"J5","Disable","PinHeader_1x02_P2.54mm_Vertical",6.9361,24.8865,-90.0000,top
-"J6","LED","PinHeader_1x03_P2.54mm_Vertical",3.1261,30.0529,90.0000,top
+"J5","Disable","PinHeader_1x02_P2.54mm_Vertical",8.1664,24.9019,-90.0000,top
+"J6","LED","PinHeader_1x04_P2.54mm_Vertical",2.9848,30.0529,90.0000,top
 "J7","Conn_01x02_Male","PinHeader_1x02_P2.54mm_Vertical",3.1111,38.6889,0.0000,top
 "R1","10K","R_0603_1608Metric",118.5458,33.3347,-90.0000,top
 "R2","68","R_0603_1608Metric",116.0058,33.3347,-90.0000,top
@@ -32,8 +29,8 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "R7","1K","R_0603_1608Metric",43.7388,33.3347,-90.0000,top
 "R8","10K","R_0603_1608Metric",15.7988,30.9217,-90.0000,top
 "R9","10K","R_0603_1608Metric",13.2588,30.9217,-90.0000,top
-"R10","150","R_0603_1608Metric",11.4931,30.9217,-90.0000,top
-"R11","10K","R_0603_1608Metric",10.6953,24.8865,0.0000,top
+"R10","150","R_0603_1608Metric",11.7732,26.4513,0.0000,top
+"R11","10K","R_0603_1608Metric",11.7732,24.9273,0.0000,top
 "R12","10K","R_0603_1608Metric",58.9410,33.3347,-90.0000,top
 "R13","10K","R_0603_1608Metric",65.1564,33.3347,90.0000,top
 "U1","LM1117-3.3","SOT-223-3_TabPin2",115.6840,17.8661,0.0000,top
