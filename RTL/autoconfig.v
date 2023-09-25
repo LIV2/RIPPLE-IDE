@@ -35,7 +35,7 @@ module Autoconfig (
 // Autoconfig
 localparam [15:0] mfg_id  = 16'd5194;
 localparam [7:0]  prod_id = 8'd5;
-localparam [31:0] serial  = 32'd1;
+localparam [31:0] serial  = `SERIAL;
 
 reg ide_configured = 0;
 
@@ -58,7 +58,7 @@ always @(posedge AS_n or negedge RESET_n) begin
   end
 end
 
-always @(negedge UDS_n or negedge RESET_n)
+always @(posedge CLK or negedge RESET_n)
 begin
   if (!RESET_n) begin
     DOUT           <= 'b0;
@@ -66,7 +66,8 @@ begin
     ide_base       <= 4'b0;
     ide_configured <= 0;
     shutup         <= 0;
-  end else if (autoconfig_cycle && RW) begin
+  end else if (autoconfig_cycle && RW && !AS_n) begin
+    dtack <= 1;
     case (ADDR[8:1])
       8'h00:   DOUT <= {3'b110, ide_enabled}; // IO / Read from autoboot rom
       8'h01:   DOUT <= 4'b0010;               // Size:128K
@@ -94,7 +95,8 @@ begin
       8'h21:   DOUT <= 4'b0;
       default: DOUT <= 4'hF;
     endcase
-  end else if (autoconfig_cycle && !RW && !AS_n) begin
+  end else if (autoconfig_cycle && !RW && !AS_n && !UDS_n && !dtack) begin
+    dtack <= 1;
     if (ADDR[8:1] == 8'h26 && !shutup) begin
         // We've been told to shut up (not enough space)
         shutup <= 1;
@@ -103,9 +105,11 @@ begin
     end else if (ADDR[8:1] == 8'h24 && !ide_configured) begin
         ide_configured <= 1'b1;
     end
+  end else if (AS_n) begin
+    dtack <= 0;
   end
 end
 
-assign ide_access  = (ADDR[23:17] == {4'hE,ide_base} && ide_configured);
+assign ide_access  = (ADDR[23:17] == {4'hE,ide_base} && ide_configured && cfgout);
 
 endmodule

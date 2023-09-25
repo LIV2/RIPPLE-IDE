@@ -7,7 +7,7 @@ run
 -ofmt NGC
 -p xc9500xl
 -top RIPPLE
--opt_mode Area
+-opt_mode Speed
 -opt_level 2
 -iuc NO
 -keep_hierarchy Yes

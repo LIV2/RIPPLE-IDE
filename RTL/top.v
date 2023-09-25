@@ -22,7 +22,7 @@ module RIPPLE(
     input BERR_n,
     input C1n,
     input C3n,
-    input CDACn, // Unused but maybe handy later
+    input CDAC,
     input CFGIN_n,
     inout [15:12] DBUS,
     input LDS_n,
@@ -50,10 +50,33 @@ wire [3:0] autoconfig_dout;
 wire ide_dtack;
 
 wire CLK7M = !(C1n ^ C3n);
+`define dumbreset
+`ifdef dumbreset
+reg [6:0] RESET_CNTR;
 
+always @(posedge CLK7M) begin
+  if (!RESET_n) begin
+    if (RESET_CNTR < 7'd64)
+      RESET_CNTR <= RESET_CNTR + 1;
+  end else begin
+    RESET_CNTR <= 6'd0;
+  end
+end
+
+assign RESET = (RESET_CNTR == 7'd64) ? 1'b0 : 1'b1;
+`else
+
+reg RESET = 0;
+
+always @(posedge CLK7M) begin
+  RESET <= RESET_n;
+end
+`endif
 reg ide_enable;
-always @(negedge RESET_n) begin
-  ide_enable <= IDE_OFF_n;
+
+always @(posedge CLK7M) begin
+  if (!RESET)
+    ide_enable <= IDE_OFF_n;
 end
 
 Autoconfig AUTOCONFIG (
@@ -63,7 +86,7 @@ Autoconfig AUTOCONFIG (
   .CLK (CLK7M),
   .RW (RW),
   .DIN (DBUS[15:12]),
-  .RESET_n (RESET_n),
+  .RESET_n (RESET),
   .ide_enabled (ide_enable),
   .CFGIN_n (CFGIN_n),
   .CFGOUT_n (CFGOUT_n),
@@ -82,7 +105,8 @@ IDE IDE (
   .CLK (CLK7M),
   .ide_access (ide_access),
   .ide_enable (ide_enable),
-  .RESET_n (RESET_n),
+  .RESET_n (RESET),
+  .AS_n_S4 (AS_n_S4),
   .DTACK (ide_dtack),
   .IOR_n (IOR_n),
   .IOW_n (IOW_n),
@@ -91,29 +115,14 @@ IDE IDE (
   .IDE_ROMEN (IDE_ROMEN)
 );
 
-
 assign DBUS[15:12] = (autoconfig_cycle) && RW && RESET_n ? autoconfig_dout : 'bZ;
-
-`ifdef enable_dtack_gen
-// If we want to control DTACK ourselves...
-// Disabled by default
-assign DTACK_n = (!AS_n && ide_access) ? 1'b0 : 1'bZ;
-
-wire OVR = ide_access && !AS_n;
-assign OVR_n_1 = (OVR) ? 1'b0 : 1'bZ;
-assign OVR_n_2 = (OVR) ? 1'b0 : 1'bZ;
-
-`else
 
 assign DTACK_n = 1'bZ;
 assign OVR_n_1 = 1'bZ;
 assign OVR_n_2 = 1'bZ;
 
-`endif
-
 assign SLAVE_n = !((autoconfig_cycle || ide_access) && !AS_n);
 
-assign IDEBUF_OE = !(((autoconfig_cycle || ide_access) && !AS_n && BERR_n && (!RW || !UDS_n || !LDS_n)));
-
+assign IDEBUF_OE = !(!RW || ((autoconfig_cycle || ide_access) && !AS_n && !AS_n_S4 && BERR_n && RESET_n));
 
 endmodule

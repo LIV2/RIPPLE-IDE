@@ -25,6 +25,7 @@ module IDE(
     input ide_access,
     input ide_enable,
     input RESET_n,
+    output AS_n_S4,
     output DTACK,
     output IOR_n,
     output IOW_n,
@@ -39,36 +40,50 @@ reg ide_dtack;
 reg ide_enabled = 0;
 
 
+reg [1:0] as_delay; // AS_n shifted by CLK
+reg S3_n;           // S3 has started
+
+assign AS_n_S4 = as_delay[0];
+
 always @(posedge CLK or negedge RESET_n) begin
   if (!RESET_n) begin
     ide_enabled <= 0;
   end else begin
     // IDE enabled on first write to an IDE address
-    if (ide_access && ide_enable && !RW && !UDS_n && !AS_n) ide_enabled <= 1;
+    if (ide_access && !RW && !UDS_n && !S3_n) ide_enabled <= 1;
   end
 end
 
-assign IDECS1_n = !(ide_access && ADDR[12] && !ADDR[16]) || !ide_enabled;
-assign IDECS2_n = !(ide_access && ADDR[13] && !ADDR[16]) || !ide_enabled;
+assign IDECS1_n = !(ide_access && ADDR[16:12] == 5'b00001) || !ide_enabled;
+assign IDECS2_n = !(ide_access && ADDR[16:12] == 5'b00010) || !ide_enabled;
 
 // IDE ROM is mapped to whole range until ide is enabled by the first write
 // After then, it is mapped to (base address) + 64K
-assign IDE_ROMEN = !(!AS_n && ide_access && (!ide_enabled || ADDR[16]));
+assign IDE_ROMEN = !(!AS_n && ide_access && (!ide_enabled || !(ADDR[12] ^ ADDR[13]) || ADDR[16]));
 
-reg [2:0] as_delay;
-localparam S6 = 3'b100;
-
-always @(posedge CLK or posedge AS_n) begin
-  if (AS_n) begin
-    as_delay <= 3'b111;
+always @(negedge CLK or negedge RESET_n) begin
+  if (!RESET_n) begin
+    S3_n <= 1;
   end else begin
-    as_delay <= {as_delay[1:0], AS_n};
+    S3_n <= AS_n;
   end
 end
 
-assign IOR_n = !(!AS_n &&  RW && !as_delay[0] && ds); // S4 to end of S6
-assign IOW_n = !(!AS_n && !RW && !as_delay[1] && ds); // S4 & S5
+always @(posedge CLK or negedge RESET_n) begin
+  if (!RESET_n) begin
+    as_delay <= 2'b11;
+  end else begin
+    if (AS_n) begin
+      as_delay[1:0] <= 2'b11;
+    end else begin
+      as_delay <= {as_delay[0], S3_n};
+    end
+  end
+end
 
-assign DTACK = (ide_access && as_delay[1] == 0);
+// IOR Active during states S3-S6
+// IOW Active during states S3-S5
+assign IOR_n = !(!AS_n &&  RW && !S3_n);
+assign IOW_n = !(!AS_n && !RW && !S3_n && as_delay[1]);
 
 endmodule
