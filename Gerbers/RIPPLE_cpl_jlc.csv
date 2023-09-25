@@ -12,7 +12,7 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "C11","0.1u","C_0603_1608Metric",31.2630,15.3515,0.0000,top
 "C12","47u","CP_Radial_D5.0mm_P2.50mm",15.0629,11.7701,0.0000,top
 "CN1","Zorro2","Zorro2-CardEdge",2.4000,4.3194,0.0000,top
-"D1","BAT54A","SOT-23",62.6494,33.2199,90.0000,top
+"D1","BAT54A","SOT-23",61.5318,33.2199,90.0000,top
 "F1","Polyfuse_Small","Fuse_1812_4532Metric",121.7716,28.4071,90.0000,top
 "J2","Conn_01x02_Male","PinHeader_1x02_P2.54mm_Vertical",126.0348,36.1489,180.0000,top
 "J3","Conn_02x20_Odd_Even","IDC-Header_2x20_P2.54mm_Horizontal",70.2858,36.6358,90.0000,top
@@ -22,7 +22,7 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "J7","Conn_01x02_Male","PinHeader_1x02_P2.54mm_Vertical",3.1111,38.6889,0.0000,top
 "R1","10K","R_0603_1608Metric",118.5458,33.3347,-90.0000,top
 "R2","68","R_0603_1608Metric",116.0058,33.3347,-90.0000,top
-"R3","1K","R_0603_1608Metric",114.4664,33.3347,-90.0000,top
+"R3","68","R_0603_1608Metric",54.8770,33.3347,90.0000,top
 "R4","1K","R_0603_1608Metric",108.3858,33.3347,-90.0000,top
 "R5","68","R_0603_1608Metric",56.4010,33.3347,90.0000,top
 "R6","1K","R_0603_1608Metric",48.8188,33.3347,-90.0000,top
@@ -32,7 +32,8 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "R10","150","R_0603_1608Metric",11.7732,26.4513,0.0000,top
 "R11","10K","R_0603_1608Metric",11.7732,24.9273,0.0000,top
 "R12","10K","R_0603_1608Metric",58.9410,33.3347,-90.0000,top
-"R13","10K","R_0603_1608Metric",65.1564,33.3347,90.0000,top
+"R13","10K","R_0603_1608Metric",64.0464,33.3347,90.0000,top
+"R14","68","R_0603_1608Metric",114.4400,33.3347,-90.0000,top
 "U1","LM1117-3.3","SOT-223-3_TabPin2",115.6840,17.8661,0.0000,top
 "U2","SST39SF010","TSOP-I-32_11.8x8mm_P0.5mm",101.4248,18.0025,180.0000,top
 "U3","XC9572XL-VQ64","TQFP-64_10x10mm_P0.5mm",81.3184,18.2725,315.0000,top
