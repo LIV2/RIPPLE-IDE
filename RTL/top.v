@@ -36,6 +36,7 @@ module RIPPLE(
     output SLAVE_n,
 // IDE stuff
     input IDE_OFF_n,
+    output [1:0] ROM_BANK,
     output IDE_ROMEN,
     output IDEBUF_OE,
     output [1:0] IDE1_CS_n,
@@ -50,28 +51,13 @@ wire [3:0] autoconfig_dout;
 wire ide_dtack;
 
 wire CLK7M = !(C1n ^ C3n);
-`define dumbreset
-`ifdef dumbreset
-reg [6:0] RESET_CNTR;
-
-always @(posedge CLK7M) begin
-  if (!RESET_n) begin
-    if (RESET_CNTR < 7'd64)
-      RESET_CNTR <= RESET_CNTR + 1;
-  end else begin
-    RESET_CNTR <= 6'd0;
-  end
-end
-
-assign RESET = (RESET_CNTR == 7'd64) ? 1'b0 : 1'b1;
-`else
 
 reg RESET = 0;
 
 always @(posedge CLK7M) begin
   RESET <= RESET_n;
 end
-`endif
+
 reg ide_enable;
 
 always @(posedge CLK7M) begin
@@ -98,6 +84,7 @@ Autoconfig AUTOCONFIG (
 
 IDE IDE (
   .ADDR (ADDR),
+  .DIN  (DBUS[15:14]),
   .UDS_n (UDS_n),
   .LDS_n (LDS_n),
   .RW (RW),
@@ -112,7 +99,8 @@ IDE IDE (
   .IOW_n (IOW_n),
   .IDE1_CS_n (IDE1_CS_n),
   .IDE2_CS_n (IDE2_CS_n),
-  .IDE_ROMEN (IDE_ROMEN)
+  .IDE_ROMEN (IDE_ROMEN),
+  .ROM_BANK (ROM_BANK)
 );
 
 assign DBUS[15:12] = (autoconfig_cycle) && RW && RESET_n ? autoconfig_dout : 'bZ;

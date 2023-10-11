@@ -34,7 +34,7 @@ module Autoconfig (
 
 // Autoconfig
 localparam [15:0] mfg_id  = 16'd5194;
-localparam [7:0]  prod_id = 8'd5;
+localparam [7:0]  prod_id = 8'd7;
 localparam [31:0] serial  = `SERIAL;
 
 reg ide_configured = 0;
@@ -63,7 +63,7 @@ begin
   if (!RESET_n) begin
     DOUT           <= 'b0;
     dtack          <= 0;
-    ide_base       <= 4'b0;
+    ide_base       <= 3'b0;
     ide_configured <= 0;
     shutup         <= 0;
   end else if (autoconfig_cycle && RW && !AS_n) begin
