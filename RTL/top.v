@@ -38,8 +38,8 @@ module RIPPLE(
     input IDE_OFF_n,
     output IDE_ROMEN,
     output IDEBUF_OE,
-    output IDECS1_n,
-    output IDECS2_n,
+    output [1:0] IDE1_CS_n,
+    output [1:0] IDE2_CS_n,
     output IOR_n,
     output IOW_n
     );
@@ -110,8 +110,8 @@ IDE IDE (
   .DTACK (ide_dtack),
   .IOR_n (IOR_n),
   .IOW_n (IOW_n),
-  .IDECS1_n (IDECS1_n),
-  .IDECS2_n (IDECS2_n),
+  .IDE1_CS_n (IDE1_CS_n),
+  .IDE2_CS_n (IDE2_CS_n),
   .IDE_ROMEN (IDE_ROMEN)
 );
 

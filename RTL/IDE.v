@@ -29,8 +29,8 @@ module IDE(
     output DTACK,
     output IOR_n,
     output IOW_n,
-    output IDECS1_n,
-    output IDECS2_n,
+    output [1:0] IDE1_CS_n,
+    output [1:0] IDE2_CS_n,
     output IDE_ROMEN
     );
 
@@ -54,8 +54,13 @@ always @(posedge CLK or negedge RESET_n) begin
   end
 end
 
-assign IDECS1_n = !(ide_access && ADDR[16:12] == 5'b00001) || !ide_enabled;
-assign IDECS2_n = !(ide_access && ADDR[16:12] == 5'b00010) || !ide_enabled;
+wire CS_0 = ide_enabled && ide_access && ADDR[16:15] == 2'b00 && ADDR[13:12] == 2'b01;
+wire CS_1 = ide_enabled && ide_access && ADDR[16:15] == 2'b00 && ADDR[13:12] == 2'b10;
+
+assign IDE1_CS_n[0] = !(!ADDR[14] && CS_0);
+assign IDE1_CS_n[1] = !(!ADDR[14] && CS_1);
+assign IDE2_CS_n[0] = !( ADDR[14] && CS_0);
+assign IDE2_CS_n[1] = !( ADDR[14] && CS_1);
 
 // IDE ROM is mapped to whole range until ide is enabled by the first write
 // After then, it is mapped to (base address) + 64K
