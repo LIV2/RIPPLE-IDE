@@ -48,4 +48,5 @@ NET "IDE2_CS_n<1>" LOC = "P47";
 NET "IDEBUF_OE"    LOC = "P59";
 NET "IDE_ROMEN"    LOC = "P33";
 NET "SLAVE_n"      LOC = "P43";
-NET "ROM_BANK<0>"     LOC = "P46";
+NET "ROM_BANK<0>"  LOC = "P46";
+NET "ROM_BANK<0>"  LOC = "P36";
