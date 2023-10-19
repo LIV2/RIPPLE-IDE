@@ -22,7 +22,6 @@ module RIPPLE(
     input BERR_n,
     input C1n,
     input C3n,
-    input CDAC,
     input CFGIN_n,
     inout [15:12] DBUS,
     input LDS_n,

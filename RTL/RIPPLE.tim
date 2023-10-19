@@ -5,7 +5,7 @@ Design:     RIPPLE
 Device:     XC9572XL-10-VQ64
 Speed File: Version 3.0
 Program:    Timing Report Generator:  version P.20131013
-Date:       Fri Oct 20 19:05:51 2023
+Date:       Fri Oct 20 19:06:24 2023
 
 Performance Summary:
 
@@ -147,8 +147,8 @@ IDEBUF_OE     24.2  31.9  31.9
 IDE_ROMEN     22.4  31.1  31.1
 IOR_n               30.1  30.1
 IOW_n               30.1  30.1
-ROM_BANK<0>         30.1  30.1
-ROM_BANK<1>         22.4  22.4
+ROM_BANK<0>         31.1  31.1
+ROM_BANK<1>         30.1  30.1
 SLAVE_n       23.4  31.1  31.1
 
 --------------------------------------------------------------------------------
@@ -182,13 +182,13 @@ ADDR<5>    -4.6  -4.6
 ADDR<6>    -4.6  -4.6
 ADDR<7>    -4.6  -4.6
 ADDR<8>    -4.6  -4.6
-AS_n       -5.6  -5.6
+AS_n       -4.6  -4.6
 CFGIN_n    -5.6  -5.6
 DBUS<13>   -5.6  -5.6
 DBUS<14>   -4.2  -4.2
 DBUS<15>   -4.2  -4.2
 IDE_OFF_n  -5.6  -5.6
-RESET_n    -5.6  -5.6
+RESET_n    -4.6  -4.6
 RW         -4.2  -4.2
 UDS_n      -4.2  -4.2
 
@@ -233,10 +233,10 @@ AUTOCONFIG/ide_base<2>.CE     10.0                    10.0
 AUTOCONFIG/ide_configured.CE  10.0                    10.0                  
 AUTOCONFIG/shutup.CE          10.0                          10.0            
 DBUS<12>.D                                                                  
-IDE/as_delay<1>.D                                                 10.0      
+IDE/as_delay<1>.D                                                 11.0      
 IDE/ide_enabled.D                   11.0  11.0  11.0  11.0        11.0  11.0
 ROM_BANK<0>_BUFR.D                  11.4  11.4  11.4  11.4        11.4      
-ROM_BANK<1>.D                       11.4  11.4  11.4  11.4        11.4      
+ROM_BANK<1>_BUFR.D                  11.4  11.4  11.4  11.4        11.4      
 ide_enable.CE                                                               
 
 --------------------------------------------------------------------------------
@@ -254,13 +254,13 @@ ide_enable.CE
         \                              <     <     l
          \                             0     1     e
           \                            >     >     .
-           \                           _     .     Q
-            \                          B     Q      
-             \                         U            
-              \                        F            
-               \                       R            
-                \                      .            
-                 \                     Q            
+           \                           _     _     Q
+            \                          B     B      
+             \                         U     U      
+              \                        F     F      
+               \                       R     R      
+                \                      .     .      
+                 \                     Q     Q      
                   \                                 
                    \                                
                     \                               
@@ -283,7 +283,7 @@ DBUS<12>.D                                      10.0
 IDE/as_delay<1>.D                                   
 IDE/ide_enabled.D                                   
 ROM_BANK<0>_BUFR.D                  11.4            
-ROM_BANK<1>.D                             11.4      
+ROM_BANK<1>_BUFR.D                        11.4      
 ide_enable.CE                 10.0                  
 
 --------------------------------------------------------------------------------
@@ -327,10 +327,10 @@ AUTOCONFIG/ide_base<2>.CE     10.0                    10.0
 AUTOCONFIG/ide_configured.CE  10.0                    10.0                  
 AUTOCONFIG/shutup.CE          10.0                          10.0            
 DBUS<12>.D                                                                  
-IDE/as_delay<1>.D                                                 10.0      
+IDE/as_delay<1>.D                                                 11.0      
 IDE/ide_enabled.D                   11.0  11.0  11.0  11.0        11.0  11.0
 ROM_BANK<0>_BUFR.D                  11.4  11.4  11.4  11.4        11.4      
-ROM_BANK<1>.D                       11.4  11.4  11.4  11.4        11.4      
+ROM_BANK<1>_BUFR.D                  11.4  11.4  11.4  11.4        11.4      
 ide_enable.CE                                                               
 
 --------------------------------------------------------------------------------
@@ -348,13 +348,13 @@ ide_enable.CE
         \                              <     <     l
          \                             0     1     e
           \                            >     >     .
-           \                           _     .     Q
-            \                          B     Q      
-             \                         U            
-              \                        F            
-               \                       R            
-                \                      .            
-                 \                     Q            
+           \                           _     _     Q
+            \                          B     B      
+             \                         U     U      
+              \                        F     F      
+               \                       R     R      
+                \                      .     .      
+                 \                     Q     Q      
                   \                                 
                    \                                
                     \                               
@@ -377,7 +377,7 @@ DBUS<12>.D                                      10.0
 IDE/as_delay<1>.D                                   
 IDE/ide_enabled.D                                   
 ROM_BANK<0>_BUFR.D                  11.4            
-ROM_BANK<1>.D                             11.4      
+ROM_BANK<1>_BUFR.D                        11.4      
 ide_enable.CE                 10.0                  
 
 Path Type Definition: 
