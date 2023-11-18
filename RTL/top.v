@@ -110,6 +110,6 @@ assign OVR_n_2 = 1'bZ;
 
 assign SLAVE_n = !((autoconfig_cycle || ide_access) && !AS_n);
 
-assign IDEBUF_OE = !(!RW || ((autoconfig_cycle || ide_access) && !AS_n && (!UDS_n || !LDS_n) && BERR_n && RESET_n));
+assign IDEBUF_OE = !(!RW || ((autoconfig_cycle || ide_access) && !AS_n && !AS_n_S4 && BERR_n && RESET_n));
 
 endmodule
