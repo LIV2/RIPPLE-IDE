@@ -32,7 +32,7 @@ module IDE(
     output IOW_n,
     output [1:0] IDE1_CS_n,
     output [1:0] IDE2_CS_n,
-    output reg [1:0] ROM_BANK,
+    output [1:0] ROM_BANK,
     output IDE_ROMEN
     );
 
@@ -43,6 +43,10 @@ reg ide_enabled = 0;
 reg bank_sel = 0;
 
 reg [1:0] as_delay; // AS_n shifted by CLK
+reg [1:0] rom_bankSel;
+
+assign ROM_BANK = (ide_enabled) ? rom_bankSel : {1'b0,ADDR[16]};
+
 reg S3_n;           // S3 has started
 
 assign AS_n_S4 = as_delay[0];
@@ -50,11 +54,11 @@ assign AS_n_S4 = as_delay[0];
 always @(posedge CLK or negedge RESET_n) begin
   if (!RESET_n) begin
     ide_enabled <= 0;
-    ROM_BANK <= 0;
+    rom_bankSel <= 0;
   end else begin
     // IDE enabled on first write to an IDE address
     if (ide_access && ADDR[16:15] == 2'b00 && !RW && !UDS_n && !S3_n) ide_enabled <= 1;
-    if (ide_access && ADDR[16:15] == 2'b01 && !RW && !UDS_n && !S3_n) ROM_BANK <= DIN;
+    if (ide_access && ADDR[16:15] == 2'b01 && !RW && !UDS_n && !S3_n) rom_bankSel <= DIN;
   end
 end
 
