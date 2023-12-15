@@ -34,7 +34,7 @@ module Autoconfig (
 
 // Autoconfig
 localparam [15:0] mfg_id  = 16'd5194;
-localparam [7:0]  prod_id = 8'd5;
+localparam [7:0]  prod_id = 8'd7;
 localparam [31:0] serial  = `SERIAL;
 
 reg ide_configured = 0;
