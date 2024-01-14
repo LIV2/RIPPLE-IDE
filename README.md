@@ -18,12 +18,14 @@ Tested and working.
 ## Features
 * Autoboot
 * Works with Kickstart 1.3 and up
-* Supports up to 127GB drives
+* [Supports up to 2TB drives](https://github.com/LIV2/lide.device/#large-drive-4gb-support)
 * Supports ATAPI Devices (CD/DVD-ROM, Zip disk etc)
 * Boot from ZIP/LS-120 etc
+* [Boot from CD-ROM](https://github.com/LIV2/lide.device/#boot-from-cdrom)
 * SCSI Direct, NSD, TD64 support
 * Uses [lide.device](https://github.com/LIV2/lide.device)
 
+For more information on these features please see the [lide.device readme](https://github.com/LIV2/lide.device/blob/master/README.md)
 
 ## Ordering PCBs
 I recommend ordering from JLCPCB as this board was designed within their 2-layer specifications  
