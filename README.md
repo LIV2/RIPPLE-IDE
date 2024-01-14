@@ -28,7 +28,12 @@ Tested and working.
 For more information on these features please see the [lide.device readme](https://github.com/LIV2/lide.device/blob/master/README.md)
 
 ## Ordering PCBs
+You can find the latest Gerbers attached to the [latest Release](https://github.com/LIV2/RIPPLE-IDE/releases)
+
 I recommend ordering from JLCPCB as this board was designed within their 2-layer specifications  
+
+BOM and Placement files for JLCPCBs assembly service are provided and can be found inside the Gerbers folder and the Gerbers.zip file found under [Releases](https://github.com/LIV2/RIPPLE-IDE/releases)
+
 Recommended options when ordering:
 * Thickness: 1.6mm
 * Surface Finish: ENIG-RoHS
