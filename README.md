@@ -2,7 +2,7 @@
 
 Zorro 2 IDE Interface for Amiga 2000/3000/4000
 
-![PCB](Docs/PCB.png?raw=True)
+![PCB](Docs/RIPPLE.jpg?raw=True)
 
 ## Table of contents
 1. [Status](#status)
