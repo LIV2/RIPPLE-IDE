@@ -11,6 +11,7 @@ filters:
     type: rot_footprint
     rotations:
       - ["^TSOP-II", 270.0]
+      - ["^TSOP-I-32", 270.0]
       - ["^SOT-89", 180.0]
       - ["^SW_DIP_SPSTx04", 270.0]
       - ["^CP_EIA-3216-18_Kemet-A", 0.0]
