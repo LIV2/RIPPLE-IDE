@@ -39,7 +39,7 @@ localparam [31:0] serial  = `SERIAL;
 
 reg ide_configured = 0;
 
-reg [2:0] ide_base;
+reg [7:0] ide_base;
 
 reg cfgout;
 reg shutup;
@@ -63,7 +63,7 @@ begin
   if (!RESET_n) begin
     DOUT           <= 'b0;
     dtack          <= 0;
-    ide_base       <= 3'b0;
+    ide_base       <= 8'b0;
     ide_configured <= 0;
     shutup         <= 0;
   end else if (autoconfig_cycle && RW && !AS_n) begin
@@ -101,8 +101,9 @@ begin
         // We've been told to shut up (not enough space)
         shutup <= 1;
     end else if (ADDR[8:1] == 8'h25 && !ide_configured) begin
-        ide_base <= DIN[3:1];
+        ide_base[3:0] <= DIN[3:0];
     end else if (ADDR[8:1] == 8'h24 && !ide_configured) begin
+        ide_base[7:4] <= DIN[3:0];
         ide_configured <= 1'b1;
     end
   end else if (AS_n) begin
@@ -110,6 +111,6 @@ begin
   end
 end
 
-assign ide_access  = (ADDR[23:17] == {4'hE,ide_base} && ide_configured && cfgout);
+assign ide_access  = ((ADDR[23:17] == ide_base[7:1]) && ide_configured && cfgout);
 
 endmodule
