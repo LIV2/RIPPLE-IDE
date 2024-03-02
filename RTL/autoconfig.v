@@ -70,7 +70,11 @@ begin
     dtack <= 1;
     case (ADDR[8:1])
       8'h00:   DOUT <= {3'b110, ide_enabled}; // IO / Read from autoboot rom
+`ifdef size_64k
+      8'h01:   DOUT <= 4'b0001;               // Size:64K
+`else
       8'h01:   DOUT <= 4'b0010;               // Size:128K
+`endif
       8'h02:   DOUT <= ~prod_id[7:4];         // Product number
       8'h03:   DOUT <= ~prod_id[3:0];         // Product number
       8'h04:   DOUT <= ~4'b0000; 
@@ -111,6 +115,10 @@ begin
   end
 end
 
+`ifdef size_64k
+assign ide_access  = ((ADDR[23:16] == ide_base) && ide_configured && cfgout);
+`else
 assign ide_access  = ((ADDR[23:17] == ide_base[7:1]) && ide_configured && cfgout);
+`endif
 
 endmodule
