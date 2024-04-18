@@ -1,7 +1,7 @@
  
 cpldfit:  version P.20131013                        Xilinx Inc.
                                   Fitter Report
-Design Name: RIPPLE                              Date:  3- 2-2024,  2:41AM
+Design Name: RIPPLE                              Date:  4-18-2024,  4:18AM
 Device Used: XC9572XL-10-VQ64
 Fitting Status: Successful
 
@@ -9,18 +9,18 @@ Fitting Status: Successful
 
 Macrocells     Product Terms    Function Block   Registers      Pins           
 Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
-41 /72  ( 57%) 170 /360  ( 47%) 112/216 ( 52%)   23 /72  ( 32%) 48 /52  ( 92%)
+41 /72  ( 57%) 193 /360  ( 54%) 114/216 ( 53%)   23 /72  ( 32%) 48 /52  ( 92%)
 
 ** Function Block Resources **
 
 Function    Mcells      FB Inps     Pterms      IO          
 Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
-FB1           1/18        2/54        2/90      10/13
-FB2          11/18       37/54       41/90      12/13
-FB3          12/18       36/54       73/90      14/14*
-FB4          17/18       37/54       54/90      12/12*
+FB1           3/18        5/54        7/90      10/13
+FB2          11/18       39/54       44/90      12/13
+FB3           9/18       31/54       81/90      14/14*
+FB4          18/18*      39/54       61/90      12/12*
              -----       -----       -----      -----    
-             41/72      112/216     170/360     48/52 
+             41/72      114/216     193/360     48/52 
 
 * - Resource is exhausted
 
@@ -88,14 +88,14 @@ WARNING:Cpld:1239 - The global clock designation (BUFG) on signal 'ADDR_12_IBUF'
 Signal                      Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
 Name                        Pts   Inps          No.  Type    Use     Mode Rate State
 DBUS<15>                    8     23    FB2_3   58   I/O     I/O     STD  SLOW RESET
-IDEBUF_OE                   3     16    FB2_4   59   I/O     O       STD  SLOW 
+IDEBUF_OE                   4     17    FB2_4   59   I/O     O       STD  SLOW 
 DTACK_n                     0     0     FB2_10  1    I/O     O       STD  SLOW 
 OVR_n_1                     0     0     FB3_6   34   I/O     O       STD  SLOW 
 IDE_ROMEN                   19    21    FB3_11  33   I/O     O       STD  SLOW 
 OVR_n_2                     0     0     FB3_14  35   I/O     O       STD  SLOW 
 ROM_BANK<1>                 1     2     FB3_15  36   I/O     O       STD  SLOW 
 CFGOUT_n                    3     4     FB3_16  42   I/O     O       STD  SLOW SET
-SLAVE_n                     2     12    FB4_2   43   I/O     O       STD  SLOW 
+SLAVE_n                     3     13    FB4_2   43   I/O     O       STD  SLOW 
 ROM_BANK<0>                 2     3     FB4_3   46   I/O     O       STD  SLOW 
 IDE2_CS_n<1>                1     4     FB4_4   47   I/O     O       STD  SLOW 
 IOR_n                       1     3     FB4_5   44   I/O     O       STD  SLOW 
@@ -111,28 +111,28 @@ DBUS<14>                    8     23    FB4_17  57   I/O     I/O     STD  SLOW R
 
 Signal                      Total Total Loc     Pwr  Reg Init
 Name                        Pts   Inps          Mode State
-ide_enable/ide_enable_CLKF  2     2     FB1_18  STD  
-IDE/as_delay<1>             3     4     FB2_1   STD  RESET
-AUTOCONFIG/shutup           3     25    FB2_2   STD  RESET
-IDE/rom_bankSel<0>          4     11    FB2_5   STD  RESET
+ide_enable/ide_enable_CLKF  2     2     FB1_16  STD  
+IDE/S3_n/IDE/S3_n_CLKF      2     2     FB1_17  STD  
+ide_enable                  3     3     FB1_18  STD  RESET
+RESET                       2     2     FB2_1   STD  RESET
+IDE/as_delay<1>             3     4     FB2_2   STD  RESET
+AUTOCONFIG/shutup           3     25    FB2_5   STD  RESET
 AUTOCONFIG/ide_base<7>      4     26    FB2_6   STD  RESET
-AUTOCONFIG/ide_base<6>      4     26    FB2_7   STD  RESET
-AUTOCONFIG/ide_base<4>      4     26    FB2_8   STD  RESET
-AUTOCONFIG/ide_base<3>      4     26    FB2_9   STD  RESET
-AUTOCONFIG/ide_base<2>      4     26    FB2_11  STD  RESET
-IDE/S3_n/IDE/S3_n_CLKF      2     2     FB3_2   STD  
-IDE/S3_n                    3     3     FB3_3   STD  RESET
-ide_enable                  3     3     FB3_4   STD  RESET
-IDE/ide_enabled             3     10    FB3_5   STD  RESET
-IDE/rom_bankSel<1>          4     11    FB3_7   STD  RESET
-$OpTx$INV$89                16    16    FB3_9   STD  
-$OpTx$FX_DC$102             19    19    FB3_18  STD  
-RESET                       2     2     FB4_1   STD  RESET
-AUTOCONFIG/ide_configured   3     25    FB4_7   STD  RESET
-AS_n_S4                     3     4     FB4_9   STD  RESET
+AUTOCONFIG/ide_base<4>      4     26    FB2_7   STD  RESET
+AUTOCONFIG/ide_base<3>      4     26    FB2_8   STD  RESET
+IDE/rom_bankSel<1>          6     13    FB2_9   STD  RESET
+IDE/rom_bankSel<0>          6     13    FB2_11  STD  RESET
+IDE/ide_enabled             22    23    FB3_1   STD  RESET
+$OpTx$INV$24                14    14    FB3_5   STD  
+$OpTx$FX_DC$38              19    19    FB3_10  STD  
+IDE/S3_n                    3     3     FB3_17  STD  RESET
+AUTOCONFIG/dtack            5     16    FB4_1   STD  RESET
+AS_n_S4                     3     4     FB4_7   STD  RESET
+AUTOCONFIG/ide_base<6>      4     26    FB4_9   STD  RESET
 AUTOCONFIG/ide_base<5>      4     26    FB4_10  STD  RESET
-AUTOCONFIG/ide_base<1>      4     26    FB4_13  STD  RESET
-AUTOCONFIG/dtack            5     16    FB4_16  STD  RESET
+AUTOCONFIG/ide_base<2>      4     26    FB4_13  STD  RESET
+AUTOCONFIG/ide_base<1>      4     26    FB4_16  STD  RESET
+AUTOCONFIG/ide_configured   3     25    FB4_18  STD  RESET
 
 ** 29 Inputs **
 
@@ -184,8 +184,8 @@ Pin Type/Use - I  - Input             GCK - Global Clock
 X            - Signal used as input to the macrocell logic.
 Pin No.      - ~  - User Assigned
 *********************************** FB1  ***********************************
-Number of function block inputs used/remaining:               2/52
-Number of signals used by logic mapping into function block:  2
+Number of function block inputs used/remaining:               5/49
+Number of signals used by logic mapping into function block:  5
 Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
 Name                Pt      Pt    Pt  Pt               #    Type    Use
 (unused)              0       0     0   5     FB1_1         (b)     
@@ -203,41 +203,44 @@ Name                Pt      Pt    Pt  Pt               #    Type    Use
 (unused)              0       0     0   5     FB1_13        (b)     
 (unused)              0       0     0   5     FB1_14  17    GCK/I/O 
 (unused)              0       0     0   5     FB1_15  19    I/O     
-(unused)              0       0     0   5     FB1_16        (b)     
-(unused)              0       0     0   5     FB1_17  20    I/O     I
 ide_enable/ide_enable_CLKF
-                      2       0     0   3     FB1_18        (b)     (b)
+                      2       0     0   3     FB1_16        (b)     (b)
+IDE/S3_n/IDE/S3_n_CLKF
+                      2       0     0   3     FB1_17  20    I/O     I
+ide_enable            3       0     0   2     FB1_18        (b)     (b)
 
 Signals Used by Logic in Function Block
-  1: C1n                2: C3n              
+  1: C1n                3: IDE_OFF_n          5: ide_enable/ide_enable_CLKF 
+  2: C3n                4: RESET            
 
 Signal                        1         2         3         4 FB
 Name                0----+----0----+----0----+----0----+----0 Inputs
 ide_enable/ide_enable_CLKF 
                      XX...................................... 2
+IDE/S3_n/IDE/S3_n_CLKF 
+                     XX...................................... 2
+ide_enable           ..XXX................................... 3
                     0----+----1----+----2----+----3----+----4
                               0         0         0         0
 *********************************** FB2  ***********************************
-Number of function block inputs used/remaining:               37/17
-Number of signals used by logic mapping into function block:  37
+Number of function block inputs used/remaining:               39/15
+Number of signals used by logic mapping into function block:  39
 Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
 Name                Pt      Pt    Pt  Pt               #    Type    Use
-IDE/as_delay<1>       3       0     0   2     FB2_1         (b)     (b)
-AUTOCONFIG/shutup     3       0   \/1   1     FB2_2   60    I/O     I
+RESET                 2       0     0   3     FB2_1         (b)     (b)
+IDE/as_delay<1>       3       0   \/2   0     FB2_2   60    I/O     I
 DBUS<15>              8       3<-   0   0     FB2_3   58    I/O     I/O
-IDEBUF_OE             3       0   /\2   0     FB2_4   59    I/O     O
-IDE/rom_bankSel<0>    4       0     0   1     FB2_5   61    I/O     I
+IDEBUF_OE             4       0   /\1   0     FB2_4   59    I/O     O
+AUTOCONFIG/shutup     3       0     0   2     FB2_5   61    I/O     I
 AUTOCONFIG/ide_base<7>
                       4       0     0   1     FB2_6   62    I/O     (b)
-AUTOCONFIG/ide_base<6>
-                      4       0     0   1     FB2_7         (b)     (b)
 AUTOCONFIG/ide_base<4>
-                      4       0     0   1     FB2_8   63    I/O     I
+                      4       0     0   1     FB2_7         (b)     (b)
 AUTOCONFIG/ide_base<3>
-                      4       0     0   1     FB2_9   64    GSR/I/O I
-DTACK_n               0       0     0   5     FB2_10  1     I/O     O
-AUTOCONFIG/ide_base<2>
-                      4       0     0   1     FB2_11  2     GTS/I/O I
+                      4       0   \/1   0     FB2_8   63    I/O     I
+IDE/rom_bankSel<1>    6       1<-   0   0     FB2_9   64    GSR/I/O I
+DTACK_n               0       0   \/1   4     FB2_10  1     I/O     O
+IDE/rom_bankSel<0>    6       1<-   0   0     FB2_11  2     GTS/I/O I
 (unused)              0       0     0   5     FB2_12  4     I/O     I
 (unused)              0       0     0   5     FB2_13        (b)     
 (unused)              0       0     0   5     FB2_14  5     GTS/I/O I
@@ -247,209 +250,202 @@ AUTOCONFIG/ide_base<2>
 (unused)              0       0     0   5     FB2_18        (b)     
 
 Signals Used by Logic in Function Block
-  1: $OpTx$INV$89      14: ADDR<4>                    26: CFGOUT_n 
-  2: ADDR<15>          15: ADDR<5>                    27: IDE/S3_n 
-  3: ADDR<16>          16: ADDR<6>                    28: IDE/rom_bankSel<0> 
-  4: ADDR<17>          17: ADDR<7>                    29: DBUS<15>.PIN 
-  5: ADDR<18>          18: ADDR<8>                    30: DBUS<14>.PIN 
-  6: ADDR<19>          19: AS_n                       31: DBUS<12>.PIN 
-  7: ADDR<1>           20: AS_n_S4                    32: RESET 
-  8: ADDR<20>          21: AUTOCONFIG/dtack           33: RESET_n 
-  9: ADDR<21>          22: AUTOCONFIG/ide_configured  34: RW 
- 10: ADDR<22>          23: AUTOCONFIG/shutup          35: UDS_n 
- 11: ADDR<23>          24: BERR_n                     36: ide_enable 
- 12: ADDR<2>           25: CFGIN_n                    37: ide_enable/ide_enable_CLKF 
- 13: ADDR<3>          
+  1: $OpTx$INV$24      14: ADDR<4>                    27: CFGOUT_n 
+  2: ADDR<15>          15: ADDR<5>                    28: IDE/S3_n 
+  3: ADDR<16>          16: ADDR<6>                    29: IDE/rom_bankSel<0> 
+  4: ADDR<17>          17: ADDR<7>                    30: IDE/rom_bankSel<1> 
+  5: ADDR<18>          18: ADDR<8>                    31: DBUS<15>.PIN 
+  6: ADDR<19>          19: AS_n                       32: DBUS<14>.PIN 
+  7: ADDR<1>           20: AS_n_S4                    33: DBUS<12>.PIN 
+  8: ADDR<20>          21: AUTOCONFIG/dtack           34: RESET 
+  9: ADDR<21>          22: AUTOCONFIG/ide_base<5>     35: RESET_n 
+ 10: ADDR<22>          23: AUTOCONFIG/ide_configured  36: RW 
+ 11: ADDR<23>          24: AUTOCONFIG/shutup          37: UDS_n 
+ 12: ADDR<2>           25: BERR_n                     38: ide_enable 
+ 13: ADDR<3>           26: CFGIN_n                    39: ide_enable/ide_enable_CLKF 
 
 Signal                        1         2         3         4 FB
 Name                0----+----0----+----0----+----0----+----0 Inputs
-IDE/as_delay<1>      ..................XX...........X....X... 4
-AUTOCONFIG/shutup    ..XXXXXXXXXXXXXXXXX.X.X.XX.....X.XX.X... 25
-DBUS<15>             ..XXXXXXXXXXXXXXXXX.....XX.....XXX..X... 23
-IDEBUF_OE            X.XXXX.XXXX.......XX...XXX......XX...... 16
-IDE/rom_bankSel<0>   XXX.......................XX.X.X.XXXX... 11
+RESET                ..................................X...X. 2
+IDE/as_delay<1>      ..................XX.............X....X. 4
+DBUS<15>             ..XXXXXXXXXXXXXXXXX......XX......XXX..X. 23
+IDEBUF_OE            X.XXXX.XXXX.......XX.X..XXX.......XX.... 17
+AUTOCONFIG/shutup    ..XXXXXXXXXXXXXXXXX.X..X.XX......X.XX.X. 25
 AUTOCONFIG/ide_base<7> 
-                     ..XXXXXXXXXXXXXXXXX.XX..XX..X..X.XX.X... 26
-AUTOCONFIG/ide_base<6> 
-                     ..XXXXXXXXXXXXXXXXX.XX..XX...X.X.XX.X... 26
+                     ..XXXXXXXXXXXXXXXXX.X.X..XX...X..X.XX.X. 26
 AUTOCONFIG/ide_base<4> 
-                     ..XXXXXXXXXXXXXXXXX.XX..XX....XX.XX.X... 26
+                     ..XXXXXXXXXXXXXXXXX.X.X..XX.....XX.XX.X. 26
 AUTOCONFIG/ide_base<3> 
-                     ..XXXXXXXXXXXXXXXXX.XX..XX..X..X.XX.X... 26
+                     ..XXXXXXXXXXXXXXXXX.X.X..XX...X..X.XX.X. 26
+IDE/rom_bankSel<1>   XXX.....X............X.....X.XX..X.XXXX. 13
 DTACK_n              ........................................ 0
-AUTOCONFIG/ide_base<2> 
-                     ..XXXXXXXXXXXXXXXXX.XX..XX...X.X.XX.X... 26
+IDE/rom_bankSel<0>   XXX.....X............X.....XX..X.X.XXXX. 13
                     0----+----1----+----2----+----3----+----4
                               0         0         0         0
 *********************************** FB3  ***********************************
-Number of function block inputs used/remaining:               36/18
-Number of signals used by logic mapping into function block:  36
+Number of function block inputs used/remaining:               31/23
+Number of signals used by logic mapping into function block:  31
 Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
 Name                Pt      Pt    Pt  Pt               #    Type    Use
-(unused)              0       0   /\5   0     FB3_1         (b)     (b)
-IDE/S3_n/IDE/S3_n_CLKF
-                      2       0   /\3   0     FB3_2   22    I/O     I
-IDE/S3_n              3       0     0   2     FB3_3   31    I/O     I
-ide_enable            3       0     0   2     FB3_4   32    I/O     I
-IDE/ide_enabled       3       0     0   2     FB3_5   24    I/O     I
-OVR_n_1               0       0     0   5     FB3_6   34    I/O     O
-IDE/rom_bankSel<1>    4       0   \/1   0     FB3_7         (b)     (b)
+IDE/ide_enabled      22      17<-   0   0     FB3_1         (b)     (b)
+(unused)              0       0   /\5   0     FB3_2   22    I/O     I
+(unused)              0       0   /\5   0     FB3_3   31    I/O     I
+(unused)              0       0   \/5   0     FB3_4   32    I/O     I
+$OpTx$INV$24         14       9<-   0   0     FB3_5   24    I/O     I
+OVR_n_1               0       0   /\4   1     FB3_6   34    I/O     O
+(unused)              0       0   \/5   0     FB3_7         (b)     (b)
 (unused)              0       0   \/5   0     FB3_8   25    I/O     I
-$OpTx$INV$89         16      11<-   0   0     FB3_9   27    I/O     I
-(unused)              0       0   /\5   0     FB3_10  39    I/O     I
+(unused)              0       0   \/5   0     FB3_9   27    I/O     I
+$OpTx$FX_DC$38       19      15<- \/1   0     FB3_10  39    I/O     I
 IDE_ROMEN            19      14<-   0   0     FB3_11  33    I/O     O
 (unused)              0       0   /\5   0     FB3_12  40    I/O     I
 (unused)              0       0   /\5   0     FB3_13        (b)     (b)
-OVR_n_2               0       0   /\4   1     FB3_14  35    I/O     O
+OVR_n_2               0       0   /\3   2     FB3_14  35    I/O     O
 ROM_BANK<1>           1       0     0   4     FB3_15  36    I/O     O
-CFGOUT_n              3       0   \/1   1     FB3_16  42    I/O     O
-(unused)              0       0   \/5   0     FB3_17  38    I/O     I
-$OpTx$FX_DC$102      19      14<-   0   0     FB3_18        (b)     (b)
+CFGOUT_n              3       0     0   2     FB3_16  42    I/O     O
+IDE/S3_n              3       0   \/2   0     FB3_17  38    I/O     I
+(unused)              0       0   \/5   0     FB3_18        (b)     (b)
 
 Signals Used by Logic in Function Block
-  1: $OpTx$INV$89      13: AS_n                       25: CFGOUT_n 
-  2: ADDR<12>          14: AUTOCONFIG/ide_base<1>     26: IDE/S3_n 
-  3: ADDR<13>          15: AUTOCONFIG/ide_base<2>     27: IDE/S3_n/IDE/S3_n_CLKF 
-  4: ADDR<15>          16: AUTOCONFIG/ide_base<3>     28: IDE/ide_enabled 
-  5: ADDR<16>          17: AUTOCONFIG/ide_base<4>     29: IDE/rom_bankSel<1> 
-  6: ADDR<17>          18: AUTOCONFIG/ide_base<5>     30: IDE_OFF_n 
-  7: ADDR<18>          19: AUTOCONFIG/ide_base<6>     31: DBUS<15>.PIN 
-  8: ADDR<19>          20: AUTOCONFIG/ide_base<7>     32: RESET 
-  9: ADDR<20>          21: AUTOCONFIG/ide_configured  33: RW 
- 10: ADDR<21>          22: AUTOCONFIG/shutup          34: UDS_n 
- 11: ADDR<22>          23: C1n                        35: ide_enable 
- 12: ADDR<23>          24: C3n                        36: ide_enable/ide_enable_CLKF 
+  1: ADDR<12>          12: AS_n                       22: CFGOUT_n 
+  2: ADDR<13>          13: AUTOCONFIG/ide_base<1>     23: IDE/S3_n 
+  3: ADDR<15>          14: AUTOCONFIG/ide_base<2>     24: IDE/S3_n/IDE/S3_n_CLKF 
+  4: ADDR<16>          15: AUTOCONFIG/ide_base<3>     25: IDE/ide_enabled 
+  5: ADDR<17>          16: AUTOCONFIG/ide_base<4>     26: IDE/rom_bankSel<1> 
+  6: ADDR<18>          17: AUTOCONFIG/ide_base<5>     27: RESET 
+  7: ADDR<19>          18: AUTOCONFIG/ide_base<6>     28: RW 
+  8: ADDR<20>          19: AUTOCONFIG/ide_base<7>     29: UDS_n 
+  9: ADDR<21>          20: AUTOCONFIG/ide_configured  30: ide_enable 
+ 10: ADDR<22>          21: AUTOCONFIG/shutup          31: ide_enable/ide_enable_CLKF 
+ 11: ADDR<23>         
 
 Signal                        1         2         3         4 FB
 Name                0----+----0----+----0----+----0----+----0 Inputs
-IDE/S3_n/IDE/S3_n_CLKF 
-                     ......................XX................ 2
-IDE/S3_n             ............X.............X....X........ 3
-ide_enable           .............................X.X...X.... 3
-IDE/ide_enabled      X..XX....................X.X...XXXXX.... 10
+IDE/ide_enabled      ....XXXXXXX.XXXXXXXX.XX.X.XXXXX......... 23
+$OpTx$INV$24         ....XXXX.XX.XXXX.XXX.X.................. 14
 OVR_n_1              ........................................ 0
-IDE/rom_bankSel<1>   X..XX....................X..X.XXXXXX.... 11
-$OpTx$INV$89         .....XXXXXXX.XXXXXXXX...X............... 16
-IDE_ROMEN            .XX.XXXXXXXXXXXXXXXXX...X..X............ 21
+$OpTx$FX_DC$38       ..XXXXXXXXX.XXXXXXXX.X..X............... 19
+IDE_ROMEN            XX.XXXXXXXXXXXXXXXXX.X..X............... 21
 OVR_n_2              ........................................ 0
-ROM_BANK<1>          ...........................XX........... 2
-CFGOUT_n             ............X.......XX.........X........ 4
-$OpTx$FX_DC$102      ...XXXXXXXXX.XXXXXXXX...X..X............ 19
+ROM_BANK<1>          ........................XX.............. 2
+CFGOUT_n             ...........X.......XX.....X............. 4
+IDE/S3_n             ...........X...........X..X............. 3
                     0----+----1----+----2----+----3----+----4
                               0         0         0         0
 *********************************** FB4  ***********************************
-Number of function block inputs used/remaining:               37/17
-Number of signals used by logic mapping into function block:  37
+Number of function block inputs used/remaining:               39/15
+Number of signals used by logic mapping into function block:  39
 Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
 Name                Pt      Pt    Pt  Pt               #    Type    Use
-RESET                 2       0     0   3     FB4_1         (b)     (b)
-SLAVE_n               2       0     0   3     FB4_2   43    I/O     O
+AUTOCONFIG/dtack      5       0     0   0     FB4_1         (b)     (b)
+SLAVE_n               3       0     0   2     FB4_2   43    I/O     O
 ROM_BANK<0>           2       0     0   3     FB4_3   46    I/O     O
 IDE2_CS_n<1>          1       0     0   4     FB4_4   47    I/O     O
 IOR_n                 1       0     0   4     FB4_5   44    I/O     O
 IDE1_CS_n<1>          1       0     0   4     FB4_6   49    I/O     O
-AUTOCONFIG/ide_configured
-                      3       0     0   2     FB4_7         (b)     (b)
+AS_n_S4               3       0     0   2     FB4_7         (b)     (b)
 IOW_n                 1       0     0   4     FB4_8   45    I/O     O
-AS_n_S4               3       0     0   2     FB4_9         (b)     (b)
+AUTOCONFIG/ide_base<6>
+                      4       0     0   1     FB4_9         (b)     (b)
 AUTOCONFIG/ide_base<5>
                       4       0     0   1     FB4_10  51    I/O     I
 IDE2_CS_n<0>          1       0   \/3   1     FB4_11  48    I/O     O
 DBUS<12>              8       3<-   0   0     FB4_12  52    I/O     I/O
-AUTOCONFIG/ide_base<1>
+AUTOCONFIG/ide_base<2>
                       4       0     0   1     FB4_13        (b)     (b)
 IDE1_CS_n<0>          1       0   \/2   2     FB4_14  50    I/O     O
 DBUS<13>              7       2<-   0   0     FB4_15  56    I/O     I/O
-AUTOCONFIG/dtack      5       0     0   0     FB4_16        (b)     (b)
+AUTOCONFIG/ide_base<1>
+                      4       0   \/1   0     FB4_16        (b)     (b)
 DBUS<14>              8       3<-   0   0     FB4_17  57    I/O     I/O
-(unused)              0       0   /\3   2     FB4_18        (b)     (b)
+AUTOCONFIG/ide_configured
+                      3       0   /\2   0     FB4_18        (b)     (b)
 
 Signals Used by Logic in Function Block
-  1: $OpTx$FX_DC$102   14: ADDR<23>                   26: CFGOUT_n 
-  2: $OpTx$INV$89      15: ADDR<2>                    27: IDE/S3_n 
-  3: ADDR<12>          16: ADDR<3>                    28: IDE/as_delay<1> 
-  4: ADDR<13>          17: ADDR<4>                    29: IDE/ide_enabled 
-  5: ADDR<14>          18: ADDR<5>                    30: IDE/rom_bankSel<0> 
-  6: ADDR<16>          19: ADDR<6>                    31: DBUS<13>.PIN 
-  7: ADDR<17>          20: ADDR<7>                    32: RESET 
-  8: ADDR<18>          21: ADDR<8>                    33: RESET_n 
-  9: ADDR<19>          22: AS_n                       34: RW 
- 10: ADDR<1>           23: AUTOCONFIG/dtack           35: UDS_n 
- 11: ADDR<20>          24: AUTOCONFIG/ide_configured  36: ide_enable 
- 12: ADDR<21>          25: CFGIN_n                    37: ide_enable/ide_enable_CLKF 
- 13: ADDR<22>         
+  1: $OpTx$FX_DC$38    14: ADDR<23>                   27: CFGOUT_n 
+  2: $OpTx$INV$24      15: ADDR<2>                    28: IDE/S3_n 
+  3: ADDR<12>          16: ADDR<3>                    29: IDE/as_delay<1> 
+  4: ADDR<13>          17: ADDR<4>                    30: IDE/ide_enabled 
+  5: ADDR<14>          18: ADDR<5>                    31: IDE/rom_bankSel<0> 
+  6: ADDR<16>          19: ADDR<6>                    32: DBUS<14>.PIN 
+  7: ADDR<17>          20: ADDR<7>                    33: DBUS<13>.PIN 
+  8: ADDR<18>          21: ADDR<8>                    34: RESET 
+  9: ADDR<19>          22: AS_n                       35: RESET_n 
+ 10: ADDR<1>           23: AUTOCONFIG/dtack           36: RW 
+ 11: ADDR<20>          24: AUTOCONFIG/ide_base<5>     37: UDS_n 
+ 12: ADDR<21>          25: AUTOCONFIG/ide_configured  38: ide_enable 
+ 13: ADDR<22>          26: CFGIN_n                    39: ide_enable/ide_enable_CLKF 
 
 Signal                        1         2         3         4 FB
 Name                0----+----0----+----0----+----0----+----0 Inputs
-RESET                ................................X...X... 2
-SLAVE_n              .X...XXXX.XXXX.......X..XX.............. 12
-ROM_BANK<0>          .....X......................XX.......... 3
+AUTOCONFIG/dtack     .....XXXX.XXXX.......XX..XX......X.XX.X. 16
+SLAVE_n              .X...XXXX.XXXX.......X.X.XX............. 13
+ROM_BANK<0>          .....X.......................XX......... 3
 IDE2_CS_n<1>         X.XXX................................... 4
-IOR_n                .....................X....X......X...... 3
+IOR_n                .....................X.....X.......X.... 3
 IDE1_CS_n<1>         X.XXX................................... 4
-AUTOCONFIG/ide_configured 
-                     .....XXXXXXXXXXXXXXXXXXXXX.....X.XX.X... 25
-IOW_n                .....................X....XX.....X...... 4
-AS_n_S4              .....................X....X....X....X... 4
+AS_n_S4              .....................X.....X.....X....X. 4
+IOW_n                .....................X.....XX......X.... 4
+AUTOCONFIG/ide_base<6> 
+                     .....XXXXXXXXXXXXXXXXXX.XXX....X.X.XX.X. 26
 AUTOCONFIG/ide_base<5> 
-                     .....XXXXXXXXXXXXXXXXXXXXX....XX.XX.X... 26
+                     .....XXXXXXXXXXXXXXXXXX.XXX.....XX.XX.X. 26
 IDE2_CS_n<0>         X.XXX................................... 4
-DBUS<12>             .....XXXXXXXXXXXXXXXXX..XX.....XXX.XX... 24
-AUTOCONFIG/ide_base<1> 
-                     .....XXXXXXXXXXXXXXXXXXXXX....XX.XX.X... 26
+DBUS<12>             .....XXXXXXXXXXXXXXXXX...XX......XXX.XX. 24
+AUTOCONFIG/ide_base<2> 
+                     .....XXXXXXXXXXXXXXXXXX.XXX....X.X.XX.X. 26
 IDE1_CS_n<0>         X.XXX................................... 4
-DBUS<13>             .....XXXXXXXXXXXXXXXXX..XX.....XXX..X... 23
-AUTOCONFIG/dtack     .....XXXX.XXXX.......XX.XX.....X.XX.X... 16
-DBUS<14>             .....XXXXXXXXXXXXXXXXX..XX.....XXX..X... 23
+DBUS<13>             .....XXXXXXXXXXXXXXXXX...XX......XXX..X. 23
+AUTOCONFIG/ide_base<1> 
+                     .....XXXXXXXXXXXXXXXXXX.XXX.....XX.XX.X. 26
+DBUS<14>             .....XXXXXXXXXXXXXXXXX...XX......XXX..X. 23
+AUTOCONFIG/ide_configured 
+                     .....XXXXXXXXXXXXXXXXXX.XXX......X.XX.X. 25
                     0----+----1----+----2----+----3----+----4
                               0         0         0         0
 *******************************  Equations  ********************************
 
 ********** Mapped Logic **********
 
-$OpTx$FX_DC$102 = ADDR<16>
-	# !IDE/ide_enabled
+$OpTx$FX_DC$38 = ADDR<16>
 	# !AUTOCONFIG/ide_configured
 	# ADDR<15>
 	# CFGOUT_n
-;Imported pterms FB3_1
-	# ADDR<17> & !AUTOCONFIG/ide_base<1>
-	# !ADDR<17> & AUTOCONFIG/ide_base<1>
-	# AUTOCONFIG/ide_base<6> & !ADDR<22>
-	# !AUTOCONFIG/ide_base<6> & ADDR<22>
-	# AUTOCONFIG/ide_base<7> & !ADDR<23>
-;Imported pterms FB3_2
+;Imported pterms FB3_9
+	# !IDE/ide_enabled
 	# ADDR<18> & !AUTOCONFIG/ide_base<2>
 	# !ADDR<18> & AUTOCONFIG/ide_base<2>
-	# AUTOCONFIG/ide_base<5> & !ADDR<21>
-;Imported pterms FB3_17
-	# ADDR<20> & !AUTOCONFIG/ide_base<4>
-	# !ADDR<20> & AUTOCONFIG/ide_base<4>
-	# AUTOCONFIG/ide_base<3> & !ADDR<19>
-	# !AUTOCONFIG/ide_base<3> & ADDR<19>
-	# !AUTOCONFIG/ide_base<7> & ADDR<23>
-;Imported pterms FB3_16
-	# !AUTOCONFIG/ide_base<5> & ADDR<21>;    
-
-$OpTx$INV$89 = !AUTOCONFIG/ide_configured
-	# CFGOUT_n
-	# ADDR<20> & !AUTOCONFIG/ide_base<4>
-	# !ADDR<20> & AUTOCONFIG/ide_base<4>
-	# !AUTOCONFIG/ide_base<3> & ADDR<19>
-;Imported pterms FB3_8
-	# AUTOCONFIG/ide_base<3> & !ADDR<19>
 	# AUTOCONFIG/ide_base<6> & !ADDR<22>
 	# !AUTOCONFIG/ide_base<6> & ADDR<22>
+;Imported pterms FB3_8
+	# ADDR<17> & !AUTOCONFIG/ide_base<1>
+	# !ADDR<17> & AUTOCONFIG/ide_base<1>
+	# !AUTOCONFIG/ide_base<3> & ADDR<19>
 	# AUTOCONFIG/ide_base<7> & !ADDR<23>
 	# !AUTOCONFIG/ide_base<7> & ADDR<23>
 ;Imported pterms FB3_7
-	# !ADDR<18> & AUTOCONFIG/ide_base<2>
-;Imported pterms FB3_10
-	# ADDR<18> & !AUTOCONFIG/ide_base<2>
-	# ADDR<17> & !AUTOCONFIG/ide_base<1>
-	# !ADDR<17> & AUTOCONFIG/ide_base<1>
+	# ADDR<20> & !AUTOCONFIG/ide_base<4>
+	# !ADDR<20> & AUTOCONFIG/ide_base<4>
+	# AUTOCONFIG/ide_base<3> & !ADDR<19>
 	# AUTOCONFIG/ide_base<5> & !ADDR<21>
 	# !AUTOCONFIG/ide_base<5> & ADDR<21>;    
+
+$OpTx$INV$24 = !AUTOCONFIG/ide_configured
+	# CFGOUT_n
+	# ADDR<18> & !AUTOCONFIG/ide_base<2>
+	# AUTOCONFIG/ide_base<6> & !ADDR<22>
+	# !AUTOCONFIG/ide_base<6> & ADDR<22>
+;Imported pterms FB3_4
+	# !ADDR<18> & AUTOCONFIG/ide_base<2>
+	# ADDR<17> & !AUTOCONFIG/ide_base<1>
+	# !ADDR<17> & AUTOCONFIG/ide_base<1>
+	# AUTOCONFIG/ide_base<7> & !ADDR<23>
+	# !AUTOCONFIG/ide_base<7> & ADDR<23>
+;Imported pterms FB3_6
+	# ADDR<20> & !AUTOCONFIG/ide_base<4>
+	# !ADDR<20> & AUTOCONFIG/ide_base<4>
+	# AUTOCONFIG/ide_base<3> & !ADDR<19>
+	# !AUTOCONFIG/ide_base<3> & ADDR<19>;    
 
 !AS_n_S4.D = !AS_n & !IDE/S3_n;
    AS_n_S4.CLK = ide_enable/ide_enable_CLKF;
@@ -586,9 +582,10 @@ CFGOUT_n.D = !AUTOCONFIG/ide_configured & !AUTOCONFIG/shutup;
 
 !DBUS<14>.D = !ADDR<8> & !ADDR<7> & !ADDR<5> & !ADDR<2> & 
 	ADDR<1> & !ADDR<6> & !ADDR<3>
-;Imported pterms FB4_18
+;Imported pterms FB4_16
 	# !ADDR<8> & !ADDR<7> & !ADDR<5> & !ADDR<4> & 
 	!ADDR<2> & ADDR<6> & !ADDR<3>
+;Imported pterms FB4_18
 	# !ADDR<8> & !ADDR<7> & !ADDR<5> & !ADDR<4> & 
 	ADDR<1> & !ADDR<6> & !ADDR<3>
 	# !ADDR<8> & !ADDR<7> & !ADDR<5> & ADDR<4> & 
@@ -607,9 +604,9 @@ CFGOUT_n.D = !AUTOCONFIG/ide_configured & !AUTOCONFIG/shutup;
 ;Imported pterms FB2_2
 	# !ADDR<8> & !ADDR<7> & !ADDR<5> & !ADDR<4> & 
 	!ADDR<2> & ADDR<1> & !ADDR<3>
-;Imported pterms FB2_4
 	# !ADDR<8> & !ADDR<7> & ADDR<5> & !ADDR<4> & 
 	ADDR<2> & ADDR<1> & !ADDR<6> & ADDR<3>
+;Imported pterms FB2_4
 	# !ADDR<8> & !ADDR<7> & !ADDR<5> & ADDR<4> & 
 	ADDR<2> & ADDR<1> & !ADDR<6> & !ADDR<3>;
    DBUS<15>.CLK = ide_enable/ide_enable_CLKF;
@@ -635,44 +632,92 @@ IDE/S3_n/IDE/S3_n_CLKF = C1n
    IDE/as_delay<1>.CLK = ide_enable/ide_enable_CLKF;
    IDE/as_delay<1>.AP = !RESET;    
 
-IDE/ide_enabled.T = !ADDR<16> & !UDS_n & !RW & !IDE/ide_enabled & 
-	!IDE/S3_n & ide_enable & !ADDR<15> & !$OpTx$INV$89;
+!IDE/ide_enabled.D = RW & !IDE/ide_enabled
+	# !IDE/ide_enabled & !AUTOCONFIG/ide_configured
+	# !IDE/ide_enabled & CFGOUT_n
+;Imported pterms FB3_2
+	# ADDR<20> & !AUTOCONFIG/ide_base<4> & 
+	!IDE/ide_enabled
+	# !ADDR<20> & AUTOCONFIG/ide_base<4> & 
+	!IDE/ide_enabled
+	# ADDR<17> & !AUTOCONFIG/ide_base<1> & 
+	!IDE/ide_enabled
+	# AUTOCONFIG/ide_base<5> & !ADDR<21> & 
+	!IDE/ide_enabled
+	# !AUTOCONFIG/ide_base<5> & ADDR<21> & 
+	!IDE/ide_enabled
+;Imported pterms FB3_3
+	# !ADDR<18> & AUTOCONFIG/ide_base<2> & 
+	!IDE/ide_enabled
+	# AUTOCONFIG/ide_base<6> & !ADDR<22> & 
+	!IDE/ide_enabled
+	# !AUTOCONFIG/ide_base<6> & ADDR<22> & 
+	!IDE/ide_enabled
+	# AUTOCONFIG/ide_base<7> & !ADDR<23> & 
+	!IDE/ide_enabled
+	# !AUTOCONFIG/ide_base<7> & ADDR<23> & 
+	!IDE/ide_enabled
+;Imported pterms FB3_18
+	# UDS_n & !IDE/ide_enabled
+	# !IDE/ide_enabled & IDE/S3_n
+	# !IDE/ide_enabled & !ide_enable
+	# AUTOCONFIG/ide_base<3> & !ADDR<19> & 
+	!IDE/ide_enabled
+	# !AUTOCONFIG/ide_base<3> & ADDR<19> & 
+	!IDE/ide_enabled
+;Imported pterms FB3_17
+	# ADDR<18> & !AUTOCONFIG/ide_base<2> & 
+	!IDE/ide_enabled
+	# !ADDR<17> & AUTOCONFIG/ide_base<1> & 
+	!IDE/ide_enabled;
    IDE/ide_enabled.CLK = ide_enable/ide_enable_CLKF;
    IDE/ide_enabled.AR = !RESET;    
 
 IDE/rom_bankSel<0>.T = !ADDR<16> & !UDS_n & DBUS<14>.PIN & 
-	!IDE/rom_bankSel<0> & !RW & !IDE/S3_n & ide_enable & ADDR<15> & 
-	!$OpTx$INV$89
+	AUTOCONFIG/ide_base<5> & !IDE/rom_bankSel<0> & ADDR<21> & !RW & !IDE/S3_n & 
+	ide_enable & ADDR<15> & !$OpTx$INV$24
+	# !ADDR<16> & !UDS_n & DBUS<14>.PIN & 
+	!AUTOCONFIG/ide_base<5> & !IDE/rom_bankSel<0> & !ADDR<21> & !RW & !IDE/S3_n & 
+	ide_enable & ADDR<15> & !$OpTx$INV$24
 	# !ADDR<16> & !UDS_n & !DBUS<14>.PIN & 
-	IDE/rom_bankSel<0> & !RW & !IDE/S3_n & ide_enable & ADDR<15> & 
-	!$OpTx$INV$89;
+	AUTOCONFIG/ide_base<5> & IDE/rom_bankSel<0> & ADDR<21> & !RW & !IDE/S3_n & 
+	ide_enable & ADDR<15> & !$OpTx$INV$24
+;Imported pterms FB2_10
+	# !ADDR<16> & !UDS_n & !DBUS<14>.PIN & 
+	!AUTOCONFIG/ide_base<5> & IDE/rom_bankSel<0> & !ADDR<21> & !RW & !IDE/S3_n & 
+	ide_enable & ADDR<15> & !$OpTx$INV$24;
    IDE/rom_bankSel<0>.CLK = ide_enable/ide_enable_CLKF;
    IDE/rom_bankSel<0>.AR = !RESET;    
 
 IDE/rom_bankSel<1>.T = !ADDR<16> & !UDS_n & DBUS<15>.PIN & 
-	!IDE/rom_bankSel<1> & !RW & !IDE/S3_n & ide_enable & ADDR<15> & 
-	!$OpTx$INV$89
+	AUTOCONFIG/ide_base<5> & !IDE/rom_bankSel<1> & ADDR<21> & !RW & !IDE/S3_n & 
+	ide_enable & ADDR<15> & !$OpTx$INV$24
+	# !ADDR<16> & !UDS_n & DBUS<15>.PIN & 
+	!AUTOCONFIG/ide_base<5> & !IDE/rom_bankSel<1> & !ADDR<21> & !RW & !IDE/S3_n & 
+	ide_enable & ADDR<15> & !$OpTx$INV$24
 	# !ADDR<16> & !UDS_n & !DBUS<15>.PIN & 
-	IDE/rom_bankSel<1> & !RW & !IDE/S3_n & ide_enable & ADDR<15> & 
-	!$OpTx$INV$89;
+	AUTOCONFIG/ide_base<5> & IDE/rom_bankSel<1> & ADDR<21> & !RW & !IDE/S3_n & 
+	ide_enable & ADDR<15> & !$OpTx$INV$24
+;Imported pterms FB2_8
+	# !ADDR<16> & !UDS_n & !DBUS<15>.PIN & 
+	!AUTOCONFIG/ide_base<5> & IDE/rom_bankSel<1> & !ADDR<21> & !RW & !IDE/S3_n & 
+	ide_enable & ADDR<15> & !$OpTx$INV$24;
    IDE/rom_bankSel<1>.CLK = ide_enable/ide_enable_CLKF;
    IDE/rom_bankSel<1>.AR = !RESET;    
 
-!IDE1_CS_n<0> = ADDR<12> & !ADDR<13> & !ADDR<14> & 
-	!$OpTx$FX_DC$102;    
+!IDE1_CS_n<0> = ADDR<12> & !ADDR<13> & !ADDR<14> & !$OpTx$FX_DC$38;    
 
-!IDE1_CS_n<1> = ADDR<12> & !ADDR<13> & ADDR<14> & 
-	!$OpTx$FX_DC$102;    
+!IDE1_CS_n<1> = ADDR<12> & !ADDR<13> & ADDR<14> & !$OpTx$FX_DC$38;    
 
-!IDE2_CS_n<0> = !ADDR<12> & ADDR<13> & !ADDR<14> & 
-	!$OpTx$FX_DC$102;    
+!IDE2_CS_n<0> = !ADDR<12> & ADDR<13> & !ADDR<14> & !$OpTx$FX_DC$38;    
 
-!IDE2_CS_n<1> = !ADDR<12> & ADDR<13> & ADDR<14> & 
-	!$OpTx$FX_DC$102;    
+!IDE2_CS_n<1> = !ADDR<12> & ADDR<13> & ADDR<14> & !$OpTx$FX_DC$38;    
 
 !IDEBUF_OE = !RW
-	# !AS_n & RESET_n & !AS_n_S4 & BERR_n & 
-	!$OpTx$INV$89
+	# AUTOCONFIG/ide_base<5> & ADDR<21> & !AS_n & 
+	RESET_n & !AS_n_S4 & BERR_n & !$OpTx$INV$24
+	# !AUTOCONFIG/ide_base<5> & !ADDR<21> & !AS_n & 
+	RESET_n & !AS_n_S4 & BERR_n & !$OpTx$INV$24
 	# !CFGIN_n & !ADDR<20> & !ADDR<18> & !ADDR<17> & 
 	!ADDR<16> & ADDR<23> & ADDR<22> & ADDR<21> & ADDR<19> & 
 	!AS_n & RESET_n & !AS_n_S4 & BERR_n & CFGOUT_n;    
@@ -682,21 +727,22 @@ IDE_ROMEN = AS_n
 	# CFGOUT_n
 	# AUTOCONFIG/ide_base<3> & !ADDR<19>
 	# !AUTOCONFIG/ide_base<3> & ADDR<19>
-;Imported pterms FB3_12
+;Imported pterms FB3_10
 	# ADDR<20> & !AUTOCONFIG/ide_base<4>
+;Imported pterms FB3_12
 	# !ADDR<20> & AUTOCONFIG/ide_base<4>
 	# ADDR<17> & !AUTOCONFIG/ide_base<1>
+	# !ADDR<17> & AUTOCONFIG/ide_base<1>
 	# AUTOCONFIG/ide_base<5> & !ADDR<21>
 	# !AUTOCONFIG/ide_base<5> & ADDR<21>
 ;Imported pterms FB3_13
 	# ADDR<18> & !AUTOCONFIG/ide_base<2>
 	# !ADDR<18> & AUTOCONFIG/ide_base<2>
-	# !ADDR<17> & AUTOCONFIG/ide_base<1>
 	# AUTOCONFIG/ide_base<6> & !ADDR<22>
 	# !AUTOCONFIG/ide_base<6> & ADDR<22>
+	# !AUTOCONFIG/ide_base<7> & ADDR<23>
 ;Imported pterms FB3_14
 	# AUTOCONFIG/ide_base<7> & !ADDR<23>
-	# !AUTOCONFIG/ide_base<7> & ADDR<23>
 	# !ADDR<16> & ADDR<12> & !ADDR<13> & 
 	IDE/ide_enabled
 	# !ADDR<16> & !ADDR<12> & ADDR<13> & 
@@ -720,7 +766,10 @@ ROM_BANK<0> = ADDR<16> & !IDE/ide_enabled
 
 ROM_BANK<1> = IDE/rom_bankSel<1> & IDE/ide_enabled;    
 
-!SLAVE_n = !AS_n & !$OpTx$INV$89
+!SLAVE_n = AUTOCONFIG/ide_base<5> & ADDR<21> & !AS_n & 
+	!$OpTx$INV$24
+	# !AUTOCONFIG/ide_base<5> & !ADDR<21> & !AS_n & 
+	!$OpTx$INV$24
 	# !CFGIN_n & !ADDR<20> & !ADDR<18> & !ADDR<17> & 
 	!ADDR<16> & ADDR<23> & ADDR<22> & ADDR<21> & ADDR<19> & 
 	!AS_n & CFGOUT_n;    

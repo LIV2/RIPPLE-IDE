@@ -5,12 +5,12 @@ Design:     RIPPLE
 Device:     XC9572XL-10-VQ64
 Speed File: Version 3.0
 Program:    Timing Report Generator:  version P.20131013
-Date:       Sat Mar  2 02:58:55 2024
+Date:       Thu Apr 18 04:18:38 2024
 
 Performance Summary:
 
-Pad to Pad (tPD)                          :         23.6ns (2 macrocell levels)
-Pad 'ADDR<18>' to Pad 'IDE1_CS_n<0>'                              
+Pad to Pad (tPD)                          :         24.0ns (2 macrocell levels)
+Pad 'ADDR<19>' to Pad 'IDE1_CS_n<0>'                              
 
 Clock net 'AS_n' path delays:
 
@@ -23,36 +23,36 @@ Clock Pad 'AS_n' to Output Pad 'IDE1_CS_n<0>'                     (Pterm Clock)
 
 Clock net 'C3n' path delays:
 
-Clock Pad to Output Pad (tCO)             :         39.2ns (4 macrocell levels)
+Clock Pad to Output Pad (tCO)             :         39.6ns (4 macrocell levels)
 Clock Pad 'C3n' to Output Pad 'IDE1_CS_n<0>'                      (Pterm Clock)
 
-Clock to Setup (tCYC)                     :         19.1ns (2 macrocell levels)
-Clock to Q, net 'AUTOCONFIG/ide_base<2>.Q' to TFF Setup(D) at 'IDE/rom_bankSel<0>.D'(Pterm Clock)
+Clock to Setup (tCYC)                     :         19.7ns (2 macrocell levels)
+Clock to Q, net 'AUTOCONFIG/ide_base<1>.Q' to TFF Setup(D) at 'IDE/rom_bankSel<0>.D'(Pterm Clock)
 Target FF drives output net 'IDE/rom_bankSel<0>'
 
-Setup to Clock at the Pad (tSU)           :          3.5ns (1 macrocell levels)
-Data signal 'ADDR<18>' to TFF D input Pin at 'IDE/rom_bankSel<0>.D'
+Setup to Clock at the Pad (tSU)           :          4.1ns (1 macrocell levels)
+Data signal 'ADDR<17>' to TFF D input Pin at 'IDE/rom_bankSel<0>.D'
 Clock pad 'C3n'                                                   (Pterm Clock)
 
-                          Minimum Clock Period: 19.1ns
-                     Maximum Internal Clock Speed: 52.3Mhz
+                          Minimum Clock Period: 19.7ns
+                     Maximum Internal Clock Speed: 50.7Mhz
                             (Limited by Cycle Time)
 
 Clock net 'C1n' path delays:
 
-Clock Pad to Output Pad (tCO)             :         39.2ns (4 macrocell levels)
+Clock Pad to Output Pad (tCO)             :         39.6ns (4 macrocell levels)
 Clock Pad 'C1n' to Output Pad 'IDE1_CS_n<0>'                      (Pterm Clock)
 
-Clock to Setup (tCYC)                     :         19.1ns (2 macrocell levels)
-Clock to Q, net 'AUTOCONFIG/ide_base<2>.Q' to TFF Setup(D) at 'IDE/rom_bankSel<0>.D'(Pterm Clock)
+Clock to Setup (tCYC)                     :         19.7ns (2 macrocell levels)
+Clock to Q, net 'AUTOCONFIG/ide_base<1>.Q' to TFF Setup(D) at 'IDE/rom_bankSel<0>.D'(Pterm Clock)
 Target FF drives output net 'IDE/rom_bankSel<0>'
 
-Setup to Clock at the Pad (tSU)           :          3.5ns (1 macrocell levels)
-Data signal 'ADDR<18>' to TFF D input Pin at 'IDE/rom_bankSel<0>.D'
+Setup to Clock at the Pad (tSU)           :          4.1ns (1 macrocell levels)
+Data signal 'ADDR<17>' to TFF D input Pin at 'IDE/rom_bankSel<0>.D'
 Clock pad 'C1n'                                                   (Pterm Clock)
 
-                          Minimum Clock Period: 19.1ns
-                     Maximum Internal Clock Speed: 52.3Mhz
+                          Minimum Clock Period: 19.7ns
+                     Maximum Internal Clock Speed: 50.7Mhz
                             (Limited by Cycle Time)
 
 --------------------------------------------------------------------------------
@@ -76,16 +76,16 @@ DBUS<12>                              11.0  11.0  11.0  11.0  11.0  11.0  11.0
 DBUS<13>                              11.0  11.0  11.0  11.0  11.0  11.0  11.0
 DBUS<14>                              11.0  11.0  11.0  11.0  11.0  11.0  11.0
 DBUS<15>                              11.0  11.0  11.0  11.0  11.0  11.0  11.0
-IDE1_CS_n<0>  14.5  14.5  14.5  22.2  22.2  23.2  23.6  23.2  23.2  23.6  23.2
-IDE1_CS_n<1>  14.5  14.5  14.5  22.2  22.2  23.2  23.6  23.2  23.2  23.6  23.2
-IDE2_CS_n<0>  14.5  14.5  14.5  22.2  22.2  23.2  23.6  23.2  23.2  23.6  23.2
-IDE2_CS_n<1>  14.5  14.5  14.5  22.2  22.2  23.2  23.6  23.2  23.2  23.6  23.2
-IDEBUF_OE                             14.5  23.2  23.6  23.2  22.2  23.2  23.2
-IDE_ROMEN     16.3  16.3              16.3  15.9  15.9  14.5  15.5  15.5  15.9
+IDE1_CS_n<0>  14.5  14.5  14.5  22.2  22.2  23.6  23.2  24.0  24.0  24.0  23.2
+IDE1_CS_n<1>  14.5  14.5  14.5  22.2  22.2  23.6  23.2  24.0  24.0  24.0  23.2
+IDE2_CS_n<0>  14.5  14.5  14.5  22.2  22.2  23.6  23.2  24.0  24.0  24.0  23.2
+IDE2_CS_n<1>  14.5  14.5  14.5  22.2  22.2  23.6  23.2  24.0  24.0  24.0  23.2
+IDEBUF_OE                             14.5  23.2  23.2  23.2  23.2  14.5  22.2
+IDE_ROMEN     16.3  16.3              16.3  15.5  15.9  14.5  15.5  15.5  15.9
 IOR_n                                                                         
 IOW_n                                                                         
 ROM_BANK<0>                           14.5                                    
-SLAVE_n                               14.5  23.2  23.6  23.2  22.2  23.2  23.2
+SLAVE_n                               14.5  23.2  23.2  23.2  23.2  14.5  22.2
 
 --------------------------------------------------------------------------------
                             Pad to Pad (tPD) (nsec)
@@ -108,10 +108,10 @@ DBUS<12>      11.0              11.0  11.0  11.0
 DBUS<13>      11.0              11.0  11.0  11.0
 DBUS<14>      11.0              11.0  11.0  11.0
 DBUS<15>      11.0              11.0  11.0  11.0
-IDE1_CS_n<0>  23.2                              
-IDE1_CS_n<1>  23.2                              
-IDE2_CS_n<0>  23.2                              
-IDE2_CS_n<1>  23.2                              
+IDE1_CS_n<0>  23.6                              
+IDE1_CS_n<1>  23.6                              
+IDE2_CS_n<0>  23.6                              
+IDE2_CS_n<1>  23.6                              
 IDEBUF_OE     23.2  14.5  14.5  14.5  14.5  14.5
 IDE_ROMEN     16.3  14.5                        
 IOR_n               14.5                    14.5
@@ -141,17 +141,17 @@ DBUS<12>      18.9  22.4  22.4
 DBUS<13>      18.9  22.4  22.4
 DBUS<14>      18.9  22.4  22.4
 DBUS<15>      18.9  22.4  22.4
-IDE1_CS_n<0>  30.1  39.2  39.2
-IDE1_CS_n<1>  30.1  39.2  39.2
-IDE2_CS_n<0>  30.1  39.2  39.2
-IDE2_CS_n<1>  30.1  39.2  39.2
-IDEBUF_OE     30.1  39.2  39.2
+IDE1_CS_n<0>  30.1  39.6  39.6
+IDE1_CS_n<1>  30.1  39.6  39.6
+IDE2_CS_n<0>  30.1  39.6  39.6
+IDE2_CS_n<1>  30.1  39.6  39.6
+IDEBUF_OE     30.1  38.8  38.8
 IDE_ROMEN     22.4  31.9  31.9
 IOR_n               30.1  30.1
 IOW_n               30.1  30.1
 ROM_BANK<0>         30.1  30.1
 ROM_BANK<1>         30.1  30.1
-SLAVE_n       30.1  39.2  39.2
+SLAVE_n       30.1  38.8  38.8
 
 --------------------------------------------------------------------------------
                    Setup to Clock at Pad (tSU or tSUF) (nsec)
@@ -167,16 +167,16 @@ SLAVE_n       30.1  39.2  39.2
         \            
   To     \------------
 
-ADDR<15>   -5.6  -5.6
-ADDR<16>   -5.6  -5.6
-ADDR<17>    3.1   3.1
-ADDR<18>    3.5   3.5
-ADDR<19>    3.1   3.1
+ADDR<15>   -4.6  -4.6
+ADDR<16>   -4.6  -4.6
+ADDR<17>    4.1   4.1
+ADDR<18>    4.1   4.1
+ADDR<19>    4.1   4.1
 ADDR<1>    -4.6  -4.6
-ADDR<20>    2.1   2.1
-ADDR<21>    3.1   3.1
+ADDR<20>    4.1   4.1
+ADDR<21>   -4.6  -4.6
 ADDR<22>    3.1   3.1
-ADDR<23>    3.1   3.1
+ADDR<23>    4.1   4.1
 ADDR<2>    -4.6  -4.6
 ADDR<3>    -4.6  -4.6
 ADDR<4>    -4.6  -4.6
@@ -188,12 +188,12 @@ AS_n       -5.6  -5.6
 CFGIN_n    -5.6  -5.6
 DBUS<12>   -5.6  -5.6
 DBUS<13>   -5.6  -5.6
-DBUS<14>   -5.6  -5.6
-DBUS<15>   -5.6  -5.6
+DBUS<14>   -4.6  -4.6
+DBUS<15>   -4.6  -4.6
 IDE_OFF_n  -5.6  -5.6
 RESET_n    -5.6  -5.6
-RW         -5.6  -5.6
-UDS_n      -5.6  -5.6
+RW         -4.6  -4.6
+UDS_n      -4.6  -4.6
 
 --------------------------------------------------------------------------------
                           Clock to Setup (tCYC) (nsec)
@@ -242,9 +242,9 @@ AUTOCONFIG/ide_configured.CE        10.0
 AUTOCONFIG/shutup.CE                10.0                                    
 DBUS<12>.D                                                                  
 IDE/as_delay<1>.D             10.0                                          
-IDE/ide_enabled.D                         18.7  19.1  18.7  17.7  18.7  18.7
-IDE/rom_bankSel<0>.D                      18.7  19.1  18.7  17.7  18.7  18.7
-IDE/rom_bankSel<1>.D                      18.7  19.1  18.7  17.7  18.7  18.7
+IDE/ide_enabled.D                         11.4  11.4  11.0  11.0  11.0  11.4
+IDE/rom_bankSel<0>.D                      19.7  19.7  19.7  19.7  11.0  18.7
+IDE/rom_bankSel<1>.D                      19.7  19.7  19.7  19.7  11.0  18.7
 ide_enable.CE                                                               
 
 --------------------------------------------------------------------------------
@@ -294,9 +294,9 @@ AUTOCONFIG/ide_configured.CE        10.0
 AUTOCONFIG/shutup.CE                      10.0                              
 DBUS<12>.D                                                                  
 IDE/as_delay<1>.D                                                           
-IDE/ide_enabled.D             18.7  17.7        10.0  10.0                  
-IDE/rom_bankSel<0>.D          18.7  17.7        10.0        10.0            
-IDE/rom_bankSel<1>.D          18.7  17.7        10.0              10.0      
+IDE/ide_enabled.D             11.4  10.0        11.0  11.4                  
+IDE/rom_bankSel<0>.D          19.7  18.7        11.0        11.0            
+IDE/rom_bankSel<1>.D          19.7  18.7        11.0              11.0      
 ide_enable.CE                                                           10.0
 
 --------------------------------------------------------------------------------
@@ -346,9 +346,9 @@ AUTOCONFIG/ide_configured.CE
 AUTOCONFIG/shutup.CE              
 DBUS<12>.D                    10.0
 IDE/as_delay<1>.D                 
-IDE/ide_enabled.D             10.0
-IDE/rom_bankSel<0>.D          10.0
-IDE/rom_bankSel<1>.D          10.0
+IDE/ide_enabled.D             11.0
+IDE/rom_bankSel<0>.D          11.0
+IDE/rom_bankSel<1>.D          11.0
 ide_enable.CE                     
 
 --------------------------------------------------------------------------------
@@ -398,9 +398,9 @@ AUTOCONFIG/ide_configured.CE        10.0
 AUTOCONFIG/shutup.CE                10.0                                    
 DBUS<12>.D                                                                  
 IDE/as_delay<1>.D             10.0                                          
-IDE/ide_enabled.D                         18.7  19.1  18.7  17.7  18.7  18.7
-IDE/rom_bankSel<0>.D                      18.7  19.1  18.7  17.7  18.7  18.7
-IDE/rom_bankSel<1>.D                      18.7  19.1  18.7  17.7  18.7  18.7
+IDE/ide_enabled.D                         11.4  11.4  11.0  11.0  11.0  11.4
+IDE/rom_bankSel<0>.D                      19.7  19.7  19.7  19.7  11.0  18.7
+IDE/rom_bankSel<1>.D                      19.7  19.7  19.7  19.7  11.0  18.7
 ide_enable.CE                                                               
 
 --------------------------------------------------------------------------------
@@ -450,9 +450,9 @@ AUTOCONFIG/ide_configured.CE        10.0
 AUTOCONFIG/shutup.CE                      10.0                              
 DBUS<12>.D                                                                  
 IDE/as_delay<1>.D                                                           
-IDE/ide_enabled.D             18.7  17.7        10.0  10.0                  
-IDE/rom_bankSel<0>.D          18.7  17.7        10.0        10.0            
-IDE/rom_bankSel<1>.D          18.7  17.7        10.0              10.0      
+IDE/ide_enabled.D             11.4  10.0        11.0  11.4                  
+IDE/rom_bankSel<0>.D          19.7  18.7        11.0        11.0            
+IDE/rom_bankSel<1>.D          19.7  18.7        11.0              11.0      
 ide_enable.CE                                                           10.0
 
 --------------------------------------------------------------------------------
@@ -502,9 +502,9 @@ AUTOCONFIG/ide_configured.CE
 AUTOCONFIG/shutup.CE              
 DBUS<12>.D                    10.0
 IDE/as_delay<1>.D                 
-IDE/ide_enabled.D             10.0
-IDE/rom_bankSel<0>.D          10.0
-IDE/rom_bankSel<1>.D          10.0
+IDE/ide_enabled.D             11.0
+IDE/rom_bankSel<0>.D          11.0
+IDE/rom_bankSel<1>.D          11.0
 ide_enable.CE                     
 
 Path Type Definition: 

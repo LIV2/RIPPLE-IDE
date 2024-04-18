@@ -56,8 +56,8 @@ always @(posedge CLK or negedge RESET_n) begin
     ide_enabled <= 0;
     rom_bankSel <= 0;
   end else begin
-    // IDE enabled on first write to an IDE address
-    if (ide_enable && ide_access && ADDR[16:15] == 2'b00 && !RW && !UDS_n && !S3_n) ide_enabled <= 1;
+    // IDE enabled on first write seen
+    if (ide_enable && ide_access && !RW && !UDS_n && !S3_n) ide_enabled <= 1;
     if (ide_enable && ide_access && ADDR[16:15] == 2'b01 && !RW && !UDS_n && !S3_n) rom_bankSel <= DIN;
   end
 end
