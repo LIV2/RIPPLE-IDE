@@ -8,7 +8,8 @@ Zorro 2 IDE Interface for Amiga 2000/3000/4000
 1. [Status](#status)
 2. [Features](#features)
 3. [Ordering PCBs](#ordering-pcbs)
-4. [Bill of Materials](#bill-of-materials)
+4. [Programming](#programming)
+5. [Bill of Materials](#bill-of-materials)
 6. [Special Thanks and Shoutouts](#special-thanks-and-shoutouts)
 7. [License](#license)
 
@@ -17,6 +18,7 @@ Tested and working.
 
 ## Features
 * Autoboot
+* ROM can be updated simply by booting the update disk
 * Works with Kickstart 1.3 and up
 * [Supports up to 2TB drives](https://github.com/LIV2/lide.device/#large-drive-4gb-support)
 * Supports ATAPI Devices (CD/DVD-ROM, Zip disk etc)
@@ -40,6 +42,10 @@ Recommended options when ordering:
 * Gold Fingers: Yes
 * 45°finger chamfered: Yes
 
+## Programming
+To program the Flash, simply boot the latest [lide-update.adf](https://github.com/LIV2/lide.device/releases/latest) boot disk
+
+The CPLD can be programmed using a Raspberry Pi [as described by LinuxJedi](https://linuxjedi.co.uk/2020/12/01/programming-xilinx-jtag-from-a-raspberry-pi/)
 
 ## Bill of Materials
 |References|Qty|Value|Footprint|Link|
