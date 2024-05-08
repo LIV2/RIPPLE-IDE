@@ -50,7 +50,7 @@ The CPLD can be programmed using a Raspberry Pi [as described by LinuxJedi](http
 ## Bill of Materials
 |References|Qty|Value|Footprint|Link|
 |----------|---|-----|---------|----|
-|C1,C12|2|47uF 16V|CP_Radial_D5.0mm_P2.50mm|[Mouser](https://www.mouser.com/ProductDetail/667-ECE-A1CKA101)|
+|C1,C12|2|47uF 16V|CP_Radial_D5.0mm_P2.50mm|[Mouser](https://www.mouser.com/ProductDetail/667-ECE-A1CKA470I)|
 |C3,C2|2|10uF Tantalum|1206|[Mouser](https://www.mouser.com/ProductDetail/581-TAJA106K016R)|
 |C9,C4,C5,C7,C11,C8,C6,C10|8|0.1uF Ceramic|0603|[Mouser](https://www.mouser.com/ProductDetail/187-CL10B104KA8NFNC)|
 |D1|1|BAT54A|SOT-23|[Mouser](https://www.mouser.com/ProductDetail/621-BAT54A-F)|
