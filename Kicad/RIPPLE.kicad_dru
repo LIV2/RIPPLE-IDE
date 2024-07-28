@@ -21,9 +21,9 @@
   (constraint hole_size (min 0.2mm) (max 6.35mm))
   (condition "A.Pad_Type == 'Through-hole' && A.isPlated() && A.Type == 'Pad'"))
 
-(rule "Pad Size"
-  (constraint length (min 1.0mm))
-  (condition "A.Pad_Type == 'Through-hole' && A.isPlated() && A.Type == 'Pad'"))
+#(rule "Pad Size"
+#  (constraint length (min 1.0mm))
+#  (condition "A.Pad_Type == 'Through-hole' && A.isPlated() && A.Type == 'Pad'"))
 
 (rule "Minimum annular ring (PTH)"
   (constraint annular_width (min 0.3mm))

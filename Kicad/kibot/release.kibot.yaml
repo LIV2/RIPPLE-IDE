@@ -31,7 +31,6 @@ preflight:
   run_drc: true
   run_erc: true
   update_xml: true
-  ignore_unconnected: true
   filters:
     - error: 'silk_overlap'
       filter: 'Silkscreen overlap'
