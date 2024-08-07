@@ -22,6 +22,7 @@ module RIPPLE(
     input BERR_n,
     input C1n,
     input C3n,
+    input CDACn,
     input CFGIN_n,
     inout [15:12] DBUS,
     input LDS_n,
@@ -35,11 +36,10 @@ module RIPPLE(
     output SLAVE_n,
 // IDE stuff
     input IDE_OFF_n,
-    output [1:0] ROM_BANK,
     output IDE_ROMEN,
     output IDEBUF_OE,
-    output [1:0] IDE1_CS_n,
-    output [1:0] IDE2_CS_n,
+    output IDE1_CS_n,
+    output IDE2_CS_n,
     output IOR_n,
     output IOW_n
     );
@@ -53,8 +53,14 @@ wire CLK7M = !(C1n ^ C3n);
 
 reg RESET = 0;
 
+reg [2:0] reset_delay;
 always @(posedge CLK7M) begin
-  RESET <= RESET_n;
+  reset_delay <= {reset_delay[1:0], RESET_n};
+  if (reset_delay == 'b0) begin
+    RESET <= 1'b0;
+  end else begin
+    RESET <= 1'b1;
+  end
 end
 
 reg ide_enable;
@@ -98,8 +104,7 @@ IDE IDE (
   .IOW_n (IOW_n),
   .IDE1_CS_n (IDE1_CS_n),
   .IDE2_CS_n (IDE2_CS_n),
-  .IDE_ROMEN (IDE_ROMEN),
-  .ROM_BANK (ROM_BANK)
+  .IDE_ROMEN (IDE_ROMEN)
 );
 
 assign DBUS[15:12] = (autoconfig_cycle) && RW && RESET_n ? autoconfig_dout : 'bZ;
