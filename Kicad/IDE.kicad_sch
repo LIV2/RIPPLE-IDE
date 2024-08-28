@@ -8781,7 +8781,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 85.09 160.782 90)
 			(effects
 				(font
@@ -8824,7 +8824,7 @@
 			(uuid "70fff1b9-2af6-4ad4-b77f-2d7898de3650")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R14")
 					(unit 1)
@@ -8857,7 +8857,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 209.423 244.475 90)
 			(effects
 				(font
@@ -8900,7 +8900,7 @@
 			(uuid "eb5d58b5-d483-4d58-abf0-b9762fdaf3c6")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R10")
 					(unit 1)
@@ -8965,7 +8965,7 @@
 			(uuid "2eec9e8d-4278-427f-9149-2837cff34eb2")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR026")
 					(unit 1)
@@ -9030,7 +9030,7 @@
 			(uuid "d3938845-3033-46df-82d9-7eb5532d3412")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR0104")
 					(unit 1)
@@ -9096,7 +9096,7 @@
 			(uuid "b92f6c82-481c-4260-aef8-1b4b6bcabb8c")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR023")
 					(unit 1)
@@ -9129,7 +9129,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 178.435 251.333 90)
 			(effects
 				(font
@@ -9172,7 +9172,7 @@
 			(uuid "e4ccbd4e-54f8-438d-ae8a-2e1b0a3c3a0b")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R16")
 					(unit 1)
@@ -9237,7 +9237,7 @@
 			(uuid "bf9d5ae9-b19f-4259-9ced-33fd1d45f425")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR041")
 					(unit 1)
@@ -9270,7 +9270,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 208.153 81.915 90)
 			(effects
 				(font
@@ -9313,7 +9313,7 @@
 			(uuid "15bc07fe-d593-4d4b-9077-bf062dc4fbc1")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R6")
 					(unit 1)
@@ -9349,7 +9349,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
+		(property "Footprint" "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
 			(at 109.22 80.01 0)
 			(effects
 				(font
@@ -9393,7 +9393,7 @@
 			(uuid "35e7d457-ef3f-419b-b4e5-d92eb339625b")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "F1")
 					(unit 1)
@@ -9426,7 +9426,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 200.533 81.915 90)
 			(effects
 				(font
@@ -9469,7 +9469,7 @@
 			(uuid "796e3fcb-14b9-4e01-a606-5ce7b7fa2098")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R7")
 					(unit 1)
@@ -9502,7 +9502,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 209.55 257.302 90)
 			(effects
 				(font
@@ -9545,7 +9545,7 @@
 			(uuid "fb681f73-7300-4c8c-b4cf-18e2f70805ec")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R17")
 					(unit 1)
@@ -9610,7 +9610,7 @@
 			(uuid "386f9352-d0f0-4411-99ae-a8f670db65ad")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR040")
 					(unit 1)
@@ -9801,7 +9801,7 @@
 			(uuid "02d722e9-0051-421b-bdd3-2d2bd17ecb74")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "J3")
 					(unit 1)
@@ -9893,7 +9893,7 @@
 			(uuid "d7b3bdec-c7cd-4417-afee-ea1dc63a1541")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "Q1")
 					(unit 1)
@@ -9959,7 +9959,7 @@
 			(uuid "03fb61c0-5872-4106-b907-21786cabc038")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR018")
 					(unit 1)
@@ -10025,7 +10025,7 @@
 			(uuid "0e1985f8-12b0-4ad1-81f3-301cee7072ec")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR021")
 					(unit 1)
@@ -10091,7 +10091,7 @@
 			(uuid "eb7ad8e6-cb13-46ed-b814-914f15ed3b3f")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR020")
 					(unit 1)
@@ -10124,7 +10124,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 214.503 81.915 90)
 			(effects
 				(font
@@ -10167,7 +10167,7 @@
 			(uuid "c023ac41-71e9-46aa-8ca9-d1be8fd2d7eb")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R12")
 					(unit 1)
@@ -10358,7 +10358,7 @@
 			(uuid "be716d34-d86d-4036-be53-1cb641d8c1ab")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "J4")
 					(unit 1)
@@ -10424,7 +10424,7 @@
 			(uuid "e981ddfc-c403-471a-a4f4-d616ea5db792")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR017")
 					(unit 1)
@@ -10490,7 +10490,7 @@
 			(uuid "f4539252-bd5f-4693-b603-9814e6ba11d8")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR038")
 					(unit 1)
@@ -10558,7 +10558,7 @@
 			(uuid "28cbe917-f81b-4884-afe1-e0c217e8b96b")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "J2")
 					(unit 1)
@@ -10689,7 +10689,7 @@
 			(uuid "be142dec-6e7e-4b10-95e5-291ec12bba4c")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "U4")
 					(unit 1)
@@ -10755,7 +10755,7 @@
 			(uuid "86d0ac76-b826-47ca-9865-c1c573a90eab")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR016")
 					(unit 1)
@@ -10831,7 +10831,7 @@
 			(uuid "2ee15fac-c8e1-40e9-9554-1d09be2105ae")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "D2")
 					(unit 1)
@@ -10864,7 +10864,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 234.188 81.915 90)
 			(effects
 				(font
@@ -10907,7 +10907,7 @@
 			(uuid "374a15b0-7216-484d-bc11-b30923853051")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R8")
 					(unit 1)
@@ -10973,7 +10973,7 @@
 			(uuid "98580e90-ce14-41c7-a26b-9d6dba6862bd")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR027")
 					(unit 1)
@@ -11038,7 +11038,7 @@
 			(uuid "f1800780-f2e7-4988-bba5-76cb9feb8c8f")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR028")
 					(unit 1)
@@ -11104,7 +11104,7 @@
 			(uuid "f81e7a64-023d-481c-9834-8996f562133b")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR019")
 					(unit 1)
@@ -11170,7 +11170,7 @@
 			(uuid "859b43b9-c492-4794-8db0-671be73191bc")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR024")
 					(unit 1)
@@ -11205,7 +11205,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 			(at 202.565 213.995 0)
 			(effects
 				(font
@@ -11252,7 +11252,7 @@
 			(uuid "6bf30f1a-8397-450b-bb3b-9ec35a1b8603")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "D1")
 					(unit 1)
@@ -11285,7 +11285,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 274.828 81.915 90)
 			(effects
 				(font
@@ -11328,7 +11328,7 @@
 			(uuid "1f1f26a5-0c54-4b57-a5e1-b2418a683d99")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R4")
 					(unit 1)
@@ -11361,7 +11361,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 85.09 152.273 90)
 			(effects
 				(font
@@ -11404,7 +11404,7 @@
 			(uuid "b051f579-3f56-4978-9917-4c1266f110a4")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R3")
 					(unit 1)
@@ -11535,7 +11535,7 @@
 			(uuid "757e30a6-d16f-4fe4-a1d8-02dcea530fac")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "U5")
 					(unit 1)
@@ -11611,7 +11611,7 @@
 			(uuid "d5f176d0-f185-4bf8-ba0e-d5d23841e877")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "J6")
 					(unit 1)
@@ -11676,7 +11676,7 @@
 			(uuid "43caf860-2638-4e1c-8253-3b4cd6c0d975")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR025")
 					(unit 1)
@@ -11742,7 +11742,7 @@
 			(uuid "76a8921e-6058-4c52-8d94-73c97f1f1977")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR0103")
 					(unit 1)
@@ -11775,7 +11775,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 231.648 81.915 90)
 			(effects
 				(font
@@ -11818,7 +11818,7 @@
 			(uuid "970b420c-540a-4003-b6d0-3a1d329d1773")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R9")
 					(unit 1)
@@ -11852,7 +11852,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 82.042 177.8 90)
 			(effects
 				(font
@@ -11895,7 +11895,7 @@
 			(uuid "230c8daa-b24f-4df5-93b1-437cd896450e")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R11")
 					(unit 1)
@@ -11971,7 +11971,7 @@
 			(uuid "c0f9313b-8348-44af-9373-567165dc8a17")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R13")
 					(unit 1)
@@ -12037,7 +12037,7 @@
 			(uuid "5eb89f1d-694e-489d-b51c-8fbd461e1512")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR022")
 					(unit 1)
@@ -12103,7 +12103,7 @@
 			(uuid "8d8b447d-2cce-475f-bfe4-c6bcfcfd1965")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR0102")
 					(unit 1)
@@ -12169,7 +12169,7 @@
 			(uuid "ffa9071f-c40e-4300-8a3e-4ce8ab968d4f")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR032")
 					(unit 1)
@@ -12205,7 +12205,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 81.915 220.345 0)
 			(effects
 				(font
@@ -12248,7 +12248,7 @@
 			(uuid "1ea6d655-43ef-4d3c-816e-a22530f42425")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "C11")
 					(unit 1)
@@ -12316,7 +12316,7 @@
 			(uuid "235d41a9-5690-4799-8325-6bcb07593564")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "J7")
 					(unit 1)
@@ -12386,7 +12386,7 @@
 			(uuid "521d8da0-b4a6-4028-b151-c780d4098ed6")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "J5")
 					(unit 1)
@@ -12452,7 +12452,7 @@
 			(uuid "01cf26da-b456-4ea4-a792-e956c39a8516")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR029")
 					(unit 1)
@@ -12518,7 +12518,7 @@
 			(uuid "a9412191-0457-48f2-90b3-3480ed0c30f0")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR015")
 					(unit 1)
@@ -12584,7 +12584,7 @@
 			(uuid "3364ca42-e3d9-4fec-902c-4443893b57cd")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR031")
 					(unit 1)
@@ -12620,7 +12620,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 102.87 220.345 0)
 			(effects
 				(font
@@ -12663,7 +12663,7 @@
 			(uuid "145d3536-277d-448f-82b3-f608390c5ab7")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "C9")
 					(unit 1)
@@ -12729,7 +12729,7 @@
 			(uuid "fb9b0c72-b98b-46c3-88f3-8d7bc687ab8e")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR030")
 					(unit 1)
@@ -12762,7 +12762,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 282.448 81.915 90)
 			(effects
 				(font
@@ -12805,7 +12805,7 @@
 			(uuid "178e6693-0375-48e4-83d2-818a8933f5fa")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R1")
 					(unit 1)
@@ -12840,7 +12840,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 92.71 220.345 0)
 			(effects
 				(font
@@ -12883,7 +12883,7 @@
 			(uuid "7a91903e-0619-44aa-8b8b-4273235711a4")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "C10")
 					(unit 1)
@@ -12975,7 +12975,7 @@
 			(uuid "71b2c451-d929-4897-bad9-daf5fc47d052")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "Q1")
 					(unit 2)
@@ -13008,7 +13008,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 85.09 156.337 90)
 			(effects
 				(font
@@ -13051,7 +13051,7 @@
 			(uuid "6d18cb86-a347-4e4d-a736-023ef14f762c")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R2")
 					(unit 1)
@@ -13182,7 +13182,7 @@
 			(uuid "d1bdd3a8-8dab-42a4-b1be-bec08e9e5823")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "U6")
 					(unit 1)
@@ -13247,7 +13247,7 @@
 			(uuid "6204415a-712a-4924-a51c-977223093234")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "#PWR0101")
 					(unit 1)
@@ -13280,7 +13280,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 178.435 234.823 90)
 			(effects
 				(font
@@ -13323,7 +13323,7 @@
 			(uuid "a7fa688c-e0a0-4ba4-9f89-a55f235ec56b")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R15")
 					(unit 1)
@@ -13356,7 +13356,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 85.09 147.828 90)
 			(effects
 				(font
@@ -13399,7 +13399,7 @@
 			(uuid "53e0ef03-e931-4cf8-b336-7beffd02448e")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/02af0dc9-877c-4845-bc7f-2eed0ff1075e"
 					(reference "R5")
 					(unit 1)

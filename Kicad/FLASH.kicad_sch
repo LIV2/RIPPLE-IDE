@@ -2192,7 +2192,7 @@
 			(uuid "47603e6b-a57c-4b2c-b282-6b5f8c954119")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/d2db5501-0b74-41e3-bf72-c3c8fb334b9c"
 					(reference "#PWR033")
 					(unit 1)
@@ -2258,7 +2258,7 @@
 			(uuid "e93e4516-7acd-4847-9289-3ba9a8e0d916")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/d2db5501-0b74-41e3-bf72-c3c8fb334b9c"
 					(reference "#PWR035")
 					(unit 1)
@@ -2337,7 +2337,7 @@
 			(uuid "bd01983b-a20c-4bd7-9905-c17fde19fe80")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/d2db5501-0b74-41e3-bf72-c3c8fb334b9c"
 					(reference "C4")
 					(unit 1)
@@ -2494,7 +2494,7 @@
 			(uuid "cd3d4af6-ea33-4040-9480-6d257f5a3405")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/d2db5501-0b74-41e3-bf72-c3c8fb334b9c"
 					(reference "U2")
 					(unit 1)
@@ -2560,7 +2560,7 @@
 			(uuid "febede63-d18e-4082-91f1-e4aaaf504e0a")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/d2db5501-0b74-41e3-bf72-c3c8fb334b9c"
 					(reference "#PWR037")
 					(unit 1)
@@ -2626,7 +2626,7 @@
 			(uuid "66aa0324-72f7-41b1-b995-f7983f765feb")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/d2db5501-0b74-41e3-bf72-c3c8fb334b9c"
 					(reference "#PWR036")
 					(unit 1)
@@ -2692,7 +2692,7 @@
 			(uuid "0dfc3328-c909-4b46-9046-ce52238cfff0")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/d2db5501-0b74-41e3-bf72-c3c8fb334b9c"
 					(reference "#PWR034")
 					(unit 1)

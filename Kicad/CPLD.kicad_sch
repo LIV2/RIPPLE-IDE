@@ -1955,7 +1955,7 @@
 				)
 			)
 		)
-		(symbol "Device:D_Small"
+		(symbol "Device:D_Schottky_Small_Filled"
 			(pin_numbers hide)
 			(pin_names
 				(offset 0.254) hide)
@@ -1971,8 +1971,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "D_Small"
-				(at -3.81 -2.032 0)
+			(property "Value" "D_Schottky_Small_Filled"
+				(at -7.112 -2.032 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1998,7 +1998,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Diode, small symbol"
+			(property "Description" "Schottky diode, small symbol, filled shape"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2007,25 +2007,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
+			(property "ki_keywords" "diode Schottky"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2043,19 +2025,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "D_Small_0_1"
-				(polyline
-					(pts
-						(xy -0.762 -1.016) (xy -0.762 1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "D_Schottky_Small_Filled_0_1"
 				(polyline
 					(pts
 						(xy -0.762 0) (xy 0.762 0)
@@ -2077,11 +2047,23 @@
 						(type default)
 					)
 					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0.762) (xy -1.27 1.016) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.016) (xy -0.254 -0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
 						(type none)
 					)
 				)
 			)
-			(symbol "D_Small_1_1"
+			(symbol "D_Schottky_Small_Filled_1_1"
 				(pin passive line
 					(at -2.54 0 0)
 					(length 1.778)
@@ -8678,7 +8660,7 @@
 			(uuid "54a71d04-37f9-413c-9328-748effc41b58")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "C1")
 					(unit 1)
@@ -8745,7 +8727,7 @@
 			(uuid "5a5ce130-bb8b-4f43-909a-e97de47cdadd")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR08")
 					(unit 1)
@@ -8811,7 +8793,7 @@
 			(uuid "d6ee2cac-f170-482b-9927-fff731e3680a")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#FLG01")
 					(unit 1)
@@ -8847,7 +8829,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 123.825 184.15 0)
 			(effects
 				(font
@@ -8890,7 +8872,7 @@
 			(uuid "de52c8e3-50f5-4cee-bd24-a03e1f76bb67")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "C6")
 					(unit 1)
@@ -8972,7 +8954,7 @@
 			(uuid "9a50a386-54e4-47c8-8cc6-32a4095328db")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "J1")
 					(unit 1)
@@ -9038,7 +9020,7 @@
 			(uuid "bd014163-475d-4fa0-9a92-ff78c917190d")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR01")
 					(unit 1)
@@ -9108,7 +9090,7 @@
 			(uuid "4b4a0f02-3d42-44ad-b66e-a21e0eeb2437")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "C2")
 					(unit 1)
@@ -9188,7 +9170,7 @@
 			(uuid "df7fb763-3f02-4ed3-8cb8-17619e26b0f8")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "C12")
 					(unit 1)
@@ -9267,7 +9249,7 @@
 			(uuid "cf1e415e-88f0-4acc-9e54-fc322632e7ff")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "C3")
 					(unit 1)
@@ -9474,7 +9456,7 @@
 			(uuid "2cb331fa-cda9-47cd-b4db-2bf9eee05c1a")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR012")
 					(unit 1)
@@ -9536,11 +9518,20 @@
 				(hide yes)
 			)
 		)
+		(property "exclude_from_bom" ""
+			(at 443.23 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ff63bbda-ad33-4b34-b789-4fcf87f9508f")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "J8")
 					(unit 1)
@@ -9605,7 +9596,7 @@
 			(uuid "4aa05e34-ac25-4b74-b949-268c7e3152e8")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR039")
 					(unit 1)
@@ -9671,7 +9662,7 @@
 			(uuid "793146a4-fa2b-4861-9a98-5a403c9e0daa")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR02")
 					(unit 1)
@@ -9707,7 +9698,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 141.605 184.15 0)
 			(effects
 				(font
@@ -9750,7 +9741,7 @@
 			(uuid "40d65422-42f7-4912-b962-59fc9cd09161")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "C7")
 					(unit 1)
@@ -9815,7 +9806,7 @@
 			(uuid "17e3fa74-e550-478f-a765-596d6e7ff120")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR09")
 					(unit 1)
@@ -9882,7 +9873,7 @@
 			(uuid "1e73dc17-96ed-4aa4-a9af-f582b60abda1")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR04")
 					(unit 1)
@@ -10138,7 +10129,7 @@
 			(uuid "c9b4730f-da1b-484b-95a8-92831b3f81cd")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "U3")
 					(unit 1)
@@ -10203,7 +10194,7 @@
 			(uuid "6f13f051-670d-4f4c-8d4f-6e7398357848")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR011")
 					(unit 1)
@@ -10269,7 +10260,7 @@
 			(uuid "950f3de5-ae4d-4e0e-9d4c-e646b70a8ff6")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR03")
 					(unit 1)
@@ -10305,7 +10296,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 114.935 184.15 0)
 			(effects
 				(font
@@ -10348,7 +10339,7 @@
 			(uuid "ea9b7e17-a70e-4117-b513-c26bd1bd4ea5")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "C8")
 					(unit 1)
@@ -10414,7 +10405,7 @@
 			(uuid "71ec0aa0-ade1-4178-b1e1-7865e559b4e7")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR07")
 					(unit 1)
@@ -10481,7 +10472,7 @@
 			(uuid "49c20c62-1d99-4f11-9de1-5385abcc5003")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR05")
 					(unit 1)
@@ -10552,7 +10543,7 @@
 			(uuid "5858c96e-f73d-4753-ac00-9fa0a4714bcd")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "U1")
 					(unit 1)
@@ -10561,7 +10552,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Small")
+		(lib_id "Device:D_Schottky_Small_Filled")
 		(at 83.82 149.86 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10571,7 +10562,7 @@
 		(fields_autoplaced yes)
 		(uuid "d0e05345-918a-43a6-b342-95649377d179")
 		(property "Reference" "D3"
-			(at 86.36 148.5899 90)
+			(at 86.36 148.3359 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10579,8 +10570,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BAT760"
-			(at 86.36 151.1299 90)
+		(property "Value" "BAT42W"
+			(at 86.36 150.8759 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10588,7 +10579,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 83.82 149.86 90)
 			(effects
 				(font
@@ -10606,7 +10597,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Diode, small symbol"
+		(property "Description" "Schottky diode, small symbol, filled shape"
 			(at 83.82 149.86 0)
 			(effects
 				(font
@@ -10633,7 +10624,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC #" "C124187"
+		(property "LCSC #" "C134396"
 			(at 83.82 149.86 90)
 			(effects
 				(font
@@ -10649,7 +10640,7 @@
 			(uuid "52b81cef-35e9-4076-b636-b17a50a80894")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "D3")
 					(unit 1)
@@ -10714,7 +10705,7 @@
 			(uuid "2d1b177e-c62a-4421-9eb4-981f64c50d63")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR06")
 					(unit 1)
@@ -10750,7 +10741,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 132.715 184.15 0)
 			(effects
 				(font
@@ -10793,7 +10784,7 @@
 			(uuid "34879c2b-6c98-4804-8953-14acf92a80d7")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "C5")
 					(unit 1)
@@ -10846,6 +10837,15 @@
 		)
 		(property "Description" ""
 			(at 45.72 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "exclude_from_bom" ""
+			(at 0 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11154,7 +11154,7 @@
 			(uuid "5d0ba407-ad4f-49b5-8ac0-b779b262b8ce")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "CN1")
 					(unit 1)
@@ -11220,7 +11220,7 @@
 			(uuid "be520fab-05ab-43ab-8c2f-2ad227c11827")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#FLG02")
 					(unit 1)
@@ -11285,7 +11285,7 @@
 			(uuid "637cba44-ff13-4c5b-bdf4-9f93c77314ea")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR010")
 					(unit 1)
@@ -11350,7 +11350,7 @@
 			(uuid "943f3817-096c-4962-9c1b-8ba4b7d19bd4")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR013")
 					(unit 1)
@@ -11415,7 +11415,7 @@
 			(uuid "933ef0d6-0622-4b17-8a94-6f8fb5845467")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "#PWR014")
 					(unit 1)
@@ -11469,6 +11469,15 @@
 		)
 		(property "Description" ""
 			(at 45.72 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "exclude_from_bom" ""
+			(at 0 330.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11777,7 +11786,7 @@
 			(uuid "f0c12adb-39eb-4ab7-a3ae-309242e3da83")
 		)
 		(instances
-			(project ""
+			(project "RIPPLE"
 				(path "/ed9dce6d-6ce6-4f43-9af7-96937894595a/f8fd5962-aec6-4c58-9477-07493efed0fd"
 					(reference "CN1")
 					(unit 2)
