@@ -60,6 +60,7 @@
         }
       ],
       "drc_exclusions": [
+        "courtyards_overlap|144354003|80356946|1d080025-0603-419a-b992-08adfbdef90d|c2699e7d-252f-4c39-98f2-4a52715c4985",
         "starved_thermal|209546572|90435145|9e3e96af-1c46-4473-b5ab-1e1dc81049d5|b96f9176-e588-4155-99ad-43dd7df0f3a5|B.Cu"
       ],
       "meta": {
