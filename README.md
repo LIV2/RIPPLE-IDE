@@ -57,7 +57,7 @@ The CPLD can be programmed using a Raspberry Pi [as described by LinuxJedi](http
 |D2|1|SMD LED|0603|[Mouser](https://www.mouser.com/ProductDetail/710-150060VS75000)|
 |F1|1|2A Polyfuse|1812|[Mouser](https://www.mouser.com/ProductDetail/652-MF-MSMF110-16-2)|
 |J1|1|JTAG Header|1x06 2.54mm Pin Header||
-|J4,J3|2|IDE Cennector, Right-angle|2x20 2.54mm Right-angle IDC|[Mouser](https://www.mouser.com/ProductDetail/517-30340-5002)|
+|J4,J3|2|IDE Connector, Right-angle|2x20 2.54mm Right-angle IDC|[Mouser](https://www.mouser.com/ProductDetail/517-30340-5002)|
 |J5|1|Disable Jumper|1x02 2.54mm Pin Header||
 |J6|1|LED Header|1x04 2.54mm Pin Header||
 |J7,J2|2|KEY_PWR|1x02 2.54mm Pin Header||
