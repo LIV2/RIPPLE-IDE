@@ -3,7 +3,7 @@
 "0.1u","C4","C_0603_1608Metric","C14663"
 "10u","C2,C3","C_1206_3216Metric_Pad1.33x1.80mm_HandSolder","C7171"
 "47u","C1,C12","CP_Radial_D5.0mm_P2.50mm","C239310"
-"ACT","D2","LED_0603_1608Metric","C497932"
+"ACT","D2","LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","C497932"
 "BAT42W","D3","D_SOD-123","C134396"
 "BAT54A","D1","SOT-23_Handsoldering","C283256"
 "Polyfuse_Small","F1","Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder","C210834"

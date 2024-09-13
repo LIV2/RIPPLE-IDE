@@ -13,7 +13,7 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "C12","47u","CP_Radial_D5.0mm_P2.50mm",13.7614,11.7701,0.0000,top
 "CN1","Zorro2","Zorro2-CardEdge",2.4000,4.3194,0.0000,top
 "D1","BAT54A","SOT-23_Handsoldering",61.5318,33.2199,90.0000,top
-"D2","ACT","LED_0603_1608Metric",6.7948,33.5581,0.0000,top
+"D2","ACT","LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder",6.7948,33.5581,0.0000,top
 "D3","BAT42W","D_SOD-123",34.3862,11.3129,0.0000,top
 "F1","Polyfuse_Small","Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder",121.7716,28.4071,90.0000,top
 "J2","Conn_01x02_Male","PinHeader_1x02_P2.54mm_Vertical",126.0348,36.1489,180.0000,top

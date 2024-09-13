@@ -481,7 +481,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
@@ -745,7 +745,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -796,7 +796,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/0062f23b-6b6e-4935-8e6f-4482afda388f")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 0.5225)
@@ -967,7 +970,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1018,7 +1021,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/5f74234c-d2eb-404a-90c0-5cf108b2214e")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 0.5225)
@@ -1189,7 +1195,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1443,7 +1449,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1494,7 +1500,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/2114779e-1e2b-403a-ae33-6c8a0fd8b13a")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 0.5225)
@@ -1665,7 +1674,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1716,7 +1725,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/f6e9316f-8759-4b91-90b9-e16a75422c6b")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 -0.5225)
@@ -1888,7 +1900,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2174,7 +2186,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2225,7 +2237,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/d9983f67-e353-42e0-8e82-6c10c2aed5d1")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 -0.51)
@@ -2397,7 +2412,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_IDC:IDC-Header_2x20_P2.54mm_Horizontal"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -3742,7 +3757,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3790,7 +3805,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOT?363*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/ed5e609f-5eae-4de9-946b-54381e8be4e2")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.7 1.16)
@@ -4007,7 +4025,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4058,7 +4076,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/e470f3a5-7a2f-44a2-8b3c-db52a75b2ed0")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 0.5225)
@@ -4388,7 +4409,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4439,7 +4460,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/7998376e-1616-4252-9404-6a163d1396a6")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 0.5225)
@@ -4610,7 +4634,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4661,7 +4685,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/941c5af6-e514-4718-b4de-1e50fb9443b9")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 0.5225)
@@ -4832,7 +4859,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4883,7 +4910,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/2cf727aa-cb61-4881-ab25-5959b85fc09a")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 -0.5225)
@@ -5055,7 +5085,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_IDC:IDC-Header_2x20_P2.54mm_Horizontal"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -6400,7 +6430,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7071,7 +7101,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7122,7 +7152,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/ef694741-aeee-46e4-a9f2-52a54d2bfb68")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 0.5225)
@@ -7293,7 +7326,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7515,7 +7548,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_QFP:TQFP-64_10x10mm_P0.5mm"
 			(at 0 0 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -8651,7 +8684,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8857,7 +8890,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8922,7 +8955,7 @@
 				)
 			)
 		)
-		(property "LCSC #" "C134396"
+		(property "LCSC #" "C5805717"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8935,7 +8968,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f8fd5962-aec6-4c58-9477-07493efed0fd/d0e05345-918a-43a6-b342-95649377d179")
+		(sheetname "CPLD")
+		(sheetfile "CPLD.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.36 -1)
@@ -9188,7 +9224,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9239,7 +9275,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/02ae6d6a-c454-4870-a756-cabb801e7fd5")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 0.5225)
@@ -9410,7 +9449,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10787,7 +10826,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10838,7 +10877,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/f42b2984-016c-4842-8a1e-f3b1acca0b96")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 0.5225)
@@ -11009,7 +11051,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11060,7 +11102,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/1a4b103b-bb5e-480b-859f-7a2667a15f66")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 0.5225)
@@ -11231,7 +11276,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -11473,7 +11518,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11524,7 +11569,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/9731c107-bd10-4705-a045-b2bae15b08b4")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 -0.5225)
@@ -11929,7 +11977,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12727,7 +12775,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14104,7 +14152,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
@@ -14549,7 +14597,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14600,7 +14648,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/a8496e07-ccbc-4968-ad5d-06d821d0a047")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 -0.5225)
@@ -14771,7 +14822,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14822,7 +14873,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/2b8da5e6-e5ec-4838-b476-9d61e4a24f8c")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 0.5225)
@@ -14993,7 +15047,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15215,7 +15269,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15266,7 +15320,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/a4547a11-0333-40ef-b853-0e70f640a6a5")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254724 0.5225)
@@ -15438,7 +15495,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15702,7 +15759,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 0 0 45)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15753,7 +15810,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/f8fd5962-aec6-4c58-9477-07493efed0fd/e8ae44c5-b154-4472-b750-5235212052ee")
+		(sheetname "CPLD")
+		(sheetfile "CPLD.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 -0.51)
@@ -15924,7 +15984,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSOP-I-32_11.8x8mm_P0.5mm"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -16488,7 +16548,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -17267,7 +17327,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -17516,7 +17576,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 0 0 135)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17567,7 +17627,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/f8fd5962-aec6-4c58-9477-07493efed0fd/82fa5d6a-76b5-47c9-80c1-d5d3982edf89")
+		(sheetname "CPLD")
+		(sheetfile "CPLD.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 -0.51)
@@ -17738,7 +17801,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17789,7 +17852,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/bd837099-afec-41a0-885e-ab62247a1072")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 -0.51)
@@ -17959,7 +18025,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Zorro2:Zorro2-CardEdge"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19080,7 +19146,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19131,7 +19197,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOT?23*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/92450bd3-828e-435c-9f86-7f3b9d360e54")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 0.76 1.58)
@@ -19363,7 +19432,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
 			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
@@ -19820,7 +19889,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -20197,7 +20266,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 0 0 -135)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20248,7 +20317,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/f8fd5962-aec6-4c58-9477-07493efed0fd/bb9ccabe-f496-43fa-8dcd-5159cff81bcf")
+		(sheetname "CPLD")
+		(sheetfile "CPLD.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 0.51)
@@ -20419,7 +20491,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 0 0 -45)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20470,7 +20542,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/f8fd5962-aec6-4c58-9477-07493efed0fd/22084ffa-abda-44f5-a0b0-202ca1e70914")
+		(sheetname "CPLD")
+		(sheetfile "CPLD.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 0.51)
@@ -20771,7 +20846,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20822,7 +20897,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/72a041ea-580b-4ee8-bd3e-913c240356cb")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.66 -0.735)
@@ -21015,7 +21093,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21066,7 +21144,10 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/02af0dc9-877c-4845-bc7f-2eed0ff1075e/e6ef6a03-a51d-4bef-a9ad-5c4cf78d45f8")
+		(sheetname "IDE")
+		(sheetfile "IDE.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.146267 -0.51)
