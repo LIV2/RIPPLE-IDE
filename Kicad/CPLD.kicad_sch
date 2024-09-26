@@ -8608,7 +8608,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u"
+		(property "Value" "100u"
 			(at 119.38 144.7799 0)
 			(effects
 				(font
@@ -8645,6 +8645,15 @@
 			)
 		)
 		(property "LCSC #" "C239310"
+			(at 116.84 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser # " "667-ECE-A1CKA101"
 			(at 116.84 143.51 0)
 			(effects
 				(font
@@ -8857,6 +8866,15 @@
 			)
 		)
 		(property "LCSC #" "C14663"
+			(at 123.825 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "187-CL10B104KA8NFNC"
 			(at 123.825 184.15 0)
 			(effects
 				(font
@@ -9083,6 +9101,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC #" "C7171"
+			(at 125.73 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "581-TAJA106K016R"
+			(at 125.73 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a8c4e553-9dfc-4cdf-95b7-c3d972627eea")
 		)
@@ -9118,7 +9154,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u"
+		(property "Value" "100u"
 			(at 96.52 185.4199 0)
 			(effects
 				(font
@@ -9155,6 +9191,15 @@
 			)
 		)
 		(property "LCSC #" "C239310"
+			(at 99.06 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "667-ECE-A1CKA101"
 			(at 99.06 184.15 0)
 			(effects
 				(font
@@ -9242,6 +9287,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "581-TAJA106K016R"
+			(at 152.4 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7855a690-4836-430e-88f5-a64088e4286c")
 		)
@@ -9310,6 +9364,15 @@
 			)
 		)
 		(property "LCSC #" "C17802"
+			(at 76.2 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "71-CRCW060368R0FKEB"
 			(at 76.2 147.32 90)
 			(effects
 				(font
@@ -9734,6 +9797,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "187-CL10B104KA8NFNC"
+			(at 141.605 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e7f1608f-7f0d-4cc4-bac9-d0e79ee4a594")
 		)
@@ -9928,6 +10000,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 158.75 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC #" "C90569"
+			(at 158.75 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "217-C9572XL-10VQG64C"
 			(at 158.75 68.58 0)
 			(effects
 				(font
@@ -10332,6 +10422,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "187-CL10B104KA8NFNC"
+			(at 114.935 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cbf8ebdc-b91a-47ac-b099-b349c77b7522")
 		)
@@ -10533,6 +10632,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC #" "C23984"
+			(at 139.7 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "926-LM1117MP-3.3NOPB"
+			(at 139.7 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bcf46346-6544-48e9-a138-70980f13bbb7")
 		)
@@ -10625,6 +10742,15 @@
 			)
 		)
 		(property "LCSC #" "C134396"
+			(at 83.82 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "78-BAT42W-HE3-08"
 			(at 83.82 149.86 90)
 			(effects
 				(font
@@ -10769,6 +10895,15 @@
 			)
 		)
 		(property "LCSC #" "C14663"
+			(at 132.715 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "187-CL10B104KA8NFNC"
 			(at 132.715 184.15 0)
 			(effects
 				(font

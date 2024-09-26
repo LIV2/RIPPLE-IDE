@@ -2294,7 +2294,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 145.415 139.065 0)
 			(effects
 				(font
@@ -2322,6 +2322,15 @@
 			)
 		)
 		(property "LCSC #" "C14663"
+			(at 145.415 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "187-CL10B104KA8NFNC"
 			(at 145.415 139.065 0)
 			(effects
 				(font
@@ -2389,6 +2398,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 128.905 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "579-SST39010A554CWHE"
 			(at 128.905 109.855 0)
 			(effects
 				(font

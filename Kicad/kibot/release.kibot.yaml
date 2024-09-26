@@ -2,6 +2,12 @@ kibot:
   version: 1
 
 filters:
+  - name: 'exclude_kibuzzard'
+    type: 'generic'
+    comment: 'Exclude Kibuzzard stuff'
+    exclude_any:
+      - column: References
+        regex: '^kibuzzard.*'
   - name: 'exclude_tht'
     type: 'generic'
     comment: 'Exclude thru-hole parts'
@@ -31,7 +37,10 @@ preflight:
   run_drc: true
   run_erc: true
   update_xml: true
+  ignore_unconnected: true
   filters:
+    - error: 'pin_not_connected'
+      filter: 'Pin not connected'
     - error: 'silk_overlap'
       filter: 'Silkscreen overlap'
     - error: 'pin_not_driven'
@@ -65,6 +74,8 @@ outputs:
     layers:
       - F.Cu
       - B.Cu
+      - In1.Cu
+      - In2.Cu
       - F.SilkS
       - B.SilkS
       - F.Paste
@@ -100,10 +111,10 @@ outputs:
     options:
       include_tracks: true
       layer_view: FB
-      blacklist: 'CN1,J1'
       highlight_pin1: true
       include_nets: true
       dark_mode: true
+      extra_fields: "LCSC #,Mouser #"
 
   - name: 3dImage
     type: render_3d
@@ -114,7 +125,7 @@ outputs:
       output: ../Docs/PCB.png
       zoom: 8
       view: top
-      no_tht: false
+      no_tht: true
       orthographic: true
       download: false
       width: 1300
@@ -126,6 +137,7 @@ outputs:
     options:
       output: ../Docs/PCB.png
       format: png
+      show_solderpaste: false
       show_components: none
 
   - name: 'JLCPCB_position'
@@ -138,7 +150,7 @@ outputs:
       units: millimeters
       separate_files_for_front_and_back: false
       use_aux_axis_as_origin: true
-      only_smd: false
+      only_smd: true
       columns:
         - id: Ref
           name: Designator
@@ -158,8 +170,13 @@ outputs:
     type: bom
     options:
       output: '../Gerbers/%f_%i_jlc.%x'
+      exclude_filter: 
+        - 'exclude_tht'
+        - 'exclude_kibuzzard'
       ref_separator: ','
       columns:
+        - field: 'Quantity Per PCB'
+          name: Qty
         - field: Value
           name: Comment
         - field: References
@@ -171,3 +188,31 @@ outputs:
         hide_pcb_info: true
         hide_stats_info: true
         quote_all: true
+
+  - name: 'html_bom'
+    comment: "BoM"
+    type: bom
+    options:
+      output: '../Docs/%f_%i.%x'
+      exclude_filter: 
+        - 'exclude_kibuzzard'
+      ref_separator: ','
+      columns:
+        - field: 'Quantity Per PCB'
+          name: Qty
+        - field: Value
+          name: Comment
+        - field: References
+          name: Designator
+        - Footprint
+        - field: 'Mouser #'
+          name: 'Mouser Part'
+        - field: 'LCSC #'
+          name: 'LCSC Part'
+      html:
+        title: '%f Bill of materials'
+        hide_pcb_info: true
+        hide_stats_info: true
+        quote_all: true
+        lcsc_link: "LCSC #"
+        mouser_link: "Mouser #"

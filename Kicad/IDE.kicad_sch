@@ -7467,6 +7467,16 @@
 		)
 		(uuid "ff00c6d1-db8b-4528-b74b-09cd9b6eb311")
 	)
+	(text "Resistor value may vary depending on LED\nTarget brightness is around 20mcd\n"
+		(exclude_from_sim no)
+		(at 208.28 268.478 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "676ba304-6f04-420a-8e57-db61525d6475")
+	)
 	(label "I_A0"
 		(at 161.925 189.23 0)
 		(fields_autoplaced yes)
@@ -8817,6 +8827,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "71-CRCW060368R0FKEB"
+			(at 85.09 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c59c5ca2-4e27-46e8-8846-a41295fd811e")
 		)
@@ -8885,6 +8904,15 @@
 			)
 		)
 		(property "LCSC #" "C22808"
+			(at 207.645 244.475 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "279-CRGP0603F150R"
 			(at 207.645 244.475 90)
 			(effects
 				(font
@@ -9165,6 +9193,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "603-RC0603JR-131KL"
+			(at 178.435 249.555 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ba4971ab-b045-4b65-a27c-f63f80d88062")
 		)
@@ -9262,7 +9299,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "10K"
 			(at 204.47 81.915 90)
 			(effects
 				(font
@@ -9297,7 +9334,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC #" "C416053"
+		(property "LCSC #" "C25804"
+			(at 206.375 81.915 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "279-CRGH0603J10K"
 			(at 206.375 81.915 90)
 			(effects
 				(font
@@ -9386,6 +9432,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "652-MF-MSMF110-16-2"
+			(at 107.95 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e123b3e8-f549-4ddd-b072-dd429f1798e4")
 		)
@@ -9418,7 +9473,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "10K"
 			(at 196.215 81.915 90)
 			(effects
 				(font
@@ -9453,7 +9508,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC #" "C416053"
+		(property "LCSC #" "C25804"
+			(at 198.755 81.915 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "279-CRGH0603J10K"
 			(at 198.755 81.915 90)
 			(effects
 				(font
@@ -9494,7 +9558,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "150"
 			(at 209.55 261.62 90)
 			(effects
 				(font
@@ -9530,6 +9594,15 @@
 			)
 		)
 		(property "LCSC #" "C416053"
+			(at 209.55 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "279-CRGP0603F150R"
 			(at 209.55 259.08 90)
 			(effects
 				(font
@@ -9672,6 +9745,15 @@
 			)
 		)
 		(property "LCSC #" "C720747"
+			(at 299.085 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "517-30340-5002"
 			(at 299.085 123.19 0)
 			(effects
 				(font
@@ -9866,6 +9948,15 @@
 			)
 		)
 		(property "LCSC #" "C156320"
+			(at 187.325 233.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "621-BC857BS-13-F"
 			(at 187.325 233.045 0)
 			(effects
 				(font
@@ -10160,6 +10251,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "279-CRGH0603J10K"
+			(at 212.725 81.915 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "26732050-abfd-4293-80c1-5fd4b66ba1ee")
 		)
@@ -10229,6 +10329,15 @@
 			)
 		)
 		(property "LCSC #" "C720747"
+			(at 246.38 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "517-30340-5002"
 			(at 246.38 123.19 0)
 			(effects
 				(font
@@ -10628,6 +10737,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "595-SN74HCT245PWR"
+			(at 149.225 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c11987cd-2b23-42d2-a215-13d7b2fe016a")
 		)
@@ -10824,6 +10942,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "696-SML-LX0603GW"
+			(at 201.93 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9461fa21-686b-412c-a2a7-1420c8703796")
 		)
@@ -10892,6 +11019,15 @@
 			)
 		)
 		(property "LCSC #" "C25804"
+			(at 232.41 81.915 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "279-CRGH0603J10K"
 			(at 232.41 81.915 90)
 			(effects
 				(font
@@ -11242,6 +11378,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "621-BAT54A-F"
+			(at 200.66 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7b347781-bf29-4c16-873f-6831b1a10980")
 		)
@@ -11277,7 +11422,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "10K"
 			(at 277.495 81.915 90)
 			(effects
 				(font
@@ -11312,7 +11457,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC #" "C416053"
+		(property "LCSC #" "C25804"
+			(at 273.05 81.915 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "279-CRGH0603J10K"
 			(at 273.05 81.915 90)
 			(effects
 				(font
@@ -11397,6 +11551,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "71-CRCW060368R0FKEB"
+			(at 85.09 150.495 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "58a26733-9abc-42e9-9a26-759e0d499cfb")
 		)
@@ -11466,6 +11629,15 @@
 			)
 		)
 		(property "LCSC #" "C6779"
+			(at 149.225 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "595-SN74HCT245PWR"
 			(at 149.225 132.08 0)
 			(effects
 				(font
@@ -11811,6 +11983,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "279-CRGH0603J10K"
+			(at 229.87 81.915 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "39d0e584-e6bb-4903-9019-4022d14cfab5")
 		)
@@ -11888,6 +12069,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "279-CRGH0603J10K"
+			(at 83.82 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e4babae5-b167-4683-a112-1ebe40e57476")
 		)
@@ -11928,7 +12118,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 194.818 208.28 90)
 			(effects
 				(font
@@ -11956,6 +12146,15 @@
 			)
 		)
 		(property "LCSC #" "C25804"
+			(at 193.04 208.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "279-CRGH0603J10K"
 			(at 193.04 208.28 90)
 			(effects
 				(font
@@ -12233,6 +12432,15 @@
 			)
 		)
 		(property "LCSC #" "C14663"
+			(at 81.915 220.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "187-CL10B104KA8NFNC"
 			(at 81.915 220.345 0)
 			(effects
 				(font
@@ -12656,6 +12864,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "187-CL10B104KA8NFNC"
+			(at 102.87 220.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "94287cfc-9b26-490a-bfa0-3e522201e8a4")
 		)
@@ -12798,6 +13015,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "279-CRGH0603J10K"
+			(at 280.67 81.915 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ac252ff6-d931-4cf4-b5e5-50f8e4d53315")
 		)
@@ -12868,6 +13094,15 @@
 			)
 		)
 		(property "LCSC #" "C14663"
+			(at 92.71 220.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "187-CL10B104KA8NFNC"
 			(at 92.71 220.345 0)
 			(effects
 				(font
@@ -12948,6 +13183,15 @@
 			)
 		)
 		(property "LCSC #" "C156320"
+			(at 187.325 249.555 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "621-BC857BS-13-F"
 			(at 187.325 249.555 0)
 			(effects
 				(font
@@ -13044,6 +13288,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "71-CRCW060368R0FKEB"
+			(at 85.09 158.115 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1132cfa1-9b80-49b3-a2ad-136659ea4d34")
 		)
@@ -13113,6 +13366,15 @@
 			)
 		)
 		(property "LCSC #" "C6779"
+			(at 149.225 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "595-SN74HCT245PWR"
 			(at 149.225 77.47 0)
 			(effects
 				(font
@@ -13316,6 +13578,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser #" "603-RC0603JR-131KL"
+			(at 178.435 233.045 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "563523ad-68e9-4ee6-8ef6-0a4a2713f6aa")
 		)
@@ -13384,6 +13655,15 @@
 			)
 		)
 		(property "LCSC #" "C27592"
+			(at 85.09 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "71-CRCW060368R0FKEB"
 			(at 85.09 146.05 90)
 			(effects
 				(font
