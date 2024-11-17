@@ -10,8 +10,9 @@ Zorro 2 IDE Interface for Amiga 2000/3000/4000
 3. [Ordering PCBs](#ordering-pcbs)
 4. [Programming](#programming)
 5. [Parts list & Links](#parts-list--links)
-6. [Special Thanks and Shoutouts](#special-thanks-and-shoutouts)
-7. [License](#license)
+6. [Revision history](#revision-history)
+7. [Special Thanks and Shoutouts](#special-thanks-and-shoutouts)
+8. [License](#license)
 
 ## Status
 Tested and working.
@@ -56,7 +57,10 @@ The CPLD can be programmed using a Raspberry Pi [as described by LinuxJedi](http
 * [BOM](Docs/Rev_A2-bom.md)
 * [Interactive HTML BOM](https://html-preview.github.io/?url=https://github.com/LIV2/RIPPLE-IDE/blob/Rev_A2/Docs/RIPPLE-ibom.html)
 
-### Earlier revisions
+## Revision history
+* A3 - Add protection for reverse installation
+* A2 - Add bank selection, support loading CDFS from flash
+* A1 - Initial release
 
 ## Special Thanks and Shoutouts
 Thanks to:
