@@ -201,7 +201,7 @@ outputs:
         - field: 'Quantity Per PCB'
           name: Qty
         - field: Value
-          name: Comment
+          name: Value
         - field: References
           name: Designator
         - Footprint
@@ -209,6 +209,8 @@ outputs:
           name: 'Mouser Part'
         - field: 'LCSC #'
           name: 'LCSC Part'
+        - field: 'Comments'
+          name: 'Comments'
       html:
         title: '%f Bill of materials'
         hide_pcb_info: true

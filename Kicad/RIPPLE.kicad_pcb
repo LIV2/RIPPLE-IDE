@@ -9770,7 +9770,7 @@
 				)
 			)
 		)
-		(property "Mouser # " "ECE-A1CKA101"
+		(property "Mouser # " "667-ECE-A1CKA101"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13187,7 +13187,7 @@
 				)
 			)
 		)
-		(property "Mouser #" "ECE-A1CKA101"
+		(property "Mouser #" "667-ECE-A1CKA101"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16475,12 +16475,25 @@
 				)
 			)
 		)
-		(property "Mouser #" " 579-SST39010A554CWHE"
+		(property "Mouser #" "579-SST39010A554CWHE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a0f6c976-a7df-47fa-9743-814fa82defa7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Comments" "Alt: 39SF040, MX29F040C"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c15d7bd6-8804-4891-a393-1486722bad51")
 			(effects
 				(font
 					(size 1 1)

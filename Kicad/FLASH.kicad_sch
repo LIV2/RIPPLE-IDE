@@ -2415,6 +2415,15 @@
 				(hide yes)
 			)
 		)
+		(property "Comments" "Alt: 39SF040, MX29F040C"
+			(at 128.905 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "24"
 			(uuid "7a6733c3-5c07-4b73-8be8-f672e1c418ed")
 		)
