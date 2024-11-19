@@ -23,6 +23,6 @@ jobs:
           draft: true
           files: |
             Docs/Schematic.pdf
-            Docs/*-ibom.html
+            Docs/*.html
             Gerbers.zip
             Binary/*.jed
