@@ -16488,7 +16488,7 @@
 				)
 			)
 		)
-		(property "Comments" "Alt: 39SF040, MX29F040C"
+		(property "Comments" "Alt: 39SF020, 39SF040"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")

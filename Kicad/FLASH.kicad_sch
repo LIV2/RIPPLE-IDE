@@ -2415,7 +2415,7 @@
 				(hide yes)
 			)
 		)
-		(property "Comments" "Alt: 39SF040, MX29F040C"
+		(property "Comments" "Alt: 39SF020, 39SF040"
 			(at 128.905 109.855 0)
 			(effects
 				(font
