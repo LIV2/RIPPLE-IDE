@@ -21,7 +21,10 @@ filters:
       - ["^SOT-89", 180.0]
       - ["^SW_DIP_SPSTx04", 270.0]
       - ["^CP_EIA-3216-18_Kemet-A", 0.0]
-      - ["^SOT-363", 180.0]
+      - ["^SOT-363", 270.0]
+      - ["^CP_Elec", 0.0]
+      - ["^IDC-Header", 90.0]
+      - ["^PinHeader", 90.0]
 
 
 variants:
@@ -150,7 +153,7 @@ outputs:
       units: millimeters
       separate_files_for_front_and_back: false
       use_aux_axis_as_origin: true
-      only_smd: true
+      only_smd: false
       columns:
         - id: Ref
           name: Designator
@@ -171,7 +174,6 @@ outputs:
     options:
       output: '../Gerbers/%f_%i_jlc.%x'
       exclude_filter: 
-        - 'exclude_tht'
         - 'exclude_kibuzzard'
       ref_separator: ','
       columns:

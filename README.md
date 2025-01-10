@@ -49,7 +49,11 @@ To program the Flash, simply boot the latest [lide-update.adf](https://github.co
 The CPLD can be programmed using a Raspberry Pi [as described by LinuxJedi](https://linuxjedi.co.uk/2020/12/01/programming-xilinx-jtag-from-a-raspberry-pi/)
 
 ## Parts list & links
-### Rev A3 (Latest)
+### Rev A4
+* [HTML BOM](https://html-preview.github.io/?url=https://github.com/LIV2/RIPPLE-IDE/blob/Rev_A4/Docs/RIPPLE_bom.html)
+* [Interactive HTML BOM](https://html-preview.github.io/?url=https://github.com/LIV2/RIPPLE-IDE/blob/Rev_A4/Docs/RIPPLE-ibom.html)
+
+### Rev A3
 * [HTML BOM](https://html-preview.github.io/?url=https://github.com/LIV2/RIPPLE-IDE/blob/Rev_A3/Docs/RIPPLE_bom.html)
 * [Interactive HTML BOM](https://html-preview.github.io/?url=https://github.com/LIV2/RIPPLE-IDE/blob/Rev_A3/Docs/RIPPLE-ibom.html)
 
@@ -58,6 +62,7 @@ The CPLD can be programmed using a Raspberry Pi [as described by LinuxJedi](http
 * [Interactive HTML BOM](https://html-preview.github.io/?url=https://github.com/LIV2/RIPPLE-IDE/blob/Rev_A2/Docs/RIPPLE-ibom.html)
 
 ## Revision history
+* A4 - Change flash footprint from TSOP to PLCC because the TSOP version is no longer manufactured.
 * A3 - Add protection for reverse installation
 * A2 - Add bank selection, support loading CDFS from flash
 * A1 - Initial release
