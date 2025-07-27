@@ -2,17 +2,18 @@
 
 Zorro 2 IDE Interface for Amiga 2000/3000/4000
 
-![PCB](Docs/RIPPLE.jpg?raw=True)
+![PCB](Docs/RIPPLE3D.png?raw=True)
 
 ## Table of contents
 1. [Status](#status)
 2. [Features](#features)
-3. [Ordering PCBs](#ordering-pcbs)
-4. [Programming](#programming)
-5. [Parts list & Links](#parts-list--links)
-6. [Revision history](#revision-history)
-7. [Special Thanks and Shoutouts](#special-thanks-and-shoutouts)
-8. [License](#license)
+3. [Jumpers](#jumpers)
+4. [Ordering PCBs](#ordering-pcbs)
+5. [Programming](#programming)
+6. [Parts list & Links](#parts-list--links)
+7. [Revision history](#revision-history)
+8. [Special Thanks and Shoutouts](#special-thanks-and-shoutouts)
+9. [License](#license)
 
 ## Status
 Tested and working.
@@ -29,6 +30,14 @@ Tested and working.
 * Uses [lide.device](https://github.com/LIV2/lide.device)
 
 For more information on these features please see the [lide.device readme](https://github.com/LIV2/lide.device/blob/master/README.md)
+
+## Jumpers
+|Jumper|Function|
+|------|--------|
+|**DISABLE**| Disables the IDE interface|
+|**LED**|The LED header has two positions: A2000 and A4000<br /> Plug the HDD LED connector into the one relevant for your machine|
+|**KEY PWR**|Closing this jumper enables 5V power on pin 20 for CompactFlash/IDE DOM modules|
+
 
 ## Ordering PCBs
 You can find the latest Gerbers attached to the [latest Release](https://github.com/LIV2/RIPPLE-IDE/releases)
