@@ -12,8 +12,9 @@ Zorro 2 IDE Interface for Amiga 2000/3000/4000
 5. [Programming](#programming)
 6. [Parts list & Links](#parts-list--links)
 7. [Revision history](#revision-history)
-8. [Special Thanks and Shoutouts](#special-thanks-and-shoutouts)
-9. [License](#license)
+8. [Errata](#errata)
+9. [Special Thanks and Shoutouts](#special-thanks-and-shoutouts)
+10. [License](#license)
 
 ## Status
 Tested and working.
@@ -58,6 +59,10 @@ To program the Flash, simply boot the latest [lide-update.adf](https://github.co
 The CPLD can be programmed using a Raspberry Pi [as described by LinuxJedi](https://linuxjedi.co.uk/2020/12/01/programming-xilinx-jtag-from-a-raspberry-pi/)
 
 ## Parts list & links
+### Rev A5
+* [HTML BOM](https://html-preview.github.io/?url=https://github.com/LIV2/RIPPLE-IDE/blob/Rev_A5/Docs/RIPPLE_bom.html)
+* [Interactive HTML BOM](https://html-preview.github.io/?url=https://github.com/LIV2/RIPPLE-IDE/blob/Rev_A5/Docs/RIPPLE-ibom.html)
+
 ### Rev A4
 * [HTML BOM](https://html-preview.github.io/?url=https://github.com/LIV2/RIPPLE-IDE/blob/Rev_A4/Docs/RIPPLE_bom.html)
 * [Interactive HTML BOM](https://html-preview.github.io/?url=https://github.com/LIV2/RIPPLE-IDE/blob/Rev_A4/Docs/RIPPLE-ibom.html)
@@ -71,10 +76,14 @@ The CPLD can be programmed using a Raspberry Pi [as described by LinuxJedi](http
 * [Interactive HTML BOM](https://html-preview.github.io/?url=https://github.com/LIV2/RIPPLE-IDE/blob/Rev_A2/Docs/RIPPLE-ibom.html)
 
 ## Revision history
+* A5 - Fixup R10/R11 silkscreen - they had been swapped arouund on Rev A3 and A4
 * A4 - Change flash footprint from TSOP to PLCC because the TSOP version is no longer manufactured.
 * A3 - Add protection for reverse installation
 * A2 - Add bank selection, support loading CDFS from flash
 * A1 - Initial release
+
+## Errata
+Revisions A3 and A4 had a silkscreen issue with R10/R11 labels swapped around - R10 (150 Ohm) should be above R11 (10K)
 
 ## Special Thanks and Shoutouts
 Thanks to:
